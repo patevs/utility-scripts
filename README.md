@@ -1,5 +1,21 @@
 # Utility Scripts
 
-> Various utility scripts I have created to aid in the automation of system setup and configuration tasks.
+> Personal utility scripts used to help automate system setup and configuration tasks.
+
+---
+
+## Project Structure
+
+```md
+.
++-- scripts
+|   +-- choco
+|   +-- git
+|   +-- npm
+|   +-- pip
++-- .editorconfig
++-- README.md
++-- VERSION
+```
 
 ---
