@@ -1,6 +1,6 @@
 # Utility Scripts
 
-> Personal utility scripts used to help automate system setup and configuration tasks.
+> Collection of utility scripts I have created to help automate various system setup and configuration tasks.
 
 ---
 
