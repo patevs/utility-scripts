@@ -133,6 +133,8 @@ CALL npm install --global package-json-to-readme
 :: Development Utilities
 ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
+:: # https://github.com/bower/bower
+:: CALL npm install --global bower
 :: # https://github.com/kentcdodds/clog-cli
 :: CALL npm install --global clog-cli
 :: # https://github.com/facebook/create-react-app
@@ -253,11 +255,17 @@ ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 :: # https://github.com/yeoman/yo
 CALL npm install --global yo
 
+:: ASP.NET Core
+:: requires bower to be installed
+:: # https://github.com/OmniSharp/generator-aspnet
+:: CALL npm install --global generator-aspnet
+
 :: HTML/Frontend
 :: # https://github.com/h5bp/generator-h5bp
 CALL npm install --global generator-h5bp
 :: # https://github.com/yeoman/generator-webapp
 :: CALL npm install --global generator-webapp
+
 :: JavaScript/Node
 :: (Ava/Codecov)
 :: # https://github.com/sindresorhus/generator-nm
@@ -265,6 +273,7 @@ CALL npm install --global generator-nm
 :: (Jest/Coveralls)
 :: # https://github.com/yeoman/generator-node
 :: CALL npm install --global generator-node
+
 :: Typescript
 :: (Jest)
 :: # https://github.com/ospatil/generator-node-typescript
