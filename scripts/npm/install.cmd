@@ -66,7 +66,7 @@ CALL npm install --global g3l
 :: # https://github.com/IonicaBizau/git-stats
 :: CALL npm install --global git-stats
 :: # https://github.com/carloscuesta/gitmoji-cli
-:: CALL npm install --global gitmoji-cli
+CALL npm install --global gitmoji-cli
 :: # https://github.com/himynameisdave/git-labelmaker
 :: :: CALL npm install --global git-labelmaker
 
@@ -79,19 +79,23 @@ ECHO. & ECHO  [44m Installing NodeJS and NPM Utility Modules: [0m & ECHO.
 :: # https://github.com/alanshaw/david
 CALL npm install --global david
 :: # https://github.com/dylang/npm-check
-:: CALL npm install --global npm-check
+CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
-:: CALL npm install --global npm-check-updates
+CALL npm install --global npm-check-updates
+:: # https://github.com/pksunkara/npm-police
+:: CALL npm install --global npm-police
+:: # https://github.com/lirantal/npq
+:: CALL npm install --global npq
 :: # https://github.com/sculove/nti
 :: CALL npm install --global nti
 :: # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules
-:: CALL npm install --global cost-of-modules
+CALL npm install --global cost-of-modules
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
 :: # https://github.com/workshopper/how-to-npm
-:: CALL npm install --global how-to-npm
+CALL npm install --global how-to-npm
 :: # https://github.com/GoogleChromeLabs/ndb
 :: # NOTE: ndb requires windows-build-tools
 :: CALL npm install --global ndb
@@ -102,10 +106,10 @@ CALL npm install --global ntl
 :: # https://github.com/voidcosmos/npkill
 :: CALL npm install --global npkill
 :: https://github.com/npms-io/npms-cli
-:: CALL npm install --global npms-cli
+CALL npm install --global npms-cli
 :: CALL npm install --global npkill
 :: # https://github.com/zeke/package-json-to-readme
-:: CALL npm install --global package-json-to-readme
+CALL npm install --global package-json-to-readme
 :: # https://github.com/Unitech/pm2
 :: CALL npm install --global pm2
 :: # https://github.com/felixrieseberg/windows-build-tools
@@ -131,12 +135,16 @@ CALL npm install --global ntl
 :: ---------------------------------------------------------------------------- ::
 
 :: Development Utilities
-:: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
+:: # https://github.com/bower/bower
+CALL npm install --global bower
 :: # https://github.com/kentcdodds/clog-cli
 :: CALL npm install --global clog-cli
 :: # https://github.com/facebook/create-react-app
 :: CALL npm install --global create-react-app
+:: # https://github.com/alchaplinsky/devion
+:: CALL npm install --global devion
 :: # https://github.com/thlorenz/doctoc
 :: CALL npm install --global doctoc
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
@@ -147,7 +155,7 @@ CALL npm install --global ntl
 :: # https://github.com/GitbookIO/gitbook
 :: CALL npm install --global gitbook-cli
 :: # https://github.com/cutenode/good-first-issue
-:: CALL npm install --global good-first-issue
+CALL npm install --global good-first-issue
 :: # https://github.com/kangax/html-minifier
 :: CALL npm install --global html-minifer
 :: # Image minifier
@@ -172,7 +180,7 @@ CALL npm install --global licensed
 :: CALL npm install --global passgen-cli
 :: https://github.com/sdras/project-explorer
 :: Note: requires yarn to be installed
-:: CALL npm install --global project-explorer
+CALL npm install --global project-explorer
 :: # Progressive web metrics
 :: # https://github.com/paulirish/pwmetrics
 :: CALL npm install --global pwmetrics
@@ -222,7 +230,7 @@ CALL npm install --global empty-trash-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
-:: CALL npm install --global gtop
+CALL npm install --global gtop
 :: # https://github.com/nogizhopaboroda/iponmap
 :: CALL npm install --global iponmap
 :: # https://github.com/sindresorhus/open-cli
@@ -248,23 +256,30 @@ CALL npm install --global wifi-password-cli
 :: ---------------------------------------------------------------------------- ::
 
 :: Yeoman and generators
-:: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
 :: # https://github.com/yeoman/yo
-:: CALL npm install --global yo
+CALL npm install --global yo
+
+:: ASP.NET Core
+:: requires bower to be installed
+:: # https://github.com/OmniSharp/generator-aspnet
+CALL npm install --global generator-aspnet
 
 :: HTML/Frontend
 :: # https://github.com/h5bp/generator-h5bp
-:: CALL npm install --global generator-h5bp
+CALL npm install --global generator-h5bp
 :: # https://github.com/yeoman/generator-webapp
 :: CALL npm install --global generator-webapp
+
 :: JavaScript/Node
 :: (Ava/Codecov)
 :: # https://github.com/sindresorhus/generator-nm
-:: CALL npm install --global generator-nm
+CALL npm install --global generator-nm
 :: (Jest/Coveralls)
 :: # https://github.com/yeoman/generator-node
 :: CALL npm install --global generator-node
+
 :: Typescript
 :: (Jest)
 :: # https://github.com/ospatil/generator-node-typescript
@@ -276,17 +291,17 @@ CALL npm install --global wifi-password-cli
 :: ---------------------------------------------------------------------------- ::
 
 :: Alternative Package Managers
-:: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
 :: # https://github.com/alexanderGugel/ied
 :: CALL npm install --global ied
 :: # https://github.com/pnpm/pnpm
-:: CALL npm install --global pnpm
+CALL npm install --global pnpm
 :: Upgrade pnpm
-:: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
-:: CALL pnpm install --global pnpm
+ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
+CALL pnpm install --global pnpm
 :: # https://github.com/yarnpkg/yarn
-:: CALL npm install --global yarn
+CALL npm install --global yarn
 
 :: ---------------------------------------------------------------------------- ::
 
