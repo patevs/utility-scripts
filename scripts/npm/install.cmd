@@ -82,6 +82,10 @@ CALL npm install --global david
 CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
 CALL npm install --global npm-check-updates
+:: # https://github.com/pksunkara/npm-police
+:: CALL npm install --global npm-police
+:: # https://github.com/lirantal/npq
+:: CALL npm install --global npq
 :: # https://github.com/sculove/nti
 :: CALL npm install --global nti
 :: # https://github.com/ruyadorno/ntl
@@ -139,6 +143,8 @@ CALL npm install --global bower
 :: CALL npm install --global clog-cli
 :: # https://github.com/facebook/create-react-app
 :: CALL npm install --global create-react-app
+:: # https://github.com/alchaplinsky/devion
+:: CALL npm install --global devion
 :: # https://github.com/thlorenz/doctoc
 :: CALL npm install --global doctoc
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
