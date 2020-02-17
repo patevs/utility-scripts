@@ -96,6 +96,8 @@ CALL npm install --global cost-of-modules
 :: CALL npm install --global dependency-check
 :: # https://github.com/workshopper/how-to-npm
 CALL npm install --global how-to-npm
+:: # https://github.com/lirantal/lockfile-lint
+:: CALL npm install --global lockfile-lint
 :: # https://github.com/GoogleChromeLabs/ndb
 :: # NOTE: ndb requires windows-build-tools
 :: CALL npm install --global ndb
@@ -143,6 +145,8 @@ CALL npm install --global bower
 :: CALL npm install --global clog-cli
 :: # https://github.com/facebook/create-react-app
 :: CALL npm install --global create-react-app
+:: # https://github.com/benawad/destiny
+:: CALL npm install --global destiny
 :: # https://github.com/alchaplinsky/devion
 :: CALL npm install --global devion
 :: # https://github.com/thlorenz/doctoc
@@ -171,6 +175,8 @@ CALL npm install --global licensed
 :: CALL npm install --global lighthouse
 :: # https://github.com/voorhoede/lighthouse-security
 :: CALL npm install --global lighthouse-security
+:: # https://github.com/localtunnel/localtunnel
+:: CALL npm install --global localtunnel
 :: # https://github.com/cezaraugusto/mklicense
 :: Note: try licensed instead
 :: CALL npm install --global mklicense
