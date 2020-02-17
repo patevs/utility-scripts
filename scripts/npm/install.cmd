@@ -96,6 +96,8 @@ CALL npm install --global cost-of-modules
 :: CALL npm install --global dependency-check
 :: # https://github.com/workshopper/how-to-npm
 CALL npm install --global how-to-npm
+:: # https://github.com/lirantal/lockfile-lint
+:: CALL npm install --global lockfile-lint
 :: # https://github.com/GoogleChromeLabs/ndb
 :: # NOTE: ndb requires windows-build-tools
 :: CALL npm install --global ndb
