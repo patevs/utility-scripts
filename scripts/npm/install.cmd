@@ -171,6 +171,8 @@ CALL npm install --global licensed
 :: CALL npm install --global lighthouse
 :: # https://github.com/voorhoede/lighthouse-security
 :: CALL npm install --global lighthouse-security
+:: # https://github.com/localtunnel/localtunnel
+:: CALL npm install --global localtunnel
 :: # https://github.com/cezaraugusto/mklicense
 :: Note: try licensed instead
 :: CALL npm install --global mklicense
