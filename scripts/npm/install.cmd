@@ -145,6 +145,8 @@ CALL npm install --global bower
 :: CALL npm install --global clog-cli
 :: # https://github.com/facebook/create-react-app
 :: CALL npm install --global create-react-app
+:: # https://github.com/benawad/destiny
+:: CALL npm install --global destiny
 :: # https://github.com/alchaplinsky/devion
 :: CALL npm install --global devion
 :: # https://github.com/thlorenz/doctoc
