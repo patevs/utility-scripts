@@ -296,6 +296,10 @@ CALL npm install --global generator-nm
 :: # https://github.com/phunguyen19/generator-typescript-starter
 :: CALL npm install --global generator-typescript-starter
 
+:: React Native
+:: # https://github.com/bamlab/generator-rn-toolbox
+:: CALL npm install --global generator-rn-toolbox
+
 :: ---------------------------------------------------------------------------- ::
 
 :: Alternative Package Managers
