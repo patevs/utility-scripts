@@ -162,6 +162,8 @@ CALL npm install --global bower
 CALL npm install --global good-first-issue
 :: # https://github.com/kangax/html-minifier
 :: CALL npm install --global html-minifer
+:: # https://github.com/infinitered/ignite
+:: CALL npm install --global ignite-cli
 :: # Image minifier
 :: # https://github.com/imagemin/imagemin-cli
 :: CALL npm install --global imagemin-cli
@@ -293,6 +295,10 @@ CALL npm install --global generator-nm
 :: (Ava)
 :: # https://github.com/phunguyen19/generator-typescript-starter
 :: CALL npm install --global generator-typescript-starter
+
+:: React Native
+:: # https://github.com/bamlab/generator-rn-toolbox
+:: CALL npm install --global generator-rn-toolbox
 
 :: ---------------------------------------------------------------------------- ::
 
