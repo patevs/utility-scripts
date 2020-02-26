@@ -162,6 +162,9 @@ CALL npm install --global bower
 CALL npm install --global good-first-issue
 :: # https://github.com/kangax/html-minifier
 :: CALL npm install --global html-minifer
+:: # https://github.com/infinitered/ignite
+:: Note: requires yarn to be installed
+:: CALL npm install --global ignite-cli
 :: # Image minifier
 :: # https://github.com/imagemin/imagemin-cli
 :: CALL npm install --global imagemin-cli
