@@ -165,7 +165,7 @@ CALL npm install --global good-first-issue
 :: # https://github.com/kangax/html-minifier
 :: CALL npm install --global html-minifer
 :: # https://github.com/infinitered/ignite
-:: CALL npm install --global ignite-cli
+CALL npm install --global ignite-cli
 :: # Image minifier
 :: # https://github.com/imagemin/imagemin-cli
 :: CALL npm install --global imagemin-cli
@@ -194,6 +194,8 @@ CALL npm install --global project-explorer
 :: # Progressive web metrics
 :: # https://github.com/paulirish/pwmetrics
 :: CALL npm install --global pwmetrics
+:: # https://github.com/junedomingo/react-native-rename
+:: CALL npm install --global react-native-rename
 :: # https://github.com/release-it/release-it
 :: CALL npm install --global release-it
 :: # https://github.com/jhotmann/node-rename-cli
