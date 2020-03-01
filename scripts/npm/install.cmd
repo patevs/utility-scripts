@@ -200,6 +200,8 @@ CALL npm install --global project-explorer
 :: CALL npm install --global release-it
 :: # https://github.com/jhotmann/node-rename-cli
 :: CALL npm install --global rename-cli
+:: # https://github.com/rnpm/rnpm
+:: CALL npm install --global rnpm
 :: # https://github.com/semantic-release/semantic-release
 :: CALL npm install --global semantic-release
 :: # Placeholder image generator
