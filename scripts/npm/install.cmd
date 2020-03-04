@@ -147,6 +147,8 @@ CALL npm install --global bower
 :: CALL npm install --global create-react-app
 :: # https://github.com/microsoft/reactxp
 :: CALL npm install --global create-rx-app
+:: # https://github.com/Keyang/node-csvtojson
+CALL npm install --global csvtojson
 :: # https://github.com/benawad/destiny
 :: CALL npm install --global destiny
 :: # https://github.com/alchaplinsky/devion
