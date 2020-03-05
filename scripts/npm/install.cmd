@@ -108,10 +108,10 @@ CALL npm install --global how-to-npm
 :: # https://github.com/voidcosmos/npkill
 :: CALL npm install --global npkill
 :: https://github.com/npms-io/npms-cli
-CALL npm install --global npms-cli
+:: CALL npm install --global npms-cli
 :: CALL npm install --global npkill
 :: # https://github.com/zeke/package-json-to-readme
-CALL npm install --global package-json-to-readme
+:: CALL npm install --global package-json-to-readme
 :: # https://github.com/Unitech/pm2
 :: CALL npm install --global pm2
 :: # https://github.com/felixrieseberg/windows-build-tools
@@ -148,7 +148,7 @@ CALL npm install --global bower
 :: # https://github.com/microsoft/reactxp
 :: CALL npm install --global create-rx-app
 :: # https://github.com/Keyang/node-csvtojson
-CALL npm install --global csvtojson
+:: CALL npm install --global csvtojson
 :: # https://github.com/benawad/destiny
 :: CALL npm install --global destiny
 :: # https://github.com/alchaplinsky/devion
@@ -187,12 +187,12 @@ CALL npm install --global licensed
 :: Note: try licensed instead
 :: CALL npm install --global mklicense
 ::: # https://github.com/neovim/node-client
-:: CALL npm install --global neovim
+CALL npm install --global neovim
 :: # https://github.com/jhotmann/node-passgen-cli
 :: CALL npm install --global passgen-cli
 :: https://github.com/sdras/project-explorer
 :: Note: requires yarn to be installed
-CALL npm install --global project-explorer
+:: CALL npm install --global project-explorer
 :: # Progressive web metrics
 :: # https://github.com/paulirish/pwmetrics
 :: CALL npm install --global pwmetrics
@@ -208,7 +208,7 @@ CALL npm install --global project-explorer
 :: CALL npm install --global semantic-release
 :: # Placeholder image generator
 :: # https://github.com/ecrmnn/spaceholder
-:: CALL npm install --global spaceholder
+CALL npm install --global spaceholder
 :: # SVG Optimizer
 :: # https://github.com/svg/svgo
 :: CALL npm install --global svgo
@@ -222,7 +222,7 @@ CALL npm install --global project-explorer
 :: CALL npm install --global strapi@beta
 :: # https://github.com/tldr-pages/tldr
 :: # https://github.com/tldr-pages/tldr-node-client
-:: CALL npm install --global tldr
+CALL npm install --global tldr
 :: # https://github.com/mishoo/UglifyJS2
 :: CALL npm install --global uglify-js
 :: # https://github.com/ddopson/underscore-cli
@@ -242,7 +242,7 @@ ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
-:: CALL npm install --global fkill-cli
+CALL npm install --global fkill-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
@@ -326,10 +326,10 @@ CALL npm install --global yarn
 :: ---------------------------------------------------------------------------- ::
 
 :: Miscellaneous Modules
-:: ECHO. & ECHO  [44m Installing Miscellaneous Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Miscellaneous Modules: [0m & ECHO.
 
 :: # https://github.com/xxczaki/nasa-cli
-:: CALL npm install --global nasa-cli
+CALL npm install --global nasa-cli
 
 :: ---------------------------------------------------------------------------- ::
 
