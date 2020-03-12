@@ -93,11 +93,11 @@ CALL npm install --global npm-check-updates
 :: # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules
-CALL npm install --global cost-of-modules
+:: CALL npm install --global cost-of-modules
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
 :: # https://github.com/workshopper/how-to-npm
-CALL npm install --global how-to-npm
+:: CALL npm install --global how-to-npm
 :: # https://github.com/lirantal/lockfile-lint
 :: CALL npm install --global lockfile-lint
 :: # https://github.com/GoogleChromeLabs/ndb
@@ -142,7 +142,7 @@ CALL npm install --global how-to-npm
 ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 :: # https://github.com/bower/bower
-CALL npm install --global bower
+:: CALL npm install --global bower
 :: # https://github.com/kentcdodds/clog-cli
 :: CALL npm install --global clog-cli
 :: # https://github.com/facebook/create-react-app
@@ -224,7 +224,7 @@ CALL npm install --global spaceholder
 :: CALL npm install --global strapi@beta
 :: # https://github.com/tldr-pages/tldr
 :: # https://github.com/tldr-pages/tldr-node-client
-CALL npm install --global tldr
+:: CALL npm install --global tldr
 :: # https://github.com/mishoo/UglifyJS2
 :: CALL npm install --global uglify-js
 :: # https://github.com/ddopson/underscore-cli
@@ -274,26 +274,26 @@ CALL npm install --global wifi-password-cli
 :: ---------------------------------------------------------------------------- ::
 
 :: Yeoman and generators
-ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
+:: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
 :: # https://github.com/yeoman/yo
-CALL npm install --global yo
+:: CALL npm install --global yo
 
 :: ASP.NET Core
 :: requires bower to be installed
 :: # https://github.com/OmniSharp/generator-aspnet
-CALL npm install --global generator-aspnet
+:: CALL npm install --global generator-aspnet
 
 :: HTML/Frontend
 :: # https://github.com/h5bp/generator-h5bp
-CALL npm install --global generator-h5bp
+:: CALL npm install --global generator-h5bp
 :: # https://github.com/yeoman/generator-webapp
 :: CALL npm install --global generator-webapp
 
 :: JavaScript/Node
 :: (Ava/Codecov)
 :: # https://github.com/sindresorhus/generator-nm
-CALL npm install --global generator-nm
+:: CALL npm install --global generator-nm
 :: (Jest/Coveralls)
 :: # https://github.com/yeoman/generator-node
 :: CALL npm install --global generator-node
@@ -318,20 +318,20 @@ ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 :: # https://github.com/alexanderGugel/ied
 :: CALL npm install --global ied
 :: # https://github.com/pnpm/pnpm
-CALL npm install --global pnpm
+:: CALL npm install --global pnpm
 :: Upgrade pnpm
-ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
-CALL pnpm install --global pnpm
+:: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
+:: CALL pnpm install --global pnpm
 :: # https://github.com/yarnpkg/yarn
 CALL npm install --global yarn
 
 :: ---------------------------------------------------------------------------- ::
 
 :: Miscellaneous Modules
-ECHO. & ECHO  [44m Installing Miscellaneous Modules: [0m & ECHO.
+:: ECHO. & ECHO  [44m Installing Miscellaneous Modules: [0m & ECHO.
 
 :: # https://github.com/xxczaki/nasa-cli
-CALL npm install --global nasa-cli
+:: CALL npm install --global nasa-cli
 
 :: ---------------------------------------------------------------------------- ::
 
