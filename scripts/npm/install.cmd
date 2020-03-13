@@ -227,10 +227,12 @@ CALL npm install --global spaceholder
 :: ---------------------------------------------------------------------------- ::
 
 :: React Native Development Utilities
-:: ECHO. & ECHO  [44m Installing React Native Development Utility Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Installing React Native Development Utility Modules: [0m & ECHO.
 
 :: # https://github.com/microsoft/reactxp
 :: CALL npm install --global create-rx-app
+:: # https://github.com/react-native-community/cli
+CALL npm install --global react-native-cli
 :: # https://github.com/junedomingo/react-native-rename
 :: CALL npm install --global react-native-rename
 :: # https://github.com/rnpm/rnpm
