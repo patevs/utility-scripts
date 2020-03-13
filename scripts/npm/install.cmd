@@ -174,11 +174,6 @@ CALL npm install --global ignite-cli
 :: # License generator
 :: # https://github.com/plibither8/licensed
 CALL npm install --global licensed
-:: # Google's website performance test
-:: # https://github.com/GoogleChrome/lighthouse/
-:: CALL npm install --global lighthouse
-:: # https://github.com/voorhoede/lighthouse-security
-:: CALL npm install --global lighthouse-security
 :: # https://github.com/localtunnel/localtunnel
 :: CALL npm install --global localtunnel
 :: # https://github.com/cezaraugusto/mklicense
@@ -191,9 +186,6 @@ CALL npm install --global neovim
 :: https://github.com/sdras/project-explorer
 :: Note: requires yarn to be installed
 :: CALL npm install --global project-explorer
-:: # Progressive web metrics
-:: # https://github.com/paulirish/pwmetrics
-:: CALL npm install --global pwmetrics
 :: # https://github.com/release-it/release-it
 :: CALL npm install --global release-it
 :: # https://github.com/jhotmann/node-rename-cli
@@ -206,8 +198,6 @@ CALL npm install --global spaceholder
 :: # SVG Optimizer
 :: # https://github.com/svg/svgo
 :: CALL npm install --global svgo
-:: # https://github.com/lirantal/is-website-vulnerable
-:: CALL npm install --global is-website-vulnerable
 :: # https://github.com/sitespeedio/sitespeed.io
 :: CALL npm install --global sitespeed.io
 :: # https://github.com/WeiChiaChang/stacks-cli
@@ -246,14 +236,28 @@ CALL npm install --global spaceholder
 :: # https://github.com/rnpm/rnpm
 :: CALL npm install --global rnpm
 
+:: ---------------------------------------------------------------------------- ::
+
+:: Security Utilities
+:: ECHO. & ECHO  [44m Installing Security Utility Modules: [0m & ECHO.
+
+:: # Google's website performance test
+:: # https://github.com/GoogleChrome/lighthouse/
+:: CALL npm install --global lighthouse
+:: # https://github.com/voorhoede/lighthouse-security
+:: CALL npm install --global lighthouse-security
+:: # Progressive web metrics
+:: # https://github.com/paulirish/pwmetrics
+:: CALL npm install --global pwmetrics
+:: # https://github.com/lirantal/is-website-vulnerable
+:: CALL npm install --global is-website-vulnerable
+
 
 :: ---------------------------------------------------------------------------- ::
 
 :: System Utilities
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
-:: # https://github.com/rafaelrinaldi/whereami
-:: CALL npm install --global @rafaelrinaldi/whereami
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
@@ -262,8 +266,6 @@ CALL npm install --global fkill-cli
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
 CALL npm install --global gtop
-:: # https://github.com/nogizhopaboroda/iponmap
-:: CALL npm install --global iponmap
 :: # https://github.com/sindresorhus/open-cli
 :: CALL npm install --global open-cli
 :: # https://github.com/sindresorhus/pageres-cli
@@ -277,10 +279,6 @@ CALL npm install --global trash-cli
 :: # https://github.com/MrRio/vtop
 :: # NOTE: vtop must be run using sh/bash. try gtop instead
 :: CALL npm install --global vtop
-:: # https://github.com/riyadhalnur/weather-cli
-:: CALL npm install --global weather-cli
-:: # https://github.com/webtorrent/webtorrent-cli
-:: CALL npm install --global webtorrent-cli
 :: # https://github.com/kevva/wifi-password-cli
 CALL npm install --global wifi-password-cli
 
@@ -343,8 +341,16 @@ CALL npm install --global yarn
 :: Miscellaneous Modules
 :: ECHO. & ECHO  [44m Installing Miscellaneous Modules: [0m & ECHO.
 
+:: # https://github.com/rafaelrinaldi/whereami
+:: CALL npm install --global @rafaelrinaldi/whereami
+:: # https://github.com/nogizhopaboroda/iponmap
+:: CALL npm install --global iponmap
 :: # https://github.com/xxczaki/nasa-cli
 :: CALL npm install --global nasa-cli
+:: # https://github.com/riyadhalnur/weather-cli
+:: CALL npm install --global weather-cli
+:: # https://github.com/webtorrent/webtorrent-cli
+:: CALL npm install --global webtorrent-cli
 
 :: ---------------------------------------------------------------------------- ::
 
