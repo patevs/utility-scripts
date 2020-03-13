@@ -125,16 +125,16 @@ CALL npm install --global ntl
 :: ---------------------------------------------------------------------------- ::
 
 :: TypeScript and Utilities
-:: ECHO. & ECHO  [44m Installing TypeScript and Utility Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Installing TypeScript and Utility Modules: [0m & ECHO.
 
 :: # https://github.com/xavdid/typed-install
 :: CALL npm install --global typed-install
 :: # https://github.com/microsoft/TypeScript
-:: CALL npm install --global typescript
+CALL npm install --global typescript
 :: # https://github.com/bitjson/typescript-starter
 :: CALL npm install --global typescript-starter
 :: # https://github.com/jeffijoe/typesync
-:: CALL npm install --global typesync
+CALL npm install --global typesync
 
 :: ---------------------------------------------------------------------------- ::
 
@@ -145,10 +145,6 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 :: CALL npm install --global bower
 :: # https://github.com/kentcdodds/clog-cli
 :: CALL npm install --global clog-cli
-:: # https://github.com/facebook/create-react-app
-:: CALL npm install --global create-react-app
-:: # https://github.com/microsoft/reactxp
-:: CALL npm install --global create-rx-app
 :: # https://github.com/Keyang/node-csvtojson
 :: CALL npm install --global csvtojson
 :: # https://github.com/benawad/destiny
@@ -198,14 +194,10 @@ CALL npm install --global neovim
 :: # Progressive web metrics
 :: # https://github.com/paulirish/pwmetrics
 :: CALL npm install --global pwmetrics
-:: # https://github.com/junedomingo/react-native-rename
-:: CALL npm install --global react-native-rename
 :: # https://github.com/release-it/release-it
 :: CALL npm install --global release-it
 :: # https://github.com/jhotmann/node-rename-cli
 :: CALL npm install --global rename-cli
-:: # https://github.com/rnpm/rnpm
-:: CALL npm install --global rnpm
 :: # https://github.com/semantic-release/semantic-release
 :: CALL npm install --global semantic-release
 :: # Placeholder image generator
@@ -233,6 +225,27 @@ CALL npm install --global spaceholder
 :: CALL npm install --global viewport-list-cli
 :: # https://github.com/yui/yuglify
 :: CALL npm install --global yuglify
+
+:: ---------------------------------------------------------------------------- ::
+
+:: React Development Utilities
+:: ECHO. & ECHO  [44m Installing React Development Utility Modules: [0m & ECHO.
+
+:: # https://github.com/facebook/create-react-app
+:: CALL npm install --global create-react-app
+
+:: ---------------------------------------------------------------------------- ::
+
+:: React Native Development Utilities
+:: ECHO. & ECHO  [44m Installing React Native Development Utility Modules: [0m & ECHO.
+
+:: # https://github.com/microsoft/reactxp
+:: CALL npm install --global create-rx-app
+:: # https://github.com/junedomingo/react-native-rename
+:: CALL npm install --global react-native-rename
+:: # https://github.com/rnpm/rnpm
+:: CALL npm install --global rnpm
+
 
 :: ---------------------------------------------------------------------------- ::
 
