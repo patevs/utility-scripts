@@ -95,7 +95,7 @@ CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules
 CALL npm install --global cost-of-modules
 :: # https://github.com/dependency-check-team/dependency-check
-CALL npm install --global dependency-check
+:: CALL npm install --global dependency-check
 :: # https://github.com/workshopper/how-to-npm
 :: CALL npm install --global how-to-npm
 :: # https://github.com/lirantal/lockfile-lint
