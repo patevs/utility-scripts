@@ -85,7 +85,7 @@ CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
 CALL npm install --global npm-check-updates
 :: # https://github.com/pksunkara/npm-police
-CALL npm install --global npm-police
+CALL npm install --global police
 :: # https://github.com/lirantal/npq
 :: CALL npm install --global npq
 :: # https://github.com/sculove/nti
