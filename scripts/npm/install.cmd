@@ -85,7 +85,7 @@ CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
 CALL npm install --global npm-check-updates
 :: # https://github.com/pksunkara/npm-police
-:: CALL npm install --global npm-police
+CALL npm install --global npm-police
 :: # https://github.com/lirantal/npq
 :: CALL npm install --global npq
 :: # https://github.com/sculove/nti
@@ -93,13 +93,13 @@ CALL npm install --global npm-check-updates
 :: # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules
-:: CALL npm install --global cost-of-modules
+CALL npm install --global cost-of-modules
 :: # https://github.com/dependency-check-team/dependency-check
-:: CALL npm install --global dependency-check
+CALL npm install --global dependency-check
 :: # https://github.com/workshopper/how-to-npm
 :: CALL npm install --global how-to-npm
 :: # https://github.com/lirantal/lockfile-lint
-:: CALL npm install --global lockfile-lint
+CALL npm install --global lockfile-lint
 :: # https://github.com/GoogleChromeLabs/ndb
 :: # NOTE: ndb requires windows-build-tools
 :: CALL npm install --global ndb
@@ -155,7 +155,7 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 :: CALL npm install --global doctoc
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
 :: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
-:: CALL npm install --global font-awesome-svg-png
+CALL npm install --global font-awesome-svg-png
 :: # https://github.com/gatsbyjs/gatsby
 :: CALL npm install --global gatsby-cli
 :: # https://github.com/GitbookIO/gitbook
