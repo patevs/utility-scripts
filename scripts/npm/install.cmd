@@ -347,6 +347,8 @@ CALL npm install --global yarn
 :: CALL npm install --global @rafaelrinaldi/whereami
 :: # https://github.com/nogizhopaboroda/iponmap
 :: CALL npm install --global iponmap
+:: # https://github.com/mayankchd/movie
+:: CALL npm install --global movie-cli
 :: # https://github.com/xxczaki/nasa-cli
 :: CALL npm install --global nasa-cli
 :: # https://github.com/riyadhalnur/weather-cli
