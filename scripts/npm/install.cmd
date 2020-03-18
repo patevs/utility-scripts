@@ -222,6 +222,17 @@ CALL npm install --global spaceholder
 
 :: ---------------------------------------------------------------------------- ::
 
+:: Mobile Development Utilities
+:: ECHO. & ECHO  [44m Installing Mobile Development Utility Modules: [0m & ECHO.
+
+:: # https://github.com/SamVerschueren/mobicon-cli
+:: NOTE: Requires GraphicsMagick to be installed
+:: CALL npm install --global mobicon-cli
+:: # https://github.com/SamVerschueren/mobisplash-cli
+:: CALL npm install --global mobisplash-cli
+
+:: ---------------------------------------------------------------------------- ::
+
 :: React Development Utilities
 :: ECHO. & ECHO  [44m Installing React Development Utility Modules: [0m & ECHO.
 
