@@ -121,6 +121,8 @@ CALL npm install --global lockfile-lint
 :: # https://github.com/felixrieseberg/windows-build-tools
 :: # NOTE: windows-build-tools install must be run in admin prompt
 :: CALL npm install --global windows-build-tools
+:: # https://github.com/bntzio/wipe-modules
+:: CALL npm install --global wipe-modules
 :: # https://github.com/Muldoser/ytl
 :: CALL npm install --global ytl
 
