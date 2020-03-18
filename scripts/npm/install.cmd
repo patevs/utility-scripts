@@ -78,8 +78,12 @@ CALL npm install --global g3l
 ECHO. & ECHO  [44m Installing NodeJS and NPM Utility Modules: [0m & ECHO.
 
 
+:: # https://github.com/siddharthkp/cost-of-modules
+CALL npm install --global cost-of-modules
 :: # https://github.com/alanshaw/david
 CALL npm install --global david
+:: # https://github.com/dependency-check-team/dependency-check
+:: CALL npm install --global dependency-check
 :: # https://github.com/dylang/npm-check
 CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
@@ -92,10 +96,6 @@ CALL npm install --global police
 :: CALL npm install --global nti
 :: # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
-:: # https://github.com/siddharthkp/cost-of-modules
-CALL npm install --global cost-of-modules
-:: # https://github.com/dependency-check-team/dependency-check
-:: CALL npm install --global dependency-check
 :: # https://github.com/workshopper/how-to-npm
 :: CALL npm install --global how-to-npm
 :: # https://github.com/lirantal/lockfile-lint
@@ -116,9 +116,13 @@ CALL npm install --global lockfile-lint
 :: CALL npm install --global package-json-to-readme
 :: # https://github.com/Unitech/pm2
 :: CALL npm install --global pm2
+:: # https://github.com/silverwind/updates
+:: CALL npm install --global updates
 :: # https://github.com/felixrieseberg/windows-build-tools
 :: # NOTE: windows-build-tools install must be run in admin prompt
 :: CALL npm install --global windows-build-tools
+:: # https://github.com/bntzio/wipe-modules
+:: CALL npm install --global wipe-modules
 :: # https://github.com/Muldoser/ytl
 :: CALL npm install --global ytl
 
@@ -156,6 +160,8 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
 :: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
 CALL npm install --global font-awesome-svg-png
+:: # https://github.com/zaaack/foy
+:: CALL npm install --global foy
 :: # https://github.com/gatsbyjs/gatsby
 :: CALL npm install --global gatsby-cli
 :: # https://github.com/GitbookIO/gitbook
@@ -174,6 +180,8 @@ CALL npm install --global ignite-cli
 :: # License generator
 :: # https://github.com/plibither8/licensed
 CALL npm install --global licensed
+:: # https://github.com/alexfernandez/loadtest
+:: CALL npm install --global loadtest
 :: # https://github.com/localtunnel/localtunnel
 :: CALL npm install --global localtunnel
 :: # https://github.com/cezaraugusto/mklicense
@@ -215,6 +223,17 @@ CALL npm install --global spaceholder
 :: CALL npm install --global viewport-list-cli
 :: # https://github.com/yui/yuglify
 :: CALL npm install --global yuglify
+
+:: ---------------------------------------------------------------------------- ::
+
+:: Mobile Development Utilities
+:: ECHO. & ECHO  [44m Installing Mobile Development Utility Modules: [0m & ECHO.
+
+:: # https://github.com/SamVerschueren/mobicon-cli
+:: NOTE: Requires GraphicsMagick to be installed
+:: CALL npm install --global mobicon-cli
+:: # https://github.com/SamVerschueren/mobisplash-cli
+:: CALL npm install --global mobisplash-cli
 
 :: ---------------------------------------------------------------------------- ::
 
@@ -260,6 +279,8 @@ CALL npm install --global react-native-cli
 :: System Utilities
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
+:: # https://github.com/sindresorhus/del-cli
+CALL npm install --global del-cli
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
