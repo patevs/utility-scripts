@@ -78,8 +78,12 @@ CALL npm install --global g3l
 ECHO. & ECHO  [44m Installing NodeJS and NPM Utility Modules: [0m & ECHO.
 
 
+:: # https://github.com/siddharthkp/cost-of-modules
+CALL npm install --global cost-of-modules
 :: # https://github.com/alanshaw/david
 CALL npm install --global david
+:: # https://github.com/dependency-check-team/dependency-check
+:: CALL npm install --global dependency-check
 :: # https://github.com/dylang/npm-check
 CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
@@ -92,10 +96,6 @@ CALL npm install --global police
 :: CALL npm install --global nti
 :: # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
-:: # https://github.com/siddharthkp/cost-of-modules
-CALL npm install --global cost-of-modules
-:: # https://github.com/dependency-check-team/dependency-check
-:: CALL npm install --global dependency-check
 :: # https://github.com/workshopper/how-to-npm
 :: CALL npm install --global how-to-npm
 :: # https://github.com/lirantal/lockfile-lint
