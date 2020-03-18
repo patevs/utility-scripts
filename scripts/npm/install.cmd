@@ -174,6 +174,8 @@ CALL npm install --global ignite-cli
 :: # License generator
 :: # https://github.com/plibither8/licensed
 CALL npm install --global licensed
+:: # https://github.com/alexfernandez/loadtest
+:: CALL npm install --global loadtest
 :: # https://github.com/localtunnel/localtunnel
 :: CALL npm install --global localtunnel
 :: # https://github.com/cezaraugusto/mklicense
