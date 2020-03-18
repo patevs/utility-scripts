@@ -275,6 +275,8 @@ CALL npm install --global react-native-cli
 :: System Utilities
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
+:: # https://github.com/sindresorhus/del-cli
+CALL npm install --global del-cli
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
