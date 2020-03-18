@@ -156,6 +156,8 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
 :: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
 CALL npm install --global font-awesome-svg-png
+:: # https://github.com/zaaack/foy
+:: CALL npm install --global foy
 :: # https://github.com/gatsbyjs/gatsby
 :: CALL npm install --global gatsby-cli
 :: # https://github.com/GitbookIO/gitbook
@@ -264,8 +266,6 @@ ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
-:: # https://github.com/zaaack/foy
-:: CALL npm install --global foy
 :: # https://github.com/sindresorhus/fkill-cli
 CALL npm install --global fkill-cli
 :: # https://github.com/lordgiotto/google-font-installer
