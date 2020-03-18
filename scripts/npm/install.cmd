@@ -262,6 +262,8 @@ ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
+:: # https://github.com/zaaack/foy
+:: CALL npm install --global foy
 :: # https://github.com/sindresorhus/fkill-cli
 CALL npm install --global fkill-cli
 :: # https://github.com/lordgiotto/google-font-installer
