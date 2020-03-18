@@ -116,6 +116,8 @@ CALL npm install --global lockfile-lint
 :: CALL npm install --global package-json-to-readme
 :: # https://github.com/Unitech/pm2
 :: CALL npm install --global pm2
+:: # https://github.com/silverwind/updates
+:: CALL npm install --global updates
 :: # https://github.com/felixrieseberg/windows-build-tools
 :: # NOTE: windows-build-tools install must be run in admin prompt
 :: CALL npm install --global windows-build-tools
