@@ -234,6 +234,8 @@ CALL npm install --global spaceholder
 :: CALL npm install --global mobicon-cli
 :: # https://github.com/SamVerschueren/mobisplash-cli
 :: CALL npm install --global mobisplash-cli
+:: # https://github.com/wswebcreation/start-android-emulator
+:: CALL npm install --global start-android-emulator
 
 :: ---------------------------------------------------------------------------- ::
 
