@@ -244,6 +244,8 @@ CALL npm install --global spaceholder
 
 :: # https://github.com/facebook/create-react-app
 :: CALL npm install --global create-react-app
+:: # https://github.com/diegohaz/generact
+:: CALL npm install --global generact
 
 :: ---------------------------------------------------------------------------- ::
 
