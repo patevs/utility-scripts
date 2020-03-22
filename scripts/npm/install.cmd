@@ -260,6 +260,8 @@ CALL npm install --global react-native-cli
 :: CALL npm install --global react-native-rename
 :: # https://github.com/rnpm/rnpm
 :: CALL npm install --global rnpm
+:: # https://github.com/react-native-contrib/rsx
+:: CALL npm install --global rsx
 
 :: ---------------------------------------------------------------------------- ::
 
