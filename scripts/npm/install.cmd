@@ -9,6 +9,8 @@
 
 :: TODO: Create a .ps1 version of this script
 
+:: TODO: Created .md document containing links and descriptions of these packages.
+
 :: TODO: Check for already installed packages
 
 CLS
@@ -94,7 +96,7 @@ CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
 CALL npm install --global npm-check-updates
 :: # https://github.com/pksunkara/npm-police
-CALL npm install --global police
+:: CALL npm install --global police
 :: # https://github.com/lirantal/npq
 :: CALL npm install --global npq
 :: # https://github.com/sculove/nti
@@ -207,7 +209,7 @@ CALL npm install --global neovim
 :: CALL npm install --global semantic-release
 :: # Placeholder image generator
 :: # https://github.com/ecrmnn/spaceholder
-CALL npm install --global spaceholder
+:: CALL npm install --global spaceholder
 :: # SVG Optimizer
 :: # https://github.com/svg/svgo
 :: CALL npm install --global svgo
@@ -295,7 +297,7 @@ CALL npm install --global del-cli
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
-CALL npm install --global fkill-cli
+:: CALL npm install --global fkill-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
