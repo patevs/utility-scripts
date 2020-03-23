@@ -11,6 +11,7 @@
 +-- scripts
 |   +-- choco
 |   +-- git
+|   +-- music
 |   +-- npm
 |   +-- pip
 +-- .editorconfig

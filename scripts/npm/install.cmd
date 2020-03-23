@@ -7,7 +7,16 @@
 :: Batch script which installs various useful NPM global modules.
 :: Requires NodeJS and NPM to be installed.
 
-:: TODO: Check for already installed packages
+:: Node Versions:
+::  * 13.11.0
+::  * 12.16.1
+::  * 10.19.0
+::  * 8.17.0
+
+:: TODO:
+::  * Create a .ps1 version of this script.
+::  * Created .md document containing links and descriptions for each of these packages.
+::  * Check for and skip already installed packages.
 
 CLS
 ECHO. & ECHO [100;4mNPM Global Modules Install Script[0m
@@ -84,12 +93,14 @@ CALL npm install --global cost-of-modules
 CALL npm install --global david
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
+:: # https://github.com/rouanw/npm-audit-helper
+:: CALL npm install --global npm-audit-helper
 :: # https://github.com/dylang/npm-check
 CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
 CALL npm install --global npm-check-updates
 :: # https://github.com/pksunkara/npm-police
-CALL npm install --global police
+:: CALL npm install --global police
 :: # https://github.com/lirantal/npq
 :: CALL npm install --global npq
 :: # https://github.com/sculove/nti
@@ -202,7 +213,7 @@ CALL npm install --global neovim
 :: CALL npm install --global semantic-release
 :: # Placeholder image generator
 :: # https://github.com/ecrmnn/spaceholder
-CALL npm install --global spaceholder
+:: CALL npm install --global spaceholder
 :: # SVG Optimizer
 :: # https://github.com/svg/svgo
 :: CALL npm install --global svgo
@@ -290,7 +301,7 @@ CALL npm install --global del-cli
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
-CALL npm install --global fkill-cli
+:: CALL npm install --global fkill-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
@@ -374,6 +385,8 @@ CALL npm install --global yarn
 :: CALL npm install --global @rafaelrinaldi/whereami
 :: # https://github.com/nogizhopaboroda/iponmap
 :: CALL npm install --global iponmap
+:: # https://github.com/denysdovhan/learnyoubash
+:: CALL npm install --global learnyoubash
 :: # https://github.com/mayankchd/movie
 :: CALL npm install --global movie-cli
 :: # https://github.com/xxczaki/nasa-cli
