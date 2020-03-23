@@ -7,11 +7,16 @@
 :: Batch script which installs various useful NPM global modules.
 :: Requires NodeJS and NPM to be installed.
 
-:: TODO: Create a .ps1 version of this script
+:: Node Versions:
+::  * 13.11.0
+::  * 12.16.1
+::  * 10.19.0
+::  * 8.17.0
 
-:: TODO: Created .md document containing links and descriptions of these packages.
-
-:: TODO: Check for already installed packages
+:: TODO:
+::  * Create a .ps1 version of this script.
+::  * Created .md document containing links and descriptions for each of these packages.
+::  * Check for and skip already installed packages.
 
 CLS
 ECHO. & ECHO [100;4mNPM Global Modules Install Script[0m
@@ -88,7 +93,6 @@ CALL npm install --global cost-of-modules
 CALL npm install --global david
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
-:: https://github.com/rouanw/npm-audit-helper
 :: # https://github.com/rouanw/npm-audit-helper
 :: CALL npm install --global npm-audit-helper
 :: # https://github.com/dylang/npm-check
