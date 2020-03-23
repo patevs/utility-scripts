@@ -86,6 +86,9 @@ CALL npm install --global cost-of-modules
 CALL npm install --global david
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
+:: https://github.com/rouanw/npm-audit-helper
+:: # https://github.com/rouanw/npm-audit-helper
+:: CALL npm install --global npm-audit-helper
 :: # https://github.com/dylang/npm-check
 CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
