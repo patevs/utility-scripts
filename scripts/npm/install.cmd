@@ -170,7 +170,7 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 :: CALL npm install --global doctoc
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
 :: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
-CALL npm install --global font-awesome-svg-png
+:: CALL npm install --global font-awesome-svg-png
 :: # https://github.com/zaaack/foy
 :: CALL npm install --global foy
 :: # https://github.com/gatsbyjs/gatsby
@@ -178,11 +178,9 @@ CALL npm install --global font-awesome-svg-png
 :: # https://github.com/GitbookIO/gitbook
 :: CALL npm install --global gitbook-cli
 :: # https://github.com/cutenode/good-first-issue
-CALL npm install --global good-first-issue
+:: CALL npm install --global good-first-issue
 :: # https://github.com/kangax/html-minifier
 :: CALL npm install --global html-minifer
-:: # https://github.com/infinitered/ignite
-CALL npm install --global ignite-cli
 :: # Image minifier
 :: # https://github.com/imagemin/imagemin-cli
 :: CALL npm install --global imagemin-cli
@@ -265,6 +263,8 @@ ECHO. & ECHO  [44m Installing React Native Development Utility Modules: [0m & 
 
 :: # https://github.com/microsoft/reactxp
 :: CALL npm install --global create-rx-app
+:: # https://github.com/infinitered/ignite
+:: CALL npm install --global ignite-cli
 :: # https://github.com/react-native-community/cli
 CALL npm install --global react-native-cli
 :: # https://github.com/junedomingo/react-native-rename
