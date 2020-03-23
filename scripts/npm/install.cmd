@@ -7,6 +7,8 @@
 :: Batch script which installs various useful NPM global modules.
 :: Requires NodeJS and NPM to be installed.
 
+:: TODO: Create a .ps1 version of this script
+
 :: TODO: Check for already installed packages
 
 CLS
