@@ -13,7 +13,7 @@
   provided install.cmd script.
 
 .EXAMPLE
-  ./git-extras
+  .\git-extras.ps1
 
 .NOTES
   File Name: git-extras.ps1
