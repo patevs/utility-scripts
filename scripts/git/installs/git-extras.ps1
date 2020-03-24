@@ -39,7 +39,7 @@ function exists($cmdname) {
 
 Function InstallGitExtras {
   # Firstly we verify git is installed
-  if (exists gitt){
+  if (exists git){
     # Get git executable location
     # TODO: Find git executeable at runtime
     # ~\scoop\apps\git\current\bin\git.exe
