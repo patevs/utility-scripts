@@ -29,8 +29,6 @@
   https://github.com/tj/git-extras
 #>
 
-# Install-Module -Name PSWriteColor
-
 # ---------------- #
 # HELPER FUNCTIONS #
 # ---------------- #
