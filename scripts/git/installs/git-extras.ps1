@@ -42,16 +42,25 @@ Function InstallGitExtras {
   if (exists git){
     Write-Host "`n Installing git-extras utilities..."  -ForegroundColor Green
     # Get git executable location
-    # TODO: Find git executeable at runtime
+    # TODO: Find git executable at runtime
+    # Default location: %ProgramFiles%\Git
     # $gitLocation = "$envLUSERPROFILE\scoop\apps\git\current"
-    $gitLocation = "$env:USERPROFILE\scoop\apps\git\2.26.0.windows.1"
+    # $gitLocation = "$env:USERPROFILE\scoop\apps\git\2.26.0.windows.1"
+    $gitPath = "$env:ProgramFiles\Git"
+    # Test if path exists
+    if (-Not (Test-Path $gitPath)) {
+      # Attempt to find the path using scoop
+      $gitPath = Invoke-Expression "scoop prefix git"
+      Write-Host "Git Path: $gitPath"
+      Exit
+    }
     # Clone the repository
     Write-Host "`n Cloning git-extras repository... `n"  -ForegroundColor Green
     Invoke-Expression "git clone https://github.com/tj/git-extras.git"
     # Run the install script
     Write-Host "`n Running git-extras install script... `n"  -ForegroundColor Green
     # Invoke-Expression "git-extras\install.cmd $gitLocation"
-    git-extras\install.cmd $gitLocation
+    git-extras\install.cmd $gitPath
     # Finally remove the git-extras repository
     Remove-Item -Recurse -Force "git-extras"
     Write-Host "`n DONE!"  -ForegroundColor Green
