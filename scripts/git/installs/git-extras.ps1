@@ -54,17 +54,12 @@ Function InstallGitExtras {
   if (ExistsCommand git){
     Write-Host "`n Installing git-extras utilities..."  -ForegroundColor Green
     # Get git executable location
-    # TODO: Find git executable at runtime
-    # Default location: %ProgramFiles%\Git
-    # $gitLocation = "$envLUSERPROFILE\scoop\apps\git\current"
-    # $gitLocation = "$env:USERPROFILE\scoop\apps\git\2.26.0.windows.1"
+    # Default Git location:
     $gitPath = "$env:ProgramFiles\Git"
     # Test if path exists
     if (-Not (Test-Path $gitPath)) {
       # Attempt to find the path using scoop
       $gitPath = Invoke-Expression "scoop prefix git"
-      Write-Host "Git Path: $gitPath"
-      Exit
     }
     # Clone the repository
     Write-Host "`n Cloning git-extras repository... `n"  -ForegroundColor Green
@@ -84,10 +79,11 @@ Function InstallGitExtras {
 
 Function Setup {
   # Print a welcome message
-  Write-Host "`n Git Extras Utility Install Script " -BackgroundColor Green -ForegroundColor Black
+  Write-Host ""
+  Write-Host " Git Extras Utility Install Script " -BackgroundColor Green -ForegroundColor Black
   # Firstly we verify if the PSWriteColor module is installed
   if (-Not (ExistsModule PSWriteColor)) {
-    Write-Host " PSWriteColor module is not installed. Installing now..."
+    Write-Host "`n PSWriteColor module is not installed. Installing now..."
     Install-Module -Name PSWriteColor
   }
   # Now we can import the PSWriteColor module
