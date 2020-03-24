@@ -12,6 +12,11 @@
   Finally clones the git-extras repository and runs the
   provided install.cmd script.
 
+  Please note that this script requires the PSWriteColor module
+  which will be installed if not already.
+
+    https://www.powershellgallery.com/packages/PSWriteColor
+
 .EXAMPLE
   .\git-extras.ps1
 
@@ -24,7 +29,6 @@
   https://github.com/tj/git-extras
 #>
 
-# Install from Powershell Gallery https://www.powershellgallery.com/packages/PSWriteColor
 # Install-Module -Name PSWriteColor
 
 # ---------------- #
@@ -33,22 +37,24 @@
 
 # Check if a given PowerShell module is installed
 Function ExistsModule ($moduleName) {
-  if (Get-Module -ListAvailable -Name SomeModule) {
-    Write-Host "Module exists"
+  if (Get-Module -ListAvailable -Name $moduleName) {
+    Write-Host "$moduleName Module exists"
   }
   else {
-    Write-Host "Module does not exist"
+    Write-Host "$moduleName Module does not exist"
   }
 }
 
 # Check if a given command exists
 # https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
-function ExistsCommand($cmdName) {
+Function ExistsCommand($cmdName) {
   # return [bool](Get-Command -Name $cmdName -ea 0)
   return [bool](Get-Command -Name $cmdName -ErrorAction SilentlyContinue)
 }
 
 # ------------------------------------------------------------------------------------------- #
+
+
 
 Function InstallGitExtras {
   # Firstly we verify git is installed
