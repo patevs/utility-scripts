@@ -16,6 +16,7 @@
   which will be installed if not already.
 
     https://www.powershellgallery.com/packages/PSWriteColor
+    https://github.com/EvotecIT/PSWriteColor
 
 .EXAMPLE
   .\git-extras.ps1
