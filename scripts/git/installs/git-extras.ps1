@@ -24,6 +24,9 @@
   https://github.com/tj/git-extras
 #>
 
+# Install from Powershell Gallery https://www.powershellgallery.com/packages/PSWriteColor
+# Install-Module -Name PSWriteColor
+
 # ---------------- #
 # HELPER FUNCTIONS #
 # ---------------- #
