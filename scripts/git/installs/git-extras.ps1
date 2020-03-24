@@ -37,35 +37,18 @@ function exists($cmdname) {
 
 # ------------------------------------------------------------------------------------------- #
 
-Function WhoIs {
-  param (
-                  [Parameter(Mandatory=$True,
-                             HelpMessage='Please enter domain name (e.g. microsoft.com)')]
-                             [string]$domain
-          )
-  Write-Host "Connecting to Web Services URL..." -ForegroundColor Green
-  try {
-  #Retrieve the data from web service WSDL
-  If ($whois = New-WebServiceProxy -uri "http://www.webservicex.net/whois.asmx?WSDL") {Write-Host "Ok" -ForegroundColor Green}
-  else {Write-Host "Error" -ForegroundColor Red}
-  Write-Host "Gathering $domain data..." -ForegroundColor Green
-  #Return the data
-  (($whois.getwhois("=$domain")).Split("<<<")[0])
-  } catch {
-  Write-Host "Please enter valid domain name (e.g. microsoft.com)." -ForegroundColor Red}
-} #end function WhoIs
-
-# ------------------------------------------------------------------------------------------- #
-
 Function InstallGitExtras {
   # Firstly we verify git is installed
-  if (exists(gitt)){
-    # Write-Host "`n Git Status:`n"  -ForegroundColor Green
-    # Print-Green-Underline "Git Status:"
-    # git status
+  if (exists gitt){
+    # Get git executable location
+    # TODO: Find git executeable at runtime
+    # ~\scoop\apps\git\current\bin\git.exe
+    # ~\scoop\apps\git\2.26.0.windows.1\bin\git.exe
+    Write-Host "`n Installing git-extras utilities:"  -ForegroundColor Green
+    Invoke-Expression "git clone https://github.com/tj/git-extras.git"
   } else {
-    Write-Host "`n Git installation could not be found!" -ForegroundColor Red
-    Write-Host " Exiting! " -BackgroundColor red -ForegroundColor white
+    Write-Host "`n Git installation could not be found!" -NoNewline
+    Write-Host " Exiting!" -ForegroundColor red
   }
 } #end function Install-Git-Extras
 
