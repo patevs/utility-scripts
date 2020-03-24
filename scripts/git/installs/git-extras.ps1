@@ -59,7 +59,14 @@ Function WhoIs {
 
 Function Install-Git-Extras {
   # Firstly we verify git is installed
-  exists(git)
+  if (exists(gitt)){
+    # Write-Host "`n Git Status:`n"  -ForegroundColor Green
+    # Print-Green-Underline "Git Status:"
+    # git status
+  } else {
+    Write-Host "`n Git installation could not be found!" -ForegroundColor Red
+    Write-Host " Exiting! " -BackgroundColor red -ForegroundColor white
+  }
 } #end function Install-Git-Extras
 
 # ------------------------------------------------------------------------------------------- #
