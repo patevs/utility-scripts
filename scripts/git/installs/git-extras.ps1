@@ -31,9 +31,20 @@
 # HELPER FUNCTIONS #
 # ---------------- #
 
-# Check if a given installation or command exists
+Function ExistsModule {
+  if (Get-Module -ListAvailable -Name SomeModule) {
+    Write-Host "Module exists"
+  }
+  else {
+    Write-Host "Module does not exist"
+  }
+}
+
+
+
+# Check if a given command exists
 # https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
-function exists($cmdname) {
+function ExistsCommand($cmdname) {
   # return [bool](Get-Command -Name $cmdname -ea 0)
   return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
 }
@@ -42,7 +53,7 @@ function exists($cmdname) {
 
 Function InstallGitExtras {
   # Firstly we verify git is installed
-  if (exists git){
+  if (ExistsCommand git){
     Write-Host "`n Installing git-extras utilities..."  -ForegroundColor Green
     # Get git executable location
     # TODO: Find git executable at runtime
