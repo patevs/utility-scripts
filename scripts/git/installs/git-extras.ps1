@@ -31,7 +31,8 @@
 # HELPER FUNCTIONS #
 # ---------------- #
 
-Function ExistsModule {
+# Check if a given PowerShell module is installed
+Function ExistsModule ($moduleName) {
   if (Get-Module -ListAvailable -Name SomeModule) {
     Write-Host "Module exists"
   }
@@ -40,13 +41,11 @@ Function ExistsModule {
   }
 }
 
-
-
 # Check if a given command exists
 # https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
-function ExistsCommand($cmdname) {
-  # return [bool](Get-Command -Name $cmdname -ea 0)
-  return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
+function ExistsCommand($cmdName) {
+  # return [bool](Get-Command -Name $cmdName -ea 0)
+  return [bool](Get-Command -Name $cmdName -ErrorAction SilentlyContinue)
 }
 
 # ------------------------------------------------------------------------------------------- #
