@@ -40,17 +40,18 @@ function exists($cmdname) {
 Function InstallGitExtras {
   # Firstly we verify git is installed
   if (exists git){
-    Write-Host "`n Installing git-extras utilities... `n"  -ForegroundColor Green
+    Write-Host "`n Installing git-extras utilities..."  -ForegroundColor Green
     # Get git executable location
     # TODO: Find git executeable at runtime
     # $gitLocation = "~\scoop\apps\git\current\bin"
-    $gitLocation = "~\scoop\apps\git\2.26.0.windows.1\bin"
+    $gitLocation = "$env:USERPROFILE\scoop\apps\git\2.26.0.windows.1"
     # Clone the repository
     Write-Host "`n Cloning git-extras repository... `n"  -ForegroundColor Green
     Invoke-Expression "git clone https://github.com/tj/git-extras.git"
     # Run the install script
     Write-Host "`n Running git-extras install script... `n"  -ForegroundColor Green
-    Invoke-Expression "git-extras\install.cmd $gitLocation"
+    # Invoke-Expression "git-extras\install.cmd $gitLocation"
+    git-extras\install.cmd $gitLocation
     # Finally remove the git-extras repository
     Remove-Item -Recurse -Force "git-extras"
     Write-Host "`n DONE!"  -ForegroundColor Green
