@@ -43,7 +43,7 @@ Function InstallGitExtras {
     Write-Host "`n Installing git-extras utilities..."  -ForegroundColor Green
     # Get git executable location
     # TODO: Find git executeable at runtime
-    # $gitLocation = "~\scoop\apps\git\current\bin"
+    # $gitLocation = "$envLUSERPROFILE\scoop\apps\git\current"
     $gitLocation = "$env:USERPROFILE\scoop\apps\git\2.26.0.windows.1"
     # Clone the repository
     Write-Host "`n Cloning git-extras repository... `n"  -ForegroundColor Green
