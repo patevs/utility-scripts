@@ -47,14 +47,11 @@ Function InstallGitExtras {
     $gitLocation = "~\scoop\apps\git\2.26.0.windows.1\bin\git.exe"
     # Clone the repository
     Invoke-Expression "git clone https://github.com/tj/git-extras.git"
-    # Move into the git-extras directory
-    # Set-Location git-extras
     # Run the install script
-    # Invoke-Expression
-    Write-Host "git-extras\install.cmd $gitLocation"
+    Invoke-Expression "git-extras\install.cmd $gitLocation"
     # Finally remove the git-extras repository
     Remove-Item -Recurse -Force "git-extras"
-    Write-Host "`n DONE! `n"  -ForegroundColor Green
+    Write-Host "`n DONE!"  -ForegroundColor Green
   } else {
     Write-Host "`n Git installation could not be found!" -NoNewline
     Write-Host " Exiting!" -ForegroundColor red
