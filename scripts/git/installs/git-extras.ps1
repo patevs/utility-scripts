@@ -57,7 +57,7 @@ Function WhoIs {
 
 # ------------------------------------------------------------------------------------------- #
 
-Function Install-Git-Extras {
+Function InstallGitExtras {
   # Firstly we verify git is installed
   if (exists(gitt)){
     # Write-Host "`n Git Status:`n"  -ForegroundColor Green
@@ -68,6 +68,8 @@ Function Install-Git-Extras {
     Write-Host " Exiting! " -BackgroundColor red -ForegroundColor white
   }
 } #end function Install-Git-Extras
+
+InstallGitExtras
 
 # ------------------------------------------------------------------------------------------- #
 
