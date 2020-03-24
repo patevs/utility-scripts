@@ -48,10 +48,13 @@ Function InstallGitExtras {
     # Clone the repository
     Invoke-Expression "git clone https://github.com/tj/git-extras.git"
     # Move into the git-extras directory
-    Set-Location git-extras
+    # Set-Location git-extras
     # Run the install script
-    Invoke-Expression
-    Write-Host "install.cmd $gitLocation"
+    # Invoke-Expression
+    Write-Host "git-extras\install.cmd $gitLocation"
+    # Finally remove the git-extras repository
+    Remove-Item -Recurse "git-extras"
+    Write-Host "`n DONE! `n"  -ForegroundColor Green
   } else {
     Write-Host "`n Git installation could not be found!" -NoNewline
     Write-Host " Exiting!" -ForegroundColor red
