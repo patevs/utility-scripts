@@ -53,7 +53,7 @@ Function InstallGitExtras {
     # Invoke-Expression
     Write-Host "git-extras\install.cmd $gitLocation"
     # Finally remove the git-extras repository
-    Remove-Item -Recurse "git-extras"
+    Remove-Item -Recurse -Force "git-extras"
     Write-Host "`n DONE! `n"  -ForegroundColor Green
   } else {
     Write-Host "`n Git installation could not be found!" -NoNewline
