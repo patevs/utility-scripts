@@ -37,12 +37,7 @@
 
 # Check if a given PowerShell module is installed
 Function ExistsModule ($moduleName) {
-  if (Get-Module -ListAvailable -Name $moduleName) {
-    Write-Host "$moduleName Module exists"
-  }
-  else {
-    Write-Host "$moduleName Module does not exist"
-  }
+  return [bool](Get-Module -ListAvailable -Name $moduleName)
 }
 
 # Check if a given command exists
@@ -54,15 +49,7 @@ Function ExistsCommand($cmdName) {
 
 # ------------------------------------------------------------------------------------------- #
 
-
-
 Function InstallGitExtras {
-  # Firstly we verify if the PSWriteColor module is installed
-  if (ExistsModule PSWriteColor) {
-    Write-Host "Nothing to do..."
-  } else {
-    Write-Host "Install PsWriteColor..."
-  }
   # Firstly we verify git is installed
   if (ExistsCommand git){
     Write-Host "`n Installing git-extras utilities..."  -ForegroundColor Green
@@ -95,6 +82,20 @@ Function InstallGitExtras {
   }
 } #end function Install-Git-Extras
 
+Function Setup {
+  # Print a welcome message
+  Write-Host "`n Git Extras Utility Install Script " -BackgroundColor Green -ForegroundColor Black
+  # Firstly we verify if the PSWriteColor module is installed
+  if (-Not (ExistsModule PSWriteColor)) {
+    Write-Host " PSWriteColor module is not installed. Installing now..."
+    Install-Module -Name PSWriteColor
+  }
+  # Now we can import the PSWriteColor module
+  Import-Module PSWriteColor
+  # Clear-Host
+}
+
+Setup
 InstallGitExtras
 
 # ------------------------------------------------------------------------------------------- #
