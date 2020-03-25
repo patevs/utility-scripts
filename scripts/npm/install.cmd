@@ -111,6 +111,8 @@ CALL npm install --global ntl
 :: CALL npm install --global how-to-npm
 :: # https://github.com/franciscop/legally
 CALL npm install --global legally
+:: # https://github.com/davglass/license-checker
+CALL npm install --global license-checker
 :: # https://github.com/lirantal/lockfile-lint
 CALL npm install --global lockfile-lint
 :: # https://github.com/GoogleChromeLabs/ndb
