@@ -7,7 +7,7 @@
 :: Batch script which installs various useful NPM global modules.
 :: Requires NodeJS and NPM to be installed.
 
-:: Node Versions:
+:: Tested Node Versions:
 ::  * 13.11.0
 ::  * 12.16.1
 ::  * 10.19.0
@@ -109,6 +109,10 @@ CALL npm install --global npm-check-updates
 CALL npm install --global ntl
 :: # https://github.com/workshopper/how-to-npm
 :: CALL npm install --global how-to-npm
+:: # https://github.com/franciscop/legally
+CALL npm install --global legally
+:: # https://github.com/davglass/license-checker
+CALL npm install --global license-checker
 :: # https://github.com/lirantal/lockfile-lint
 CALL npm install --global lockfile-lint
 :: # https://github.com/GoogleChromeLabs/ndb
