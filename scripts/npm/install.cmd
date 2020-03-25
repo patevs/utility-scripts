@@ -124,9 +124,13 @@ CALL npm install --global lockfile-lint
 :: CALL npm install --global npe
 :: # https://github.com/voidcosmos/npkill
 :: CALL npm install --global npkill
+:: CALL npm install --global npkill
+:: # https://github.com/tclindner/npm-package-json-lint
+CALL npm install --global npm-package-json-lint
 :: https://github.com/npms-io/npms-cli
 :: CALL npm install --global npms-cli
-:: CALL npm install --global npkill
+:: # https://github.com/gorillamania/package.json-validator
+CALL npm install --global package-json-validator
 :: # https://github.com/zeke/package-json-to-readme
 :: CALL npm install --global package-json-to-readme
 :: # https://github.com/Unitech/pm2
