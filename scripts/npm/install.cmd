@@ -109,6 +109,8 @@ CALL npm install --global npm-check-updates
 CALL npm install --global ntl
 :: # https://github.com/workshopper/how-to-npm
 :: CALL npm install --global how-to-npm
+:: # https://github.com/franciscop/legally
+CALL npm install --global legally
 :: # https://github.com/lirantal/lockfile-lint
 CALL npm install --global lockfile-lint
 :: # https://github.com/GoogleChromeLabs/ndb
