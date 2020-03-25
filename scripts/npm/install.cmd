@@ -7,7 +7,7 @@
 :: Batch script which installs various useful NPM global modules.
 :: Requires NodeJS and NPM to be installed.
 
-:: Node Versions:
+:: Tested Node Versions:
 ::  * 13.11.0
 ::  * 12.16.1
 ::  * 10.19.0
