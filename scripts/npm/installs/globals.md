@@ -29,3 +29,37 @@
 * [`ungit`](https://github.com/FredrikNoren/ungit)
 
 ---
+
+## NodeJS and NPM Utilities
+
+* [`cost-of-modules`](https://github.com/siddharthkp/cost-of-modules)
+* [`david`](https://github.com/alanshaw/david)
+* [`dependency-check`](https://github.com/dependency-check-team/dependency-check)
+* [`npm-audit-helper`](https://github.com/rouanw/npm-audit-helper)
+* [`npm-check`](https://github.com/dylang/npm-check)
+* [`npm-check-updates`](https://github.com/tjunnone/npm-check-updates)
+* [`npm-police`](https://github.com/pksunkara/npm-police)
+* [`npq`](https://github.com/lirantal/npq)
+* [`nti`](https://github.com/sculove/nti)
+* [`ntl`](https://github.com/ruyadorno/ntl)
+* [`how-to-npm`](https://github.com/workshopper/how-to-npm)
+* [`legally`](https://github.com/franciscop/legally)
+* [`license-checker`](https://github.com/davglass/license-checker)
+* [`lockfile-lint`](https://github.com/lirantal/lockfile-lint)
+* [`ndb`](https://github.com/GoogleChromeLabs/ndb)
+  * NOTE: ndb requires windows-build-tools
+* [`np`](https://github.com/sindresorhus/np)
+* [`npe`](https://github.com/zeke/npe)
+* [`npkill`](https://github.com/voidcosmos/npkill)
+* [`npm-package-json-lint`](https://github.com/tclindner/npm-package-json-lint)
+* [`npms-cli`](https://github.com/npms-io/npms-cli)
+* [`package.json-validator`](https://github.com/gorillamania/package.json-validator)
+* [`package-json-to-readme`](https://github.com/zeke/package-json-to-readme)
+* [`pm2`](https://github.com/Unitech/pm2)
+* [`updates`](https://github.com/silverwind/updates)
+* [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools)
+  * NOTE: windows-build-tools install must be run in admin prompt
+* [`wipe-modules`](https://github.com/bntzio/wipe-modules)
+* [`ytl`](https://github.com/Muldoser/ytl)
+
+---
