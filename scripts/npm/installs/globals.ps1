@@ -56,10 +56,13 @@ if (-Not (ExistsModule PSWriteColor)) {
   Write-Host "`n PSWriteColor module is not installed. " -NoNewline
   Write-Host "Installing Now... " -ForegroundColor Green -NoNewline
   Install-Module -Name PSWriteColor
-  Write-Host "Done." -ForegroundColor Green
+  # Write-Host "Done." -ForegroundColor Green
+  Write-Host " Done " -BackgroundColor Green -ForegroundColor White
 }
 # Import PSWriteColor module
-Import-Module PSWriteColor
+# Import-Module PSWriteColor
+
+Uninstall-Module PSWriteColor
 
 # Next we verify NodeJS and NPM are installed.
 
