@@ -209,7 +209,7 @@ CALL npm install --global licensed
 CALL npm install --global neovim
 :: # https://github.com/jhotmann/node-passgen-cli
 :: CALL npm install --global passgen-cli
-:: https://github.com/sdras/project-explorer
+:: # https://github.com/sdras/project-explorer
 :: Note: requires yarn to be installed
 :: CALL npm install --global project-explorer
 :: # https://github.com/release-it/release-it
