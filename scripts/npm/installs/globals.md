@@ -76,78 +76,39 @@
 ## Development Utilities
 
 * [`bower`](https://github.com/bower/bower)
-
 * [`clog-cli`](https://github.com/kentcdodds/clog-cli)
-
 * [`node-csvtojson`](https://github.com/Keyang/node-csvtojson)
-
 * [`destiny`](https://github.com/benawad/destiny)
-
 * [`devion`](https://github.com/alchaplinsky/devion)
-
 * [`doctoc`](https://github.com/thlorenz/doctoc)
-
-* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG)
-  * NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
-
+* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) : Requires `rsvg-convert` to be on $PATH
 * [`foy`](https://github.com/zaaack/foy)
-
 * [`gatsby`](https://github.com/gatsbyjs/gatsby)
-
 * [`gitbook`](https://github.com/GitbookIO/gitbook)
-
 * [`good-first-issue`](https://github.com/cutenode/good-first-issue)
-
 * [`html-minifier`](https://github.com/kangax/html-minifier)
-
-* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image Minifier
-
+* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image minifier
 * [`Jsome`](https://github.com/Javascipt/Jsome)
-
-* [``](License generator
-* [``](https://github.com/plibither8/licensed)
-
-* [``](https://github.com/alexfernandez/loadtest)
-
-* [``](https://github.com/localtunnel/localtunnel)
-
-* [``](https://github.com/cezaraugusto/mklicense)
-:: Note: try licensed instead
-
-:* [``](https://github.com/neovim/node-client)
-
-* [``](https://github.com/jhotmann/node-passgen-cli)
-
-:: https://github.com/sdras/project-explorer)
-:: Note: requires yarn to be installed
-
-* [``](https://github.com/release-it/release-it)
-
-* [``](https://github.com/jhotmann/node-rename-cli)
-
-* [``](https://github.com/semantic-release/semantic-release)
-
-* [``](Placeholder image generator
-* [``](https://github.com/ecrmnn/spaceholder)
-
-* [``](SVG Optimizer
-* [``](https://github.com/svg/svgo)
-
-* [``](https://github.com/sitespeedio/sitespeed.io)
-
-* [``](https://github.com/WeiChiaChang/stacks-cli)
-
-* [``](https://github.com/strapi/strapi)
-
-* [``](https://github.com/tldr-pages/tldr)
-* [``](https://github.com/tldr-pages/tldr-node-client)
-
-* [``](https://github.com/mishoo/UglifyJS2)
-
-* [``](https://github.com/ddopson/underscore-cli)
-
-* [``](https://github.com/kevva/viewport-list-cli)
-
-* [``](https://github.com/yui/yuglify)
+* [`licensed`](https://github.com/plibither8/licensed) : License generator
+* [`loadtest`](https://github.com/alexfernandez/loadtest)
+* [`localtunnel`](https://github.com/localtunnel/localtunnel)
+* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Requires `bash` - Try `licensed` instead
+* [`neovim/node-client`](https://github.com/neovim/node-client)
+* [`node-passgen-cli`](https://github.com/jhotmann/node-passgen-cli)
+* [`project-explorer`](https://github.com/sdras/project-explorer)
+* [`release-it`](https://github.com/release-it/release-it)
+* [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli)
+* [`semantic-release`](https://github.com/semantic-release/semantic-release)
+* [`spaceholder`](https://github.com/ecrmnn/spaceholder) : Placeholder image generator
+* [`svgo`](https://github.com/svg/svgo) : SVG Optimizer
+* [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io)
+* [`stacks-cli`](https://github.com/WeiChiaChang/stacks-cli)
+* [`strapi`](https://github.com/strapi/strapi)
+* [`tldr`](https://github.com/tldr-pages/tldr)
+* [`tldr-node-client`](https://github.com/tldr-pages/tldr-node-client)
+* [`UglifyJS2`](https://github.com/mishoo/UglifyJS2)
+* [`underscore-cli`](https://github.com/ddopson/underscore-cli)
+* [`viewport-list-cli`](https://github.com/kevva/viewport-list-cli)
+* [`yuglify`](https://github.com/yui/yuglify)
 
 ---
