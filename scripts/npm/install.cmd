@@ -128,6 +128,8 @@ CALL npm install --global lockfile-lint
 :: CALL npm install --global npkill
 :: # https://github.com/tclindner/npm-package-json-lint
 CALL npm install --global npm-package-json-lint
+:: # https://github.com/felixrieseberg/npm-windows-upgrade
+CALL npm install --global --production npm-windows-upgrade
 :: # https://github.com/npms-io/npms-cli
 :: CALL npm install --global npms-cli
 :: # https://github.com/gorillamania/package.json-validator
