@@ -93,7 +93,7 @@ if (ExistsCommand npm) {
 }
 
 # Begin install
-Write-Color " `n All Requirements Satisfied! ", "Installing NPM Global Modules..." -C White, Green
+Write-Color " `n All Requirements Satisfied! " # , "Installing NPM Global Modules..." -C White, Green
 
 # Upgrade NPM
 Write-Color " `n Upgrading ", "NPM", "..." -C White, Cyan, White -StartSpace 2
