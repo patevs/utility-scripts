@@ -49,7 +49,7 @@ Function ExistsCommand($cmdName) {
 
 # Print a welcome message
 Write-Host ""
-Write-Host " NPM Global Modules Install Script " -BackgroundColor Green -ForegroundColor Black
+Write-Host " NPM Global Modules Install Script " -BackgroundColor Magenta -ForegroundColor Black
 
 # Verify if PSWriteColor module is installed
 if (-Not (ExistsModule PSWriteColor)) {
@@ -57,7 +57,7 @@ if (-Not (ExistsModule PSWriteColor)) {
   Write-Host "Installing Now... " -ForegroundColor Green -NoNewline
   Install-Module -Name PSWriteColor
   # Write-Host "Done." -ForegroundColor Green
-  Write-Host " Done " -BackgroundColor Green -ForegroundColor White
+  Write-Host " Done " -BackgroundColor Green -ForegroundColor Black
 }
 # Import PSWriteColor module
 # Import-Module PSWriteColor
