@@ -60,11 +60,20 @@ if (-Not (ExistsModule PSWriteColor)) {
   Write-Host " Done " -BackgroundColor Green -ForegroundColor Black
 }
 # Import PSWriteColor module
-# Import-Module PSWriteColor
-
-Uninstall-Module PSWriteColor
+Import-Module PSWriteColor
+# Uninstall-Module PSWriteColor
 
 # Next we verify NodeJS and NPM are installed.
+Write-Color "Verifying NodeJS and NPM Installations..." -StartTab 1
+
+# Test NodeJS first
+if (ExistsCommand node){
+  $nodeVersion = Invoke-Expression "node --version"
+  Write-Color "NodeJS Version: $nodeVersion"
+} else {
+  Write-Color "NodeJS is not installed. Exiting..."
+  exit
+}
 
 # ------------------------------------------------------------------------------------------- #
 
