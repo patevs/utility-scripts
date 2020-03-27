@@ -47,20 +47,6 @@ Function ExistsCommand($cmdName) {
 
 # ------------------------------------------------------------------------------------------- #
 
-Function Setup {
-  # Print a welcome message
-  Write-Host ""
-  Write-Host " Git Extras Utility Install Script " -BackgroundColor Green -ForegroundColor Black
-  # Firstly we verify if the PSWriteColor module is installed
-  if (-Not (ExistsModule PSWriteColor)) {
-    Write-Host "`n PSWriteColor module is not installed. Installing now..."
-    Install-Module -Name PSWriteColor
-  }
-  # Now we can import the PSWriteColor module
-  Import-Module PSWriteColor
-  # Clear-Host
-}
-
 # Print a welcome message
 Write-Host ""
 Write-Host " NPM Global Modules Install Script " -BackgroundColor Green -ForegroundColor Black
@@ -68,9 +54,12 @@ Write-Host " NPM Global Modules Install Script " -BackgroundColor Green -Foregro
 # Verify if PSWriteColor module is installed
 if (-Not (ExistsModule PSWriteColor)) {
   Write-Host "`n PSWriteColor module is not installed. " -NoNewline
-  Write-Host "Installing Now..." -ForegroundColor Green
+  Write-Host "Installing Now... " -ForegroundColor Green -NoNewline
   Install-Module -Name PSWriteColor
+  Write-Host "Done." -ForegroundColor Green
 }
+# Import PSWriteColor module
+Import-Module PSWriteColor
 
 # ------------------------------------------------------------------------------------------- #
 
