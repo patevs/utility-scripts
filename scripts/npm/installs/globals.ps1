@@ -61,6 +61,9 @@ Function Setup {
   # Clear-Host
 }
 
+# Print a welcome message
+Write-Host "`n NPM Global Modules Install Script " -BackgroundColor Green -ForegroundColor Black
+
 # ------------------------------------------------------------------------------------------- #
 
 # EOF #
