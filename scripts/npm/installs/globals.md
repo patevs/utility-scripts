@@ -63,3 +63,91 @@
 * [`ytl`](https://github.com/Muldoser/ytl)
 
 ---
+
+## TypeScript Utilities
+
+* [`typed-installed`](https://github.com/xavdid/typed-install)
+* [`TypeScript`](https://github.com/microsoft/TypeScript)
+* [`typescript-started`](https://github.com/bitjson/typescript-starter)
+* [`typesync`](https://github.com/jeffijoe/typesync)
+
+---
+
+## Development Utilities
+
+* [`bower`](https://github.com/bower/bower)
+
+* [`clog-cli`](https://github.com/kentcdodds/clog-cli)
+
+* [`node-csvtojson`](https://github.com/Keyang/node-csvtojson)
+
+* [`destiny`](https://github.com/benawad/destiny)
+
+* [`devion`](https://github.com/alchaplinsky/devion)
+
+* [`doctoc`](https://github.com/thlorenz/doctoc)
+
+* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG)
+  * NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
+
+* [`foy`](https://github.com/zaaack/foy)
+
+* [`gatsby`](https://github.com/gatsbyjs/gatsby)
+
+* [`gitbook`](https://github.com/GitbookIO/gitbook)
+
+* [`good-first-issue`](https://github.com/cutenode/good-first-issue)
+
+* [`html-minifier`](https://github.com/kangax/html-minifier)
+
+* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image Minifier
+
+* [`Jsome`](https://github.com/Javascipt/Jsome)
+
+* [``](License generator
+* [``](https://github.com/plibither8/licensed)
+
+* [``](https://github.com/alexfernandez/loadtest)
+
+* [``](https://github.com/localtunnel/localtunnel)
+
+* [``](https://github.com/cezaraugusto/mklicense)
+:: Note: try licensed instead
+
+:* [``](https://github.com/neovim/node-client)
+
+* [``](https://github.com/jhotmann/node-passgen-cli)
+
+:: https://github.com/sdras/project-explorer)
+:: Note: requires yarn to be installed
+
+* [``](https://github.com/release-it/release-it)
+
+* [``](https://github.com/jhotmann/node-rename-cli)
+
+* [``](https://github.com/semantic-release/semantic-release)
+
+* [``](Placeholder image generator
+* [``](https://github.com/ecrmnn/spaceholder)
+
+* [``](SVG Optimizer
+* [``](https://github.com/svg/svgo)
+
+* [``](https://github.com/sitespeedio/sitespeed.io)
+
+* [``](https://github.com/WeiChiaChang/stacks-cli)
+
+* [``](https://github.com/strapi/strapi)
+
+* [``](https://github.com/tldr-pages/tldr)
+* [``](https://github.com/tldr-pages/tldr-node-client)
+
+* [``](https://github.com/mishoo/UglifyJS2)
+
+* [``](https://github.com/ddopson/underscore-cli)
+
+* [``](https://github.com/kevva/viewport-list-cli)
+
+* [``](https://github.com/yui/yuglify)
+
+---
