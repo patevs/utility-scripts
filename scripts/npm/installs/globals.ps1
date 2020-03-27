@@ -61,6 +61,8 @@ if (-Not (ExistsModule PSWriteColor)) {
 # Import PSWriteColor module
 Import-Module PSWriteColor
 
+# Next we verify NodeJS and NPM are installed.
+
 # ------------------------------------------------------------------------------------------- #
 
 # EOF #
