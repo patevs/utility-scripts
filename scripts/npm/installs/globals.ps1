@@ -64,14 +64,29 @@ Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
 # Next we verify NodeJS and NPM are installed.
-Write-Color "Verifying NodeJS and NPM Installations..." -StartTab 1
+Write-Color " `n Verifying ", "NodeJS", " and ", "NPM", " Installations... `n" -C White, Cyan, White, Cyan, White
 
-# Test NodeJS first
-if (ExistsCommand node){
+# $nodeVersion = $null
+
+# NodeJS
+if (ExistsCommand node) {
   $nodeVersion = Invoke-Expression "node --version"
-  Write-Color "NodeJS Version: $nodeVersion"
+  Write-Color "NodeJS", " Version: " -Color Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color $nodeVersion -C Green
 } else {
-  Write-Color "NodeJS is not installed. Exiting..."
+  Write-Color "NodeJS", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color " Exiting " -B Red
+  exit
+}
+
+# NPM
+if (ExistsCommand npm) {
+  $npmVersion = Invoke-Expression "npm --version"
+  Write-Color "NPM", " Version: " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color $npmVersion -C Green
+} else {
+  Write-Color "NPM", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color " Exiting " -B Red
   exit
 }
 
