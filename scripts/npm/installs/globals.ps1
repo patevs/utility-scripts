@@ -91,6 +91,12 @@ if (ExistsCommand npm) {
   exit
 }
 
+# :: Begin install
+# ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m
+# Begin Install
+
+Write-Color "All Requirements Satisfied! ", "Installing NPM Global Modules..." -C White, Green
+
 # ------------------------------------------------------------------------------------------- #
 
 # EOF #
