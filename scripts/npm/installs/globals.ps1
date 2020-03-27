@@ -4,12 +4,19 @@
 # -------------------------------- #
 
 .SYNOPSIS
-  PowerShell script used to install npm global modules.
+  PowerShell script which installs various useful NPM global modules.
+  Requires NodeJS and NPM to be installed.
 
 .DESCRIPTION
   Ensures NodeJS and NPM are installed. Validates NodeJS and NPM
   versions along with any other required dependencies. Then installs
   NPM global modules.
+
+  Tested Node Versions:
+    * 13.11.0
+    * 12.16.1
+    * 10.19.0
+    * 8.17.0
 
   NOTE:
     This script requires the PSWriteColor module which will be installed
