@@ -1,16 +1,14 @@
-<#
-# -------------------------------- #
-# scripts/npm/installs/globals.ps1 #
-# -------------------------------- #
+<# scripts/npm/installs/globals.ps1
 
 .SYNOPSIS
-  PowerShell script which installs various useful NPM global modules.
-  Requires NodeJS and NPM to be installed.
+  `PowerShell` script that installs various useful `NPM` modules globally.
+  Therefore requires `NodeJS` and `NPM` to be installed.
 
 .DESCRIPTION
-  Ensures NodeJS and NPM are installed. Validates NodeJS and NPM
-  versions along with any other required dependencies. Then installs
-  NPM global modules.
+  1. Ensure `NodeJS` and `NPM` install and check version.
+  2. (WIP) Check current global `NPM` modules.
+  3. Upgrade global `NPM` install (optional).
+  4. Install `NPM` global modules (ensure required dependencies for each).
 
   Tested Node Versions:
     * 13.11.0
@@ -18,11 +16,9 @@
     * 10.19.0
     * 8.17.0
 
-  NOTE:
-    This script requires the PSWriteColor module which will be installed
-    if not already.
+  **NOTE** : This script will install the `PSWriteColor` module.
 
-    https://github.com/EvotecIT/PSWriteColor
+    * [`PSWriteColor`](https://github.com/EvotecIT/PSWriteColor)
 
 .EXAMPLE
   .\globals.ps1
@@ -30,7 +26,7 @@
 .NOTES
   File Name: globals.ps1
   Author: PatEvs
-  Last Edit: 27/03/2020
+  Last Edit: 28/03/2020
 
 .LINK
   https://github.com/patevs/utility-scripts
@@ -63,18 +59,13 @@ if (-Not (ExistsModule PSWriteColor)) {
   Write-Host "`n PSWriteColor module is not installed. " -NoNewline
   Write-Host "Installing Now... " -ForegroundColor Green -NoNewline
   Install-Module -Name PSWriteColor
-  # Write-Host "Done." -ForegroundColor Green
   Write-Host " Done " -BackgroundColor Green -ForegroundColor Black
 }
-# Import PSWriteColor module
 Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
 # Next we verify NodeJS and NPM are installed.
 Write-Color " `n Verifying ", "NodeJS", " and ", "NPM", " Installations... `n" -C White, Cyan, White, Cyan, White
-
-# $nodeVersion = $null
-# $npmVersion = $null
 
 # NodeJS
 if (ExistsCommand node) {
