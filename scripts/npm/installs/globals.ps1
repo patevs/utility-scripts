@@ -67,6 +67,7 @@ Import-Module PSWriteColor
 Write-Color " `n Verifying ", "NodeJS", " and ", "NPM", " Installations... `n" -C White, Cyan, White, Cyan, White
 
 # $nodeVersion = $null
+# $npmVersion = $null
 
 # NodeJS
 if (ExistsCommand node) {
