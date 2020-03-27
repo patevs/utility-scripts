@@ -29,3 +29,62 @@
 * [`ungit`](https://github.com/FredrikNoren/ungit)
 
 ---
+
+## NodeJS and NPM Utilities
+
+* [`cost-of-modules`](https://github.com/siddharthkp/cost-of-modules)
+* [`david`](https://github.com/alanshaw/david)
+
+:: # https://github.com/dependency-check-team/dependency-check
+
+:: # https://github.com/rouanw/npm-audit-helper
+
+:: # https://github.com/dylang/npm-check
+
+:: # https://github.com/tjunnone/npm-check-updates
+
+:: # https://github.com/pksunkara/npm-police
+
+:: # https://github.com/lirantal/npq
+
+:: # https://github.com/sculove/nti
+
+:: # https://github.com/ruyadorno/ntl
+
+:: # https://github.com/workshopper/how-to-npm
+
+:: # https://github.com/franciscop/legally
+
+:: # https://github.com/davglass/license-checker
+
+:: # https://github.com/lirantal/lockfile-lint
+
+:: # https://github.com/GoogleChromeLabs/ndb
+:: # NOTE: ndb requires windows-build-tools
+
+:: # https://github.com/sindresorhus/np
+
+:: # https://github.com/zeke/npe
+
+:: # https://github.com/voidcosmos/npkill
+
+:: # https://github.com/tclindner/npm-package-json-lint
+
+:: https://github.com/npms-io/npms-cli
+
+:: # https://github.com/gorillamania/package.json-validator
+
+:: # https://github.com/zeke/package-json-to-readme
+
+:: # https://github.com/Unitech/pm2
+
+:: # https://github.com/silverwind/updates
+
+:: # https://github.com/felixrieseberg/windows-build-tools
+:: # NOTE: windows-build-tools install must be run in admin prompt
+
+:: # https://github.com/bntzio/wipe-modules
+
+:: # https://github.com/Muldoser/ytl
+
+---
