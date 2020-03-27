@@ -62,7 +62,15 @@ Function Setup {
 }
 
 # Print a welcome message
-Write-Host "`n NPM Global Modules Install Script " -BackgroundColor Green -ForegroundColor Black
+Write-Host ""
+Write-Host " NPM Global Modules Install Script " -BackgroundColor Green -ForegroundColor Black
+
+# Verify if PSWriteColor module is installed
+if (-Not (ExistsModule PSWriteColor)) {
+  Write-Host "`n PSWriteColor module is not installed. " -NoNewline
+  Write-Host "Installing Now..." -ForegroundColor Green
+  Install-Module -Name PSWriteColor
+}
 
 # ------------------------------------------------------------------------------------------- #
 
