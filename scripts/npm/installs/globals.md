@@ -1,6 +1,6 @@
 # NPM Global Modules
 
-> A collection of various `NPM` global modules that I use.
+> A collection of various useful `NPM` global modules.
 
 ---
 
@@ -16,12 +16,10 @@
 
 * [`add-gitignore`](https://github.com/TejasQ/add-gitignore)
 * [`cli-github`](https://github.com/IonicaBizau/cli-github)
-* [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy)
-  * Note: Requires `Perl` to be installed
+* [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy) : Note - Requires `Perl` to be installed.
 * [`g3l`](https://github.com/svhawks/g3l)
 * [`gistup`](https://github.com/mbostock/gistup)
-* [`git-open`](https://github.com/paulirish/git-open)
-  * Note: The `hub browse` command does the same thing
+* [`git-open`](https://github.com/paulirish/git-open) : Note - `hub browse` does the same thing.
 * [`git-stats`](https://github.com/IonicaBizau/git-stats)
 * [`gitmoji-cli`](https://github.com/carloscuesta/gitmoji-cli)
 * [`git-labelmaker`](https://github.com/himynameisdave/git-labelmaker)
@@ -46,19 +44,18 @@
 * [`legally`](https://github.com/franciscop/legally)
 * [`license-checker`](https://github.com/davglass/license-checker)
 * [`lockfile-lint`](https://github.com/lirantal/lockfile-lint)
-* [`ndb`](https://github.com/GoogleChromeLabs/ndb)
-  * NOTE: ndb requires windows-build-tools
+* [`ndb`](https://github.com/GoogleChromeLabs/ndb) : Note - Requires `windows-build-tools` to be installed.
 * [`np`](https://github.com/sindresorhus/np)
 * [`npe`](https://github.com/zeke/npe)
 * [`npkill`](https://github.com/voidcosmos/npkill)
 * [`npm-package-json-lint`](https://github.com/tclindner/npm-package-json-lint)
+* [`npm-windows-upgrade`](https://github.com/felixrieseberg/npm-windows-upgrade) : Note - Must be run from an elevated prompt.
 * [`npms-cli`](https://github.com/npms-io/npms-cli)
 * [`package.json-validator`](https://github.com/gorillamania/package.json-validator)
 * [`package-json-to-readme`](https://github.com/zeke/package-json-to-readme)
 * [`pm2`](https://github.com/Unitech/pm2)
 * [`updates`](https://github.com/silverwind/updates)
-* [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools)
-  * NOTE: windows-build-tools install must be run in admin prompt
+* [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) : Note - Must be run from an elevated prompt.
 * [`wipe-modules`](https://github.com/bntzio/wipe-modules)
 * [`ytl`](https://github.com/Muldoser/ytl)
 
@@ -81,7 +78,7 @@
 * [`destiny`](https://github.com/benawad/destiny)
 * [`devion`](https://github.com/alchaplinsky/devion)
 * [`doctoc`](https://github.com/thlorenz/doctoc)
-* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) : Requires `rsvg-convert` to be on $PATH
+* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) : Requires `rsvg-convert` to be installed.
 * [`foy`](https://github.com/zaaack/foy)
 * [`gatsby`](https://github.com/gatsbyjs/gatsby)
 * [`gitbook`](https://github.com/GitbookIO/gitbook)
@@ -92,7 +89,7 @@
 * [`licensed`](https://github.com/plibither8/licensed) : License generator
 * [`loadtest`](https://github.com/alexfernandez/loadtest)
 * [`localtunnel`](https://github.com/localtunnel/localtunnel)
-* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Requires `bash` - Try `licensed` instead
+* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Note - Requires `bash` - Try `licensed` instead
 * [`neovim/node-client`](https://github.com/neovim/node-client)
 * [`node-passgen-cli`](https://github.com/jhotmann/node-passgen-cli)
 * [`project-explorer`](https://github.com/sdras/project-explorer)
