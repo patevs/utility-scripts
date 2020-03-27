@@ -72,13 +72,9 @@ Write-Color " `n Verifying ", "NodeJS", " and ", "NPM", " Installations... `n" -
 # NodeJS
 if (ExistsCommand node) {
   $nodeVersion = Invoke-Expression "node --version"
-  Write-Color "---------------------"
-  Write-Color "| NodeJS | $nodeVersion |"
-  Write-Color "---------------------"
-  # Write-Color "NodeJS ", "$nodeVersion" |
-  # Format-Table NodeJS, { $nodeVersion }
-  # Write-Color "NodeJS", " Version: " -Color Cyan, White -StartSpace 2 -NoNewLine
-  # Write-Color $nodeVersion -C Green
+  Write-Color "+--------+----------+" -StartSpace 4
+  Write-Color "|", " NodeJS ", "|", " $nodeVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+--------+----------+" -StartSpace 4
 } else {
   Write-Color "NodeJS", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
@@ -88,8 +84,8 @@ if (ExistsCommand node) {
 # NPM
 if (ExistsCommand npm) {
   $npmVersion = Invoke-Expression "npm --version"
-  Write-Color "NPM", " Version: " -C Cyan, White -StartSpace 2 -NoNewLine
-  Write-Color $npmVersion -C Green
+  Write-Color "|", "  NPM   ", "|", "  $npmVersion  ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+--------+----------+" -StartSpace 4
 } else {
   Write-Color "NPM", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
