@@ -1,14 +1,20 @@
 <# scripts/npm/installs/globals.ps1
 
+TODO:
+  * Check currently installed NPM global modules.
+  * Add argument parameter for upgrading global NPM installation.
+  * Ensure dependency requirements are met for each module.
+
 .SYNOPSIS
-  `PowerShell` script that installs various useful `NPM` modules globally.
-  Therefore requires `NodeJS` and `NPM` to be installed.
+  `PowerShell` script for installing various useful global `NPM` modules.
+
+  ! Requires `NodeJS` and `NPM` to be installed.
 
 .DESCRIPTION
-  1. Ensure `NodeJS` and `NPM` install and check version.
-  2. (WIP) Check current global `NPM` modules.
-  3. Upgrade global `NPM` install (optional).
-  4. Install `NPM` global modules (ensure required dependencies for each).
+  1. Ensure `NodeJS` and `NPM` are installed and check versions.
+  2. (WIP) Check currently installed global `NPM` modules.
+  3. (Optional) Upgrade global `NPM` installation.
+  4. Install `NPM` global modules ensuring required dependencies are met for each.
 
   Tested Node Versions:
     * 13.11.0
@@ -16,20 +22,21 @@
     * 10.19.0
     * 8.17.0
 
-  **NOTE** : This script will install the `PSWriteColor` module.
-
-    * [`PSWriteColor`](https://github.com/EvotecIT/PSWriteColor)
+  **NOTE** : This script will install the [`PSWriteColor`](https://github.com/EvotecIT/PSWriteColor) module.
 
 .EXAMPLE
   .\globals.ps1
 
 .NOTES
   File Name: globals.ps1
-  Author: PatEvs
+  Author: PatEvs (https://github.com/patevs)
   Last Edit: 28/03/2020
 
 .LINK
-  https://github.com/patevs/utility-scripts
+  Repository:
+    * https://github.com/patevs/utility-scripts
+  Script:
+    * https://github.com/patevs/utility-scripts/blob/master/scripts/npm/installs/globals.ps1
 #>
 
 # ---------------- #
@@ -64,7 +71,7 @@ if (-Not (ExistsModule PSWriteColor)) {
 Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
-# Next we verify NodeJS and NPM are installed.
+# Verify NodeJS and NPM are installed
 Write-Color " `n Verifying ", "NodeJS", " and ", "NPM", " Installations... `n" -C White, Cyan, White, Cyan, White
 
 # NodeJS
