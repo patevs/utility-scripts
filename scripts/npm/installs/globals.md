@@ -2,6 +2,8 @@
 
 > A collection of various useful `NPM` global modules.
 
+**TODO:** Add description to each module.
+
 ---
 
 ## Linting and Style Checking
@@ -78,7 +80,7 @@
 * [`destiny`](https://github.com/benawad/destiny)
 * [`devion`](https://github.com/alchaplinsky/devion)
 * [`doctoc`](https://github.com/thlorenz/doctoc)
-* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) : Requires `rsvg-convert` to be installed.
+* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) : Note - Requires `rsvg-convert` to be installed.
 * [`foy`](https://github.com/zaaack/foy)
 * [`gatsby`](https://github.com/gatsbyjs/gatsby)
 * [`gitbook`](https://github.com/GitbookIO/gitbook)
