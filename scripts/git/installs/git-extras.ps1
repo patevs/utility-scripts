@@ -97,7 +97,7 @@ Write-Color "`n Cloning git-extras repository... `n" -C White, Green, White
 Invoke-Expression "git clone https://github.com/tj/git-extras.git"
 
 # Run the install script
-Write-Host "`n Running ", "git-extras", " install script... `n" -C White, Green, White
+Write-Color "`n Running ", "git-extras", " install script... `n" -C White, Green, White
 
 # Invoke-Expression "git-extras\install.cmd $gitLocation"
 git-extras\install.cmd $gitPath
