@@ -190,3 +190,11 @@
 * [`generator-rn-toolbox`](https://github.com/bamlab/generator-rn-toolbox) : React Native
 
 ---
+
+## Alternate Package Managers
+
+* [`ied`](https://github.com/alexanderGugel/ied)
+* [`pnpm`](https://github.com/pnpm/pnpm)
+* [`yarn`](https://github.com/yarnpkg/yarn)
+
+---
