@@ -84,20 +84,20 @@
 * [`gitbook`](https://github.com/GitbookIO/gitbook)
 * [`good-first-issue`](https://github.com/cutenode/good-first-issue)
 * [`html-minifier`](https://github.com/kangax/html-minifier)
-* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image minifier
+* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image minifier.
 * [`Jsome`](https://github.com/Javascipt/Jsome)
-* [`licensed`](https://github.com/plibither8/licensed) : License generator
+* [`licensed`](https://github.com/plibither8/licensed) : License generator.
 * [`loadtest`](https://github.com/alexfernandez/loadtest)
 * [`localtunnel`](https://github.com/localtunnel/localtunnel)
-* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Note - Requires `bash` - Try `licensed` instead
+* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Note - Requires `bash` - Try `licensed` instead.
 * [`neovim/node-client`](https://github.com/neovim/node-client)
 * [`node-passgen-cli`](https://github.com/jhotmann/node-passgen-cli)
 * [`project-explorer`](https://github.com/sdras/project-explorer)
 * [`release-it`](https://github.com/release-it/release-it)
 * [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli)
 * [`semantic-release`](https://github.com/semantic-release/semantic-release)
-* [`spaceholder`](https://github.com/ecrmnn/spaceholder) : Placeholder image generator
-* [`svgo`](https://github.com/svg/svgo) : SVG Optimizer
+* [`spaceholder`](https://github.com/ecrmnn/spaceholder) : Placeholder image generator.
+* [`svgo`](https://github.com/svg/svgo) : SVG Optimizer.
 * [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io)
 * [`stacks-cli`](https://github.com/WeiChiaChang/stacks-cli)
 * [`strapi`](https://github.com/strapi/strapi)
