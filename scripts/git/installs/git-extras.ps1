@@ -55,7 +55,7 @@ Function ExistsCommand($cmdName) {
 
 # Print a welcome message
 Write-Host ""
-Write-Host " Git-Utilities Install Script " -BackgroundColor Magenta -ForegroundColor Black
+Write-Host " Git-Extras Utilities Install Script " -BackgroundColor Magenta -ForegroundColor Black
 
 # Verify if PSWriteColor module is installed
 if (-Not (ExistsModule PSWriteColor)) {
@@ -70,10 +70,17 @@ Import-Module PSWriteColor
 # Verify Git is installed
 Write-Color " `n Verifying ", "Git", " Installation... `n" -C White, Cyan, White
 
+# Verify if git executable is at default location
+$gitPath = "$env:ProgramFiles\Git"
+if (-Not (Test-Path $gitPath)) {
+  # Attempt to find the path using scoop
+  $gitPath = Invoke-Expression "scoop prefix git"
+}
+
 if (ExistsCommand git) {
   $gitVersion = Invoke-Expression "git --version"
   Write-Color "+--------+----------+" -StartSpace 4
-  Write-Color "|", " Git ", "|", " $gitVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "|", "  Git   ", "|", " $gitVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
   Write-Color "+--------+----------+" -StartSpace 4
 } else {
   Write-Color "Git", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
@@ -83,14 +90,7 @@ if (ExistsCommand git) {
 
 # Begin install
 Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
-Write-Color "Installing Git-Extras Utilities..." -StartSpaces 4
-
-# Verify if git executable is at default location
-$gitPath = "$env:ProgramFiles\Git"
-if (-Not (Test-Path $gitPath)) {
-  # Attempt to find the path using scoop
-  $gitPath = Invoke-Expression "scoop prefix git"
-}
+Write-Color "Installing ", "git-extras", " Utilities..." -C White, Green, White -StartSpaces 4
 
 # Clone the git-extras repository
 Write-Color "`n Cloning git-extras repository... `n" -C White, Green, White
