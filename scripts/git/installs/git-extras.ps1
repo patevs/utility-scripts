@@ -1,18 +1,13 @@
-<#
-# ----------------------------------- #
-# scripts/git/installs/git-extras.ps1 #
-# ----------------------------------- #
+<# scripts/git/installs/git-extras.ps1
 
 TODO:
   * Allow for passing of git location as an argument.
   * Tidy up the script.
 
 .SYNOPSIS
-  PowerShell script used to install `git-extras` utilities.
-  Requires `git` to be installed.
+  `PowerShell` script for installing [`git-extras`](https://github.com/tj/git-extras) utilities.
 
-  * https://github.com/tj/git-extras
-
+  ! Requires `git` to be installed.
 
 .DESCRIPTION
   1. Ensure `git` is installed and attempts to find the executable
