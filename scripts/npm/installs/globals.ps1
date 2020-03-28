@@ -25,11 +25,15 @@
 
 .NOTES
   File Name: globals.ps1
-  Author: PatEvs
+  Author: PatEvs (https://github.com/patevs)
   Last Edit: 28/03/2020
 
 .LINK
   https://github.com/patevs/utility-scripts
+  Repository:
+    * https://github.com/patevs/utility-scripts
+  Script:
+    * https://github.com/patevs/utility-scripts/blob/master/scripts/npm/installs/globals.ps1
 #>
 
 # ---------------- #
