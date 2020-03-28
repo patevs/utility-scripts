@@ -23,11 +23,7 @@ TODO:
 
   3. Delete the `git-extras` repository as it is no longer needed.
 
-  Note:
-    This script requires the `PSWriteColor` module which will be installed.
-
-    * https://www.powershellgallery.com/packages/PSWriteColor
-    * https://github.com/EvotecIT/PSWriteColor
+  **Note** : This script will install the [`PSWriteColor`](https://github.com/EvotecIT/PSWriteColor) module.
 
 .EXAMPLE
   .\git-extras.ps1
