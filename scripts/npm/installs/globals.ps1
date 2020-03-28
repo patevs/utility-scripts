@@ -1,8 +1,14 @@
 <# scripts/npm/installs/globals.ps1
 
+TODO:
+  * Check currently installed NPM global modules.
+  * Add argument parameter for upgrading global NPM installation.
+  * Ensure dependency requirements are met for each module.
+
 .SYNOPSIS
-  `PowerShell` script that installs various useful `NPM` modules globally.
-  Therefore requires `NodeJS` and `NPM` to be installed.
+  `PowerShell` script for installing various useful global `NPM` modules.
+
+  ! Requires `NodeJS` and `NPM` to be installed.
 
 .DESCRIPTION
   1. Ensure `NodeJS` and `NPM` are installed and check versions.
