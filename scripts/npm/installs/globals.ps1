@@ -5,10 +5,10 @@
   Therefore requires `NodeJS` and `NPM` to be installed.
 
 .DESCRIPTION
-  1. Ensure `NodeJS` and `NPM` install and check version.
-  2. (WIP) Check current global `NPM` modules.
-  3. Upgrade global `NPM` install (optional).
-  4. Install `NPM` global modules (ensure required dependencies for each).
+  1. Ensure `NodeJS` and `NPM` are installed and check versions.
+  2. (WIP) Check currently installed global `NPM` modules.
+  3. (Optional) Upgrade global `NPM` installation.
+  4. Install `NPM` global modules ensuring required dependencies are met for each.
 
   Tested Node Versions:
     * 13.11.0
@@ -16,9 +16,7 @@
     * 10.19.0
     * 8.17.0
 
-  **NOTE** : This script will install the `PSWriteColor` module.
-
-    * [`PSWriteColor`](https://github.com/EvotecIT/PSWriteColor)
+  **NOTE** : This script will install the [`PSWriteColor`](https://github.com/EvotecIT/PSWriteColor) module.
 
 .EXAMPLE
   .\globals.ps1
