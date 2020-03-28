@@ -3,6 +3,7 @@
 TODO:
   * Allow for passing of git location as an argument.
   * Tidy up the script.
+  * Add option to allow for uninstall
 
 .SYNOPSIS
   `PowerShell` script for installing [`git-extras`](https://github.com/tj/git-extras) utilities.
