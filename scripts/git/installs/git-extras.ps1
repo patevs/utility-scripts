@@ -3,31 +3,45 @@
 # scripts/git/installs/git-extras.ps1 #
 # ----------------------------------- #
 
+TODO:
+  * Allow for passing of git location as an argument.
+  * Tidy up the script.
+
 .SYNOPSIS
-  PowerShell script used to install git-extras utilities.
+  PowerShell script used to install `git-extras` utilities.
+  Requires `git` to be installed.
+
+  * https://github.com/tj/git-extras
+
 
 .DESCRIPTION
-  Ensures git is installed then finds the git executable
-  location (first path in where git.exe wins) on disk.
-  Finally clones the git-extras repository and runs the
-  provided install.cmd script.
+  1. Ensure `git` is installed and attempts to find the executable
+      location (first path in where git.exe wins) on disk.
 
-  Please note that this script requires the PSWriteColor module
-  which will be installed if not already.
+  2. Clone the `git-extras` repository, set location to cloned repository,
+      then run the provided install.cmd script.
 
-    https://www.powershellgallery.com/packages/PSWriteColor
-    https://github.com/EvotecIT/PSWriteColor
+  3. Delete the `git-extras` repository as it is no longer needed.
+
+  Note:
+    This script requires the `PSWriteColor` module which will be installed.
+
+    * https://www.powershellgallery.com/packages/PSWriteColor
+    * https://github.com/EvotecIT/PSWriteColor
 
 .EXAMPLE
   .\git-extras.ps1
 
 .NOTES
   File Name: git-extras.ps1
-  Author: PatEvs
-  Last Edit: 24/03/2020
+  Author: PatEvs (https://github.com/patevs)
+  Last Edit: 28/03/2020
 
 .LINK
-  https://github.com/tj/git-extras
+  Repository:
+    * https://github.com/patevs/utility-scripts
+  Script:
+    * https://github.com/patevs/utility-scripts/blob/master/scripts/git/installs/git-extras.ps1
 #>
 
 # ---------------- #
@@ -47,6 +61,8 @@ Function ExistsCommand($cmdName) {
 }
 
 # ------------------------------------------------------------------------------------------- #
+
+# TODO: Tidy up these functions
 
 Function InstallGitExtras {
   # Firstly we verify git is installed
