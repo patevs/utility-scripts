@@ -71,7 +71,7 @@ if (-Not (ExistsModule PSWriteColor)) {
 Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
-# Next we verify NodeJS and NPM are installed.
+# Verify NodeJS and NPM are installed
 Write-Color " `n Verifying ", "NodeJS", " and ", "NPM", " Installations... `n" -C White, Cyan, White, Cyan, White
 
 # NodeJS
