@@ -67,7 +67,7 @@ if (-Not (ExistsModule PSWriteColor)) {
 Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
-# Verify Git is installed
+# Verify git is installed
 Write-Color " `n Verifying ", "Git", " Installation... `n" -C White, Cyan, White
 
 # Verify if git executable is at default location
@@ -78,14 +78,24 @@ if (-Not (Test-Path $gitPath)) {
 }
 
 if (ExistsCommand git) {
-  $gitVersion = Invoke-Expression "git --version"
-  Write-Color "+--------+----------+" -StartSpace 4
-  Write-Color "|", "  Git   ", "|", " $gitVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+--------+----------+" -StartSpace 4
+  $gitVersionLong = Invoke-Expression "$gitPath\bin\git.exe --version"
+  $gitVersion = $gitVersionLong -replace "git version "
+  Write-Color "+-------+------------------+" -StartSpace 4
+  Write-Color "|", "  Git  ", "|", " $gitVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------+------------------+" -StartSpace 4
+  # Verify if hub is installed
+  $hubPath = Invoke-Expression "scoop prefix hub"
+  if (ExistsCommand hub) {
+    $hubVersion = Invoke-Expression "$hubPath\bin\hub.exe version"
+    $hubVersion = $hubVersion -replace "$gitVersionLong"
+    $hubVersion = $hubVersion -replace "hub version "
+    Write-Color "|", "  Hub  ", "|", "$hubVersion ", "          |" -C White, Cyan, White, Green, White -StartSpace 4
+    Write-Color "+-------+------------------+" -StartSpace 4
+  }
 } else {
   Write-Color "Git", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
-  exit
+  EXIT
 }
 
 # Begin install
