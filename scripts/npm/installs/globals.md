@@ -144,3 +144,22 @@
 * [`is-website-vulnerable`](https://github.com/lirantal/is-website-vulnerable)
 
 ---
+
+## System Utilities
+
+* [`del-cli`](https://github.com/sindresorhus/del-cli)
+* [`empty-trash-cli`](https://github.com/sindresorhus/empty-trash-cli)
+* [`fkill-cli`](https://github.com/sindresorhus/fkill-cli)
+* [`google-font-installer`](https://github.com/lordgiotto/google-font-installer)
+* [`gtop`](https://github.com/aksakalli/gtop)
+* [`open-cli`](https://github.com/sindresorhus/open-cli)
+* [`pageres-cli`](https://github.com/sindresorhus/pageres-cli)
+* [`screensaver`](https://github.com/gillstrom/screensaver)
+* [`share-cli`](https://github.com/marionebl/share-cli)
+* [`trash-cli`](https://github.com/sindresorhus/trash-cli)
+* [`vtop`](https://github.com/MrRio/vtop) : Note - Must be run using `bash`. try `gtop` instead.
+* [`wifi-password-cli`](https://github.com/kevva/wifi-password-cli)
+
+---
+
+---
