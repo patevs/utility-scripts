@@ -33,7 +33,6 @@ TODO:
   Last Edit: 28/03/2020
 
 .LINK
-  https://github.com/patevs/utility-scripts
   Repository:
     * https://github.com/patevs/utility-scripts
   Script:
