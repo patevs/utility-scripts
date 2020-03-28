@@ -198,3 +198,16 @@
 * [`yarn`](https://github.com/yarnpkg/yarn)
 
 ---
+
+## Miscellaneous
+
+* [`corona-cli`](https://github.com/ahmadawais/corona-cli)
+* [`iponmap`](https://github.com/nogizhopaboroda/iponmap)
+* [`learnyoubash`](https://github.com/denysdovhan/learnyoubash)
+* [`movie-cli`](https://github.com/mayankchd/movie)
+* [`nasa-cli`](https://github.com/xxczaki/nasa-cli)
+* [`weather-cli`](https://github.com/riyadhalnur/weather-cli)
+* [`webtorrent-cli`](https://github.com/webtorrent/webtorrent-cli)
+* [`whereami`](https://github.com/rafaelrinaldi/whereami)
+
+---
