@@ -13,8 +13,7 @@ TODO:
   1. Ensure `git` is installed and attempts to find the executable
       location (first path in where git.exe wins) on disk.
 
-  2. Clone the `git-extras` repository, set location to cloned repository,
-      then run the provided install.cmd script.
+  2. Clone the `git-extras` repository and run the provided install.cmd script.
 
   3. Delete the `git-extras` repository as it is no longer needed.
 
@@ -91,6 +90,14 @@ if (-Not (Test-Path $gitPath)) {
   # Attempt to find the path using scoop
   $gitPath = Invoke-Expression "scoop prefix git"
 }
+
+# Clone the git-extras repository
+Write-Color "`n Cloning git-extras repository... `n"  -C Green
+Invoke-Expression "git clone https://github.com/tj/git-extras.git"
+
+# Run the install script
+Write-Host "`n Running git-extras install script... `n"  -ForegroundColor Green
+
 
 # TODO: Tidy up these functions
 
