@@ -81,6 +81,17 @@ if (ExistsCommand git) {
   exit
 }
 
+# Begin install
+Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
+Write-Color "Installing Git-Extras Utilities..." -StartSpaces 4
+
+# Verify if git executable is at default location
+$gitPath = "$env:ProgramFiles\Git"
+if (-Not (Test-Path $gitPath)) {
+  # Attempt to find the path using scoop
+  $gitPath = Invoke-Expression "scoop prefix git"
+}
+
 # TODO: Tidy up these functions
 
 Function InstallGitExtras {
@@ -125,8 +136,8 @@ Function Setup {
   # Clear-Host
 }
 
-Setup
-InstallGitExtras
+# Setup
+# InstallGitExtras
 
 # ------------------------------------------------------------------------------------------- #
 
