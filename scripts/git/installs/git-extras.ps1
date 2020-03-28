@@ -53,6 +53,20 @@ Function ExistsCommand($cmdName) {
 
 # ------------------------------------------------------------------------------------------- #
 
+# Print a welcome message
+Write-Host ""
+Write-Host " Git-Utilities Install Script " -BackgroundColor Magenta -ForegroundColor Black
+
+# Verify if PSWriteColor module is installed
+if (-Not (ExistsModule PSWriteColor)) {
+  Write-Host "`n PSWriteColor module is not installed. " -NoNewline
+  Write-Host "Installing Now... " -ForegroundColor Green -NoNewline
+  Install-Module -Name PSWriteColor
+  Write-Host " Done " -BackgroundColor Green -ForegroundColor Black
+}
+Import-Module PSWriteColor
+# Uninstall-Module PSWriteColor
+
 # TODO: Tidy up these functions
 
 Function InstallGitExtras {
