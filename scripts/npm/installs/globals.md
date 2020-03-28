@@ -2,6 +2,8 @@
 
 > A collection of various useful `NPM` global modules.
 
+**TODO:** Add description to each module.
+
 ---
 
 ## Linting and Style Checking
@@ -78,26 +80,26 @@
 * [`destiny`](https://github.com/benawad/destiny)
 * [`devion`](https://github.com/alchaplinsky/devion)
 * [`doctoc`](https://github.com/thlorenz/doctoc)
-* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) : Requires `rsvg-convert` to be installed.
+* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) : Note - Requires `rsvg-convert` to be installed.
 * [`foy`](https://github.com/zaaack/foy)
 * [`gatsby`](https://github.com/gatsbyjs/gatsby)
 * [`gitbook`](https://github.com/GitbookIO/gitbook)
 * [`good-first-issue`](https://github.com/cutenode/good-first-issue)
 * [`html-minifier`](https://github.com/kangax/html-minifier)
-* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image minifier
+* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image minifier.
 * [`Jsome`](https://github.com/Javascipt/Jsome)
-* [`licensed`](https://github.com/plibither8/licensed) : License generator
+* [`licensed`](https://github.com/plibither8/licensed) : License generator.
 * [`loadtest`](https://github.com/alexfernandez/loadtest)
 * [`localtunnel`](https://github.com/localtunnel/localtunnel)
-* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Note - Requires `bash` - Try `licensed` instead
+* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Note - Requires `bash` - Try `licensed` instead.
 * [`neovim/node-client`](https://github.com/neovim/node-client)
 * [`node-passgen-cli`](https://github.com/jhotmann/node-passgen-cli)
 * [`project-explorer`](https://github.com/sdras/project-explorer)
 * [`release-it`](https://github.com/release-it/release-it)
 * [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli)
 * [`semantic-release`](https://github.com/semantic-release/semantic-release)
-* [`spaceholder`](https://github.com/ecrmnn/spaceholder) : Placeholder image generator
-* [`svgo`](https://github.com/svg/svgo) : SVG Optimizer
+* [`spaceholder`](https://github.com/ecrmnn/spaceholder) : Placeholder image generator.
+* [`svgo`](https://github.com/svg/svgo) : SVG Optimizer.
 * [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io)
 * [`stacks-cli`](https://github.com/WeiChiaChang/stacks-cli)
 * [`strapi`](https://github.com/strapi/strapi)
@@ -107,5 +109,107 @@
 * [`underscore-cli`](https://github.com/ddopson/underscore-cli)
 * [`viewport-list-cli`](https://github.com/kevva/viewport-list-cli)
 * [`yuglify`](https://github.com/yui/yuglify)
+
+---
+
+## Mobile Development Utilities
+
+* [`mobicon-cli`](https://github.com/SamVerschueren/mobicon-cli) : Note - Requires `GraphicsMagick` to be installed.
+* [`mobisplash-cli`](https://github.com/SamVerschueren/mobisplash-cli)
+* [`start-android-emulator`](https://github.com/wswebcreation/start-android-emulator)
+
+---
+
+## React Development Utilities
+
+* [`create-react-app`](https://github.com/facebook/create-react-app)
+* [`generact`](https://github.com/diegohaz/generact)
+
+---
+
+## React Native Development Utilities
+
+* [`reactxp`](https://github.com/microsoft/reactxp)
+* [`ignite`](https://github.com/infinitered/ignite)
+* [`react-native-cli`](https://github.com/react-native-community/cli)
+* [`react-native-rename`](https://github.com/junedomingo/react-native-rename)
+* [`rnpm`](https://github.com/rnpm/rnpm)
+* [`rsx`](https://github.com/react-native-contrib/rsx)
+
+---
+
+## Security Utilities
+
+* [`lighthouse`](https://github.com/GoogleChrome/lighthouse/) : Google's website performance test.
+* [`lighthouse-security`](https://github.com/voorhoede/lighthouse-security)
+* [`pwmetrics`](https://github.com/paulirish/pwmetrics) : Progressive web metrics.
+* [`is-website-vulnerable`](https://github.com/lirantal/is-website-vulnerable)
+
+---
+
+## System Utilities
+
+* [`del-cli`](https://github.com/sindresorhus/del-cli)
+* [`empty-trash-cli`](https://github.com/sindresorhus/empty-trash-cli)
+* [`fkill-cli`](https://github.com/sindresorhus/fkill-cli)
+* [`google-font-installer`](https://github.com/lordgiotto/google-font-installer)
+* [`gtop`](https://github.com/aksakalli/gtop)
+* [`open-cli`](https://github.com/sindresorhus/open-cli)
+* [`pageres-cli`](https://github.com/sindresorhus/pageres-cli)
+* [`screensaver`](https://github.com/gillstrom/screensaver)
+* [`share-cli`](https://github.com/marionebl/share-cli)
+* [`trash-cli`](https://github.com/sindresorhus/trash-cli)
+* [`vtop`](https://github.com/MrRio/vtop) : Note - Must be run using `bash`. try `gtop` instead.
+* [`wifi-password-cli`](https://github.com/kevva/wifi-password-cli)
+
+---
+
+## Yeoman and Generators
+
+* [`yo`](https://github.com/yeoman/yo)
+
+[](.)
+
+* [`generator-aspnet`](https://github.com/OmniSharp/generator-aspnet) : Note - Requires `bower` to be installed.
+
+[](.)
+
+* [`generator-h5bp`](https://github.com/h5bp/generator-h5bp)
+* [`generator-webapp`](https://github.com/yeoman/generator-webapp)
+
+[](.)
+
+* [`generator-nm`](https://github.com/sindresorhus/generator-nm): Ava & Codecov
+* [`generator-node`](https://github.com/yeoman/generator-node) : Jest & Coveralls
+
+[](.)
+
+* [`generator-node-typescript`](https://github.com/ospatil/generator-node-typescript) : Jest
+* [`generator-typescript-starter`](https://github.com/phunguyen19/generator-typescript-starter) : Ava
+
+[](.)
+
+* [`generator-rn-toolbox`](https://github.com/bamlab/generator-rn-toolbox) : React Native
+
+---
+
+## Alternate Package Managers
+
+* [`ied`](https://github.com/alexanderGugel/ied)
+* [`pnpm`](https://github.com/pnpm/pnpm)
+* [`yarn`](https://github.com/yarnpkg/yarn)
+
+---
+
+## Miscellaneous
+
+* [`corona-cli`](https://github.com/ahmadawais/corona-cli)
+* [`iponmap`](https://github.com/nogizhopaboroda/iponmap)
+* [`learnyoubash`](https://github.com/denysdovhan/learnyoubash)
+* [`movie-cli`](https://github.com/mayankchd/movie)
+* [`nasa-cli`](https://github.com/xxczaki/nasa-cli)
+* [`weather-cli`](https://github.com/riyadhalnur/weather-cli)
+* [`webtorrent-cli`](https://github.com/webtorrent/webtorrent-cli)
+* [`whereami`](https://github.com/rafaelrinaldi/whereami)
 
 ---
