@@ -2,7 +2,6 @@
 
 TODO:
   * Allow for passing of git location as an argument.
-  * Tidy up the script.
   * Add option to allow for uninstall
 
 .SYNOPSIS
@@ -100,68 +99,23 @@ if (ExistsCommand git) {
 
 # Begin install
 Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
-Write-Color "Installing ", "git-extras", " Utilities..." -C White, Green, White -StartSpaces 4
+# Write-Color "Installing ", "git-extras", " Utilities..." -C White, Green, White -StartSpaces 2
 
 # Clone the git-extras repository
-Write-Color "`n Cloning git-extras repository... `n" -C White, Green, White
+Write-Color "Cloning ", "git-extras", " repository...`n" -C White, Green, White -StartSpaces 2
 Invoke-Expression "git clone https://github.com/tj/git-extras.git"
 
 # Run the install script
-Write-Color "`n Running ", "git-extras", " install script... `n" -C White, Green, White
+Write-Color ""
+Write-Color "`Running ", "git-extras", " install script...`n" -C White, Green, White -StartSpaces 2
 
 # Invoke-Expression "git-extras\install.cmd $gitLocation"
 git-extras\install.cmd $gitPath
 
 # Lastly, remove the `git-extras` repository
 Remove-Item -Recurse -Force "git-extras"
-Write-Color "`n DONE! " -C Green
-
-# TODO: Tidy up these functions
-
-Function InstallGitExtras {
-  # Firstly we verify git is installed
-  if (ExistsCommand git){
-    Write-Host "`n Installing git-extras utilities..."  -ForegroundColor Green
-    # Get git executable location
-    # Default Git location:
-    $gitPath = "$env:ProgramFiles\Git"
-    # Test if path exists
-    if (-Not (Test-Path $gitPath)) {
-      # Attempt to find the path using scoop
-      $gitPath = Invoke-Expression "scoop prefix git"
-    }
-    # Clone the repository
-    Write-Host "`n Cloning git-extras repository... `n"  -ForegroundColor Green
-    Invoke-Expression "git clone https://github.com/tj/git-extras.git"
-    # Run the install script
-    Write-Host "`n Running git-extras install script... `n"  -ForegroundColor Green
-    # Invoke-Expression "git-extras\install.cmd $gitLocation"
-    git-extras\install.cmd $gitPath
-    # Finally remove the git-extras repository
-    Remove-Item -Recurse -Force "git-extras"
-    Write-Host "`n DONE!"  -ForegroundColor Green
-  } else {
-    Write-Host "`n Git installation could not be found!" -NoNewline
-    Write-Host " Exiting!" -ForegroundColor red
-  }
-} #end function Install-Git-Extras
-
-Function Setup {
-  # Print a welcome message
-  Write-Host ""
-  Write-Host " Git Extras Utility Install Script " -BackgroundColor Green -ForegroundColor Black
-  # Firstly we verify if the PSWriteColor module is installed
-  if (-Not (ExistsModule PSWriteColor)) {
-    Write-Host "`n PSWriteColor module is not installed. Installing now..."
-    Install-Module -Name PSWriteColor
-  }
-  # Now we can import the PSWriteColor module
-  Import-Module PSWriteColor
-  # Clear-Host
-}
-
-# Setup
-# InstallGitExtras
+Write-Color ""
+Write-Color " DONE " -B DarkGreen -C White -StartSpaces 2
 
 # ------------------------------------------------------------------------------------------- #
 
