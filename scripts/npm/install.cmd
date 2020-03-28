@@ -128,6 +128,8 @@ CALL npm install --global lockfile-lint
 :: CALL npm install --global npkill
 :: # https://github.com/tclindner/npm-package-json-lint
 CALL npm install --global npm-package-json-lint
+:: # https://github.com/felixrieseberg/npm-windows-upgrade
+CALL npm install --global --production npm-windows-upgrade
 :: # https://github.com/npms-io/npms-cli
 :: CALL npm install --global npms-cli
 :: # https://github.com/gorillamania/package.json-validator
@@ -209,7 +211,7 @@ CALL npm install --global licensed
 CALL npm install --global neovim
 :: # https://github.com/jhotmann/node-passgen-cli
 :: CALL npm install --global passgen-cli
-:: https://github.com/sdras/project-explorer
+:: # https://github.com/sdras/project-explorer
 :: Note: requires yarn to be installed
 :: CALL npm install --global project-explorer
 :: # https://github.com/release-it/release-it
@@ -392,6 +394,8 @@ CALL npm install --global yarn
 
 :: # https://github.com/rafaelrinaldi/whereami
 :: CALL npm install --global @rafaelrinaldi/whereami
+:: # https://github.com/ahmadawais/corona-cli
+CALL npm install --global corona-cli
 :: # https://github.com/nogizhopaboroda/iponmap
 :: CALL npm install --global iponmap
 :: # https://github.com/denysdovhan/learnyoubash
