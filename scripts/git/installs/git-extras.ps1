@@ -67,6 +67,20 @@ if (-Not (ExistsModule PSWriteColor)) {
 Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
+# Verify Git is installed
+Write-Color " `n Verifying ", "Git", " Installation... `n" -C White, Cyan, White
+
+if (ExistsCommand git) {
+  $gitVersion = Invoke-Expression "git --version"
+  Write-Color "+--------+----------+" -StartSpace 4
+  Write-Color "|", " Git ", "|", " $gitVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+--------+----------+" -StartSpace 4
+} else {
+  Write-Color "Git", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color " Exiting " -B Red
+  exit
+}
+
 # TODO: Tidy up these functions
 
 Function InstallGitExtras {
