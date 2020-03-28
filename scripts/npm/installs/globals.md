@@ -109,3 +109,38 @@
 * [`yuglify`](https://github.com/yui/yuglify)
 
 ---
+
+## Mobile Development Utilities
+
+* [`mobicon-cli`](https://github.com/SamVerschueren/mobicon-cli) : Note - Requires `GraphicsMagick` to be installed.
+* [`mobisplash-cli`](https://github.com/SamVerschueren/mobisplash-cli)
+* [`start-android-emulator`](https://github.com/wswebcreation/start-android-emulator)
+
+---
+
+## React Development Utilities
+
+* [`create-react-app`](https://github.com/facebook/create-react-app)
+* [`generact`](https://github.com/diegohaz/generact)
+
+---
+
+## React Native Development Utilities
+
+* [`reactxp`](https://github.com/microsoft/reactxp)
+* [`ignite`](https://github.com/infinitered/ignite)
+* [`react-native-cli`](https://github.com/react-native-community/cli)
+* [`react-native-rename`](https://github.com/junedomingo/react-native-rename)
+* [`rnpm`](https://github.com/rnpm/rnpm)
+* [`rsx`](https://github.com/react-native-contrib/rsx)
+
+---
+
+## Security Utilities
+
+* [`lighthouse`](https://github.com/GoogleChrome/lighthouse/) : Google's website performance test.
+* [`lighthouse-security`](https://github.com/voorhoede/lighthouse-security)
+* [`pwmetrics`](https://github.com/paulirish/pwmetrics) : Progressive web metrics.
+* [`is-website-vulnerable`](https://github.com/lirantal/is-website-vulnerable)
+
+---
