@@ -394,6 +394,8 @@ CALL npm install --global yarn
 
 :: # https://github.com/rafaelrinaldi/whereami
 :: CALL npm install --global @rafaelrinaldi/whereami
+:: # https://github.com/ahmadawais/corona-cli
+CALL npm install --global corona-cli
 :: # https://github.com/nogizhopaboroda/iponmap
 :: CALL npm install --global iponmap
 :: # https://github.com/denysdovhan/learnyoubash
