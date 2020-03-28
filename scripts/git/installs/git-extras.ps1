@@ -93,12 +93,18 @@ if (-Not (Test-Path $gitPath)) {
 }
 
 # Clone the git-extras repository
-Write-Color "`n Cloning git-extras repository... `n"  -C Green
+Write-Color "`n Cloning git-extras repository... `n" -C White, Green, White
 Invoke-Expression "git clone https://github.com/tj/git-extras.git"
 
 # Run the install script
-Write-Host "`n Running git-extras install script... `n"  -ForegroundColor Green
+Write-Host "`n Running ", "git-extras", " install script... `n" -C White, Green, White
 
+# Invoke-Expression "git-extras\install.cmd $gitLocation"
+git-extras\install.cmd $gitPath
+
+# Lastly, remove the `git-extras` repository
+Remove-Item -Recurse -Force "git-extras"
+Write-Color "`n DONE! " -C Green
 
 # TODO: Tidy up these functions
 
