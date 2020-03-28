@@ -162,4 +162,31 @@
 
 ---
 
+## Yeoman and Generators
+
+* [`yo`](https://github.com/yeoman/yo)
+
+[](.)
+
+* [`generator-aspnet`](https://github.com/OmniSharp/generator-aspnet) : Note - Requires `bower` to be installed.
+
+[](.)
+
+* [`generator-h5bp`](https://github.com/h5bp/generator-h5bp)
+* [`generator-webapp`](https://github.com/yeoman/generator-webapp)
+
+[](.)
+
+* [`generator-nm`](https://github.com/sindresorhus/generator-nm): Ava & Codecov
+* [`generator-node`](https://github.com/yeoman/generator-node) : Jest & Coveralls
+
+[](.)
+
+* [`generator-node-typescript`](https://github.com/ospatil/generator-node-typescript) : Jest
+* [`generator-typescript-starter`](https://github.com/phunguyen19/generator-typescript-starter) : Ava
+
+[](.)
+
+* [`generator-rn-toolbox`](https://github.com/bamlab/generator-rn-toolbox) : React Native
+
 ---
