@@ -132,7 +132,7 @@ CALL npm install --global npm-package-json-lint
 :: # https://github.com/felixrieseberg/npm-windows-upgrade
 CALL npm install --global --production npm-windows-upgrade
 :: # https://github.com/npms-io/npms-cli
-:: CALL npm install --global npms-cli
+CALL npm install --global npms-cli
 :: # https://github.com/gorillamania/package.json-validator
 CALL npm install --global package-json-validator
 :: # https://github.com/zeke/package-json-to-readme
