@@ -141,6 +141,7 @@ CALL npm install --global package-json-validator
 :: CALL npm install --global package-json-to-readme
 :: # https://github.com/Unitech/pm2
 :: CALL npm install --global pm2
+CALL npm install --global shrinkpack
 :: # https://github.com/silverwind/updates
 :: CALL npm install --global updates
 :: # https://github.com/felixrieseberg/windows-build-tools
