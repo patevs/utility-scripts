@@ -50,12 +50,16 @@
 * [`np`](https://github.com/sindresorhus/np)
 * [`npe`](https://github.com/zeke/npe)
 * [`npkill`](https://github.com/voidcosmos/npkill)
+* [`npm-cache`](https://github.com/swarajban/npm-cache) : Cache (npm | bower | composer | jspm) installs.
+* [`npm-install-peers`](https://github.com/spatie/npm-install-peers) : CLI command to install npm peerDependencies.
 * [`npm-package-json-lint`](https://github.com/tclindner/npm-package-json-lint)
 * [`npm-windows-upgrade`](https://github.com/felixrieseberg/npm-windows-upgrade) : Note - Must be run from an elevated prompt.
+* [`npminstall`](https://github.com/cnpm/npminstall) : Make `npm install` fast and easy.
 * [`npms-cli`](https://github.com/npms-io/npms-cli)
 * [`package.json-validator`](https://github.com/gorillamania/package.json-validator)
 * [`package-json-to-readme`](https://github.com/zeke/package-json-to-readme)
 * [`pm2`](https://github.com/Unitech/pm2)
+* [`shrinkpack`](https://github.com/JamieMason/shrinkpack) : Fast, resilient, reproducible builds with npm install.
 * [`updates`](https://github.com/silverwind/updates)
 * [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) : Note - Must be run from an elevated prompt.
 * [`wipe-modules`](https://github.com/bntzio/wipe-modules)

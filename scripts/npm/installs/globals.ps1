@@ -105,7 +105,11 @@ Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C Whi
 # Invoke-Expression "npm install --global npm"
 # Write-Color " `n Done" -C Green
 
-Write-Color "Installing NPM Global Modules..." -StartSpaces 4
+# $nodeGlobals = Invoke-Expression "npm list --global --depth=0"
+
+Write-Color " Existing NPM Globals `n $nodeGlobals"
+
+# Write-Color "Installing NPM Global Modules..." -StartSpaces 4
 
 # ------------------------------------------------------------------------------------------- #
 
