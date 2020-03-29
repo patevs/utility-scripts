@@ -50,6 +50,7 @@
 * [`np`](https://github.com/sindresorhus/np)
 * [`npe`](https://github.com/zeke/npe)
 * [`npkill`](https://github.com/voidcosmos/npkill)
+* [`npm-cache`](https://github.com/swarajban/npm-cache) : Cache (npm | bower | composer | jspm) installs.
 * [`npm-package-json-lint`](https://github.com/tclindner/npm-package-json-lint)
 * [`npm-windows-upgrade`](https://github.com/felixrieseberg/npm-windows-upgrade) : Note - Must be run from an elevated prompt.
 * [`npminstall`](https://github.com/cnpm/npminstall) : Make `npm install` fast and easy.
