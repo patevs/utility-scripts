@@ -58,6 +58,7 @@
 * [`package.json-validator`](https://github.com/gorillamania/package.json-validator)
 * [`package-json-to-readme`](https://github.com/zeke/package-json-to-readme)
 * [`pm2`](https://github.com/Unitech/pm2)
+* [`shrinkpack`](https://github.com/JamieMason/shrinkpack) : Fast, resilient, reproducible builds with npm install.
 * [`updates`](https://github.com/silverwind/updates)
 * [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) : Note - Must be run from an elevated prompt.
 * [`wipe-modules`](https://github.com/bntzio/wipe-modules)
