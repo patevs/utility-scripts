@@ -52,6 +52,7 @@
 * [`npkill`](https://github.com/voidcosmos/npkill)
 * [`npm-package-json-lint`](https://github.com/tclindner/npm-package-json-lint)
 * [`npm-windows-upgrade`](https://github.com/felixrieseberg/npm-windows-upgrade) : Note - Must be run from an elevated prompt.
+* [`npminstall`](https://github.com/cnpm/npminstall) : Make `npm install` fast and easy.
 * [`npms-cli`](https://github.com/npms-io/npms-cli)
 * [`package.json-validator`](https://github.com/gorillamania/package.json-validator)
 * [`package-json-to-readme`](https://github.com/zeke/package-json-to-readme)
