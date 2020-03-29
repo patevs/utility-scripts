@@ -132,6 +132,7 @@ CALL npm install --global npm-install-peers
 CALL npm install --global npm-package-json-lint
 :: # https://github.com/felixrieseberg/npm-windows-upgrade
 CALL npm install --global --production npm-windows-upgrade
+CALL npm install --global npminstall
 :: # https://github.com/npms-io/npms-cli
 CALL npm install --global npms-cli
 :: # https://github.com/gorillamania/package.json-validator
