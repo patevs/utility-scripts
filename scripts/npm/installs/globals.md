@@ -34,6 +34,7 @@
 
 * [`cost-of-modules`](https://github.com/siddharthkp/cost-of-modules)
 * [`david`](https://github.com/alanshaw/david)
+* [`depcheck`](https://github.com/depcheck/depcheck) : Check your npm module for unused dependencies.
 * [`dependency-check`](https://github.com/dependency-check-team/dependency-check)
 * [`npm-audit-helper`](https://github.com/rouanw/npm-audit-helper)
 * [`npm-check`](https://github.com/dylang/npm-check)
