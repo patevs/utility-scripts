@@ -150,6 +150,15 @@ Invoke-Expression "pip install spotdl"
 # Install YouTube Music Downloader
 Invoke-Expression "pip install ytmdl"
 
+# Install mps-youtube
+Invoke-Expression "pip install mps-youtube"
+
+# Install Beets
+Invoke-Expression "pip install beets"
+
+Write-Color ""
+Write-Color " DONE " -B DarkGreen -C White -StartSpaces 2
+
 # ------------------------------------------------------------------------------------------- #
 
 # EOF #
