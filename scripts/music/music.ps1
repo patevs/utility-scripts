@@ -104,6 +104,19 @@ if (ExistsCommand ffmpeg) {
   exit
 }
 
+# mpv
+if (ExistsCommand mpv) {
+  $mpvVersion = Invoke-Expression "ffmpeg --version"
+  $mpvVersion = $mpvVersion -replace "mpv "
+  $mpvVersion = $ffmpegVersion.Split(" ")[0]
+  Write-Color "|", " ffmpeg ", "|", " $mpvVersion  ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+--------+--------+" -StartSpace 4
+} else {
+  Write-Color "mpv", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color " Exiting " -B Red
+  exit
+}
+
 exit
 
 # TODO: Ensure mpv is installed
