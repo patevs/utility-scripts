@@ -1,6 +1,8 @@
 # NPM Global Modules
 
-> A collection of various useful `NPM` global modules.
+> A collection of various useful [`NPM`](https://github.com/npm/cli) global modules.
+
+* [NPM Website](https://www.npmjs.com/)
 
 **TODO:** Add description to each module.
 
@@ -8,9 +10,9 @@
 
 ## Linting and Style Checking
 
-* [`eslint`](https://github.com/eslint/eslint)
-* [`jshint`](https://github.com/jshint/jshint)
-* [`prettier`](https://github.com/jshint/jshint)
+* [`eslint`](https://github.com/eslint/eslint) Find and fix problems in your JavaScript code.
+* [`jshint`](https://github.com/jshint/jshint) Detect errors and potential problems in your JavaScript code.
+* [`prettier`](https://github.com/prettier/prettier) An opinionated code formatter.
 
 ---
 
