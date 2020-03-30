@@ -90,12 +90,13 @@ ECHO. & ECHO  [44m Installing NodeJS and NPM Utility Modules: [0m & ECHO.
 
 
 :: # https://github.com/siddharthkp/cost-of-modules
-CALL npm install --global cost-of-modules
+:: CALL npm install --global cost-of-modules
 :: # https://github.com/alanshaw/david
 CALL npm install --global david
-CALL npm install --global depcheck
+:: CALL npm install --global depcheck
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
+CALL npm install --global emma-cli
 :: # https://github.com/rouanw/npm-audit-helper
 :: CALL npm install --global npm-audit-helper
 :: # https://github.com/dylang/npm-check
@@ -113,11 +114,11 @@ CALL npm install --global ntl
 :: # https://github.com/workshopper/how-to-npm
 :: CALL npm install --global how-to-npm
 :: # https://github.com/franciscop/legally
-CALL npm install --global legally
+:: CALL npm install --global legally
 :: # https://github.com/davglass/license-checker
-CALL npm install --global license-checker
+:: CALL npm install --global license-checker
 :: # https://github.com/lirantal/lockfile-lint
-CALL npm install --global lockfile-lint
+:: CALL npm install --global lockfile-lint
 :: # https://github.com/GoogleChromeLabs/ndb
 :: # NOTE: ndb requires windows-build-tools
 :: CALL npm install --global ndb
@@ -127,22 +128,22 @@ CALL npm install --global lockfile-lint
 :: CALL npm install --global npe
 :: # https://github.com/voidcosmos/npkill
 :: CALL npm install --global npkill
-CALL npm install --global npm-cache
-CALL npm install --global npm-install-peers
+:: CALL npm install --global npm-cache
+:: CALL npm install --global npm-install-peers
 :: # https://github.com/tclindner/npm-package-json-lint
-CALL npm install --global npm-package-json-lint
+:: CALL npm install --global npm-package-json-lint
 :: # https://github.com/felixrieseberg/npm-windows-upgrade
 CALL npm install --global --production npm-windows-upgrade
-CALL npm install --global npminstall
+:: CALL npm install --global npminstall
 :: # https://github.com/npms-io/npms-cli
 CALL npm install --global npms-cli
 :: # https://github.com/gorillamania/package.json-validator
-CALL npm install --global package-json-validator
+:: CALL npm install --global package-json-validator
 :: # https://github.com/zeke/package-json-to-readme
 :: CALL npm install --global package-json-to-readme
 :: # https://github.com/Unitech/pm2
 :: CALL npm install --global pm2
-CALL npm install --global shrinkpack
+:: CALL npm install --global shrinkpack
 :: # https://github.com/silverwind/updates
 :: CALL npm install --global updates
 :: # https://github.com/felixrieseberg/windows-build-tools
@@ -186,7 +187,7 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 :: CALL npm install --global doctoc
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
 :: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
-:: CALL npm install --global font-awesome-svg-png
+CALL npm install --global font-awesome-svg-png
 :: # https://github.com/zaaack/foy
 :: CALL npm install --global foy
 :: # https://github.com/gatsbyjs/gatsby
@@ -280,7 +281,7 @@ ECHO. & ECHO  [44m Installing React Native Development Utility Modules: [0m & 
 :: # https://github.com/microsoft/reactxp
 :: CALL npm install --global create-rx-app
 :: # https://github.com/infinitered/ignite
-:: CALL npm install --global ignite-cli
+CALL npm install --global ignite-cli
 :: # https://github.com/react-native-community/cli
 CALL npm install --global react-native-cli
 :: # https://github.com/junedomingo/react-native-rename
@@ -317,7 +318,7 @@ CALL npm install --global del-cli
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
-:: CALL npm install --global fkill-cli
+CALL npm install --global fkill-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
