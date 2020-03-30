@@ -94,6 +94,10 @@ if (ExistsCommand pip) {
 # Begin install
 Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
 
+# Create virtual environment
+Write-Color "Creating Virtual ENvironment... `n" -C White
+Invoke-Command "Python -m venv music-env"
+
 # ------------------------------------------------------------------------------------------- #
 
 # EOF #
