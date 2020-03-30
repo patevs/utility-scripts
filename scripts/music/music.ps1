@@ -91,6 +91,19 @@ if (ExistsCommand pip) {
   exit
 }
 
+# ffmpeg
+if (ExistsCommand ffmpeg) {
+  $ffmpegVersion = Invoke-Expression "pip --version"
+  # $pipVersion = $pipVersion -replace "pip "
+  # $pipVersion = $pipVersion.Split(" ")[0]
+  Write-Color "|", "  ffmpeg   ", "|", " $ffmpegVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+--------+--------+" -StartSpace 4
+} else {
+  Write-Color "ffmpeg", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color " Exiting " -B Red
+  exit
+}
+
 # TODO: Ensure ffmpeg is installed
 # TODO: Ensure mpv is installed
 # TODO: Ensure youtube-dl is installed
