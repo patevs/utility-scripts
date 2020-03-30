@@ -36,6 +36,7 @@
 * [`david`](https://github.com/alanshaw/david)
 * [`depcheck`](https://github.com/depcheck/depcheck) : Check your npm module for unused dependencies.
 * [`dependency-check`](https://github.com/dependency-check-team/dependency-check)
+* [`emma-cli`](https://github.com/maticzav/emma-cli) : Terminal assistant to find and install node packages.
 * [`npm-audit-helper`](https://github.com/rouanw/npm-audit-helper)
 * [`npm-check`](https://github.com/dylang/npm-check)
 * [`npm-check-updates`](https://github.com/tjunnone/npm-check-updates)
