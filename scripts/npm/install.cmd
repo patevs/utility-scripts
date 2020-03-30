@@ -93,6 +93,7 @@ ECHO. & ECHO  [44m Installing NodeJS and NPM Utility Modules: [0m & ECHO.
 CALL npm install --global cost-of-modules
 :: # https://github.com/alanshaw/david
 CALL npm install --global david
+CALL npm install --global depcheck
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
 :: # https://github.com/rouanw/npm-audit-helper
