@@ -117,6 +117,19 @@ if (ExistsCommand mpv) {
   exit
 }
 
+# youtube-dl
+if (ExistsCommand youtube-dl) {
+  $ytdlVersion = Invoke-Expression "youtube-dl --version"
+  # $mpvVersion = $mpvVersion -replace "mpv "
+  # $mpvVersion = $ffmpegVersion.Split(" ")[0]
+  Write-Color "|", " Youtube-dl ", "|", " $ytdlVersion  ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+--------+--------+" -StartSpace 4
+} else {
+  Write-Color "youtube-dl", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color " Exiting " -B Red
+  exit
+}
+
 exit
 
 # TODO: Ensure mpv is installed
