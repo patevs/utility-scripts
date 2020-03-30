@@ -129,6 +129,7 @@ CALL npm install --global ntl
 :: # https://github.com/voidcosmos/npkill
 :: CALL npm install --global npkill
 :: CALL npm install --global npm-cache
+:: CALL npm install --global npm-gui
 :: CALL npm install --global npm-install-peers
 :: # https://github.com/tclindner/npm-package-json-lint
 :: CALL npm install --global npm-package-json-lint
