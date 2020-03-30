@@ -130,12 +130,7 @@ if (ExistsCommand youtube-dl) {
   exit
 }
 
-exit
-
-# TODO: Ensure mpv is installed
-# TODO: Ensure youtube-dl is installed
-
-# Create virtual environment
+# Create a virtual environment
 Write-Color "Creating Virtual Environment... `n" -C White -StartSpaces 2
 Invoke-Expression "python -m venv music-env"
 
