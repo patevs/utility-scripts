@@ -94,23 +94,25 @@ if (ExistsCommand pip) {
 # TODO: Ensure ffmpeg is installed
 # TODO: Ensure mpv is installed
 
-# Begin install
-Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
-
 # Create virtual environment
-Write-Color "Creating Virtual Environment... `n" -C White -StartSpaces 4
+Write-Color "Creating Virtual Environment... `n" -C White -StartSpaces 2
 Invoke-Expression "python -m venv music-env"
 
 # Activate virtual environment
 Invoke-Expression "music-env/Scripts/activate"
 
-# Invoke-Expression "pip list -o"
-
 # Upgrade pip and setuptools
 Invoke-Expression "pip install --upgrade pip"
 Invoke-Expression "pip install --upgrade setuptools"
 
-# Invoke-Expression "pip list -o"
+# Begin install
+Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
+
+# Install spotify-downloader
+Invoke-Expression "pip install spotdl"
+
+# Install YouTube Music Downloader
+Invoke-Expression "pip install ytmdl"
 
 # ------------------------------------------------------------------------------------------- #
 
