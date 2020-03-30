@@ -65,6 +65,7 @@
 * [`pm2`](https://github.com/Unitech/pm2) Node.js Production Process Manager with a built-in Load Balancer.
 * [`shrinkpack`](https://github.com/JamieMason/shrinkpack) Fast, resilient, reproducible builds with npm install.
 * [`updates`](https://github.com/silverwind/updates) Flexible npm dependency update tool.
+* [`updtr`](https://github.com/peerigon/updtr) Update outdated npm modules with zero pain.
 * [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) Install C++ Build Tools for Windows using npm. *Note* - Must be run from an elevated prompt.
 * [`wipe-modules`](https://github.com/bntzio/wipe-modules) Easily remove the node_modules folder of non-active projects.
 * [`ytl`](https://github.com/Muldoser/ytl) Yarn Task List: Interactive cli menu to list/run npm tasks with yarn.
