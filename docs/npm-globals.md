@@ -82,13 +82,13 @@
 
 ## Development Utilities
 
-* [`bower`](https://github.com/bower/bower)
-* [`clog-cli`](https://github.com/kentcdodds/clog-cli)
-* [`node-csvtojson`](https://github.com/Keyang/node-csvtojson)
-* [`destiny`](https://github.com/benawad/destiny)
-* [`devion`](https://github.com/alchaplinsky/devion)
-* [`doctoc`](https://github.com/thlorenz/doctoc)
-* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) : Note - Requires `rsvg-convert` to be installed.
+* [`bower`](https://github.com/bower/bower) A package manager for the web.
+* [`clog-cli`](https://github.com/kentcdodds/clog-cli) An npm distribution of the amazing [clog](https://github.com/clog-tool/clog-cli) tool.
+* [`node-csvtojson`](https://github.com/Keyang/node-csvtojson) Blazing fast and Comprehensive CSV Parser for Node.JS / Browser / Command Line.
+* [`destiny`](https://github.com/benawad/destiny) Prettier for File Structures.
+* [`devion`](https://github.com/alchaplinsky/devion) One Command to Run All your Projects in Development.
+* [`doctoc`](https://github.com/thlorenz/doctoc) Generates table of contents for markdown files inside local git repository.
+* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) Font Awesome split to individual SVG and PNG files of different sizes along with Node.JS based generator. *Note* - Requires [`rsvg-convert`](https://chocolatey.org/packages/rsvg-convert) to be installed.
 * [`foy`](https://github.com/zaaack/foy)
 * [`gatsby`](https://github.com/gatsbyjs/gatsby)
 * [`gitbook`](https://github.com/GitbookIO/gitbook)
