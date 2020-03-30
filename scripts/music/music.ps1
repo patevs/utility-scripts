@@ -106,6 +106,10 @@ Invoke-Expression "music-env/Scripts/activate"
 Invoke-Expression "pip list -o"
 
 # Upgrade pip and setuptools
+Invoke-Expression "pip install --upgrade pip"
+Invoke-Expression "pip install --upgrade setuptools"
+
+Invoke-Expression "pip list -o"
 
 # ------------------------------------------------------------------------------------------- #
 
