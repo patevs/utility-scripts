@@ -1,0 +1,19 @@
+
+# Created by https://www.gitignore.io/api/python
+# Edit at https://www.gitignore.io/?templates=python
+
+### Python ###
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# pyenv
+.python-version
+
+# Virtual environments
+env/
+venv/
+music-env/
+
+# End of https://www.gitignore.io/api/python
