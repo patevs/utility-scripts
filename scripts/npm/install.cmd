@@ -146,6 +146,7 @@ CALL npm install --global npms-cli
 :: CALL npm install --global shrinkpack
 :: # https://github.com/silverwind/updates
 :: CALL npm install --global updates
+:: CALL npm install --global updtr
 :: # https://github.com/felixrieseberg/windows-build-tools
 :: # NOTE: windows-build-tools install must be run in admin prompt
 :: CALL npm install --global windows-build-tools
