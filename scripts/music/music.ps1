@@ -93,6 +93,7 @@ if (ExistsCommand pip) {
 
 # TODO: Ensure ffmpeg is installed
 # TODO: Ensure mpv is installed
+# TODO: Ensure youtube-dl is installed
 
 # Create virtual environment
 Write-Color "Creating Virtual Environment... `n" -C White -StartSpaces 2
