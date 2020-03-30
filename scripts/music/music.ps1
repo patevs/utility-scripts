@@ -120,8 +120,6 @@ if (ExistsCommand mpv) {
 # youtube-dl
 if (ExistsCommand youtube-dl) {
   $ytdlVersion = Invoke-Expression "youtube-dl --version"
-  # $mpvVersion = $mpvVersion -replace "mpv "
-  # $mpvVersion = $ffmpegVersion.Split(" ")[0]
   Write-Color "|", " Youtube-dl ", "|", " $ytdlVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
   Write-Color "+------------+------------+" -StartSpace 4
 } else {
