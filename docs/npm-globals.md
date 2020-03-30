@@ -73,10 +73,10 @@
 
 ## TypeScript Utilities
 
-* [`typed-installed`](https://github.com/xavdid/typed-install)
-* [`TypeScript`](https://github.com/microsoft/TypeScript)
-* [`typescript-started`](https://github.com/bitjson/typescript-starter)
-* [`typesync`](https://github.com/jeffijoe/typesync)
+* [`typed-installed`](https://github.com/xavdid/typed-install) Easily install new packages and their types, every time.
+* [`TypeScript`](https://github.com/microsoft/TypeScript) TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
+* [`typescript-started`](https://github.com/bitjson/typescript-starter) Quickly create and configure a new library or Node.js project.
+* [`typesync`](https://github.com/jeffijoe/typesync) Install missing TypeScript typings for dependencies in your package.json.
 
 ---
 
