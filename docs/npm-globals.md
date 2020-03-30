@@ -34,36 +34,36 @@
 
 ## NodeJS and NPM Utilities
 
-* [`cost-of-modules`](https://github.com/siddharthkp/cost-of-modules)
-* [`david`](https://github.com/alanshaw/david)
-* [`depcheck`](https://github.com/depcheck/depcheck) : Check your npm module for unused dependencies.
-* [`dependency-check`](https://github.com/dependency-check-team/dependency-check)
-* [`emma-cli`](https://github.com/maticzav/emma-cli) : Terminal assistant to find and install node packages.
-* [`npm-audit-helper`](https://github.com/rouanw/npm-audit-helper)
-* [`npm-check`](https://github.com/dylang/npm-check)
-* [`npm-check-updates`](https://github.com/tjunnone/npm-check-updates)
-* [`npm-police`](https://github.com/pksunkara/npm-police)
-* [`npq`](https://github.com/lirantal/npq)
-* [`nti`](https://github.com/sculove/nti)
-* [`ntl`](https://github.com/ruyadorno/ntl)
-* [`how-to-npm`](https://github.com/workshopper/how-to-npm)
-* [`legally`](https://github.com/franciscop/legally)
-* [`license-checker`](https://github.com/davglass/license-checker)
-* [`lockfile-lint`](https://github.com/lirantal/lockfile-lint)
-* [`ndb`](https://github.com/GoogleChromeLabs/ndb) : Note - Requires `windows-build-tools` to be installed.
-* [`np`](https://github.com/sindresorhus/np)
-* [`npe`](https://github.com/zeke/npe)
-* [`npkill`](https://github.com/voidcosmos/npkill)
-* [`npm-cache`](https://github.com/swarajban/npm-cache) : Cache (npm | bower | composer | jspm) installs.
-* [`npm-install-peers`](https://github.com/spatie/npm-install-peers) : CLI command to install npm peerDependencies.
-* [`npm-package-json-lint`](https://github.com/tclindner/npm-package-json-lint)
-* [`npm-windows-upgrade`](https://github.com/felixrieseberg/npm-windows-upgrade) : Note - Must be run from an elevated prompt.
+* [`cost-of-modules`](https://github.com/siddharthkp/cost-of-modules) Find out which of your dependencies are slowing you down.
+* [`david`](https://github.com/alanshaw/david) Tells you when your package npm dependencies are out of date.
+* [`depcheck`](https://github.com/depcheck/depcheck) Check your npm module for unused dependencies.
+* [`dependency-check`](https://github.com/dependency-check-team/dependency-check) Checks which modules you have used in your code and then makes sure they are listed as dependencies.
+* [`emma-cli`](https://github.com/maticzav/emma-cli) Terminal assistant to find and install node packages.
+* [`npm-audit-helper`](https://github.com/rouanw/npm-audit-helper) Helps you understand and work through npm audit results.
+* [`npm-check`](https://github.com/dylang/npm-check) Check for outdated, incorrect, and unused dependencies.
+* [`npm-check-updates`](https://github.com/tjunnone/npm-check-updates) Find newer versions of package dependencies than what your package.json or bower.json allows.
+* [`npm-police`](https://github.com/pksunkara/npm-police) A module dependency version policing tool.
+* [`npq`](https://github.com/lirantal/npq) Safely* install packages with npm/yarn by auditing them as part of your install process.
+* [`nti`](https://github.com/sculove/nti) Npm Task Info: Interactive cli menu shown description to list/run npm tasks.
+* [`ntl`](https://github.com/ruyadorno/ntl) Node Task List: Interactive cli to list and run package.json scripts.
+* [`how-to-npm`](https://github.com/workshopper/how-to-npm) A module to teach you how to module.
+* [`legally`](https://github.com/franciscop/legally) Check the licenses for the NPM packages that you use.
+* [`license-checker`](https://github.com/davglass/license-checker) Check NPM package licenses
+* [`lockfile-lint`](https://github.com/lirantal/lockfile-lint) Lint an npm or yarn lockfile to analyze and detect security issues.
+* [`ndb`](https://github.com/GoogleChromeLabs/ndb) An improved debugging experience for Node.js, enabled by Chrome DevTools. *Note* - Requires [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) to be installed.
+* [`np`](https://github.com/sindresorhus/np) A better `npm publish`.
+* [`npe`](https://github.com/zeke/npe) Node Package Editor: a CLI for one-off inspection and editing of properties in package.json files.
+* [`npkill`](https://github.com/voidcosmos/npkill) Easily find and remove old and heavy node_modules folders.
+* [`npm-cache`](https://github.com/swarajban/npm-cache) Cache (npm | bower | composer | jspm) installs.
+* [`npm-install-peers`](https://github.com/spatie/npm-install-peers) CLI command to install npm peerDependencies.
+* [`npm-package-json-lint`](https://github.com/tclindner/npm-package-json-lint) Configurable linter for package.json files.
+* [`npm-windows-upgrade`](https://github.com/felixrieseberg/npm-windows-upgrade) Upgrade npm on Windows. *Note* - Must be run from an elevated prompt.
 * [`npminstall`](https://github.com/cnpm/npminstall) : Make `npm install` fast and easy.
-* [`npms-cli`](https://github.com/npms-io/npms-cli)
-* [`package.json-validator`](https://github.com/gorillamania/package.json-validator)
-* [`package-json-to-readme`](https://github.com/zeke/package-json-to-readme)
-* [`pm2`](https://github.com/Unitech/pm2)
-* [`shrinkpack`](https://github.com/JamieMason/shrinkpack) : Fast, resilient, reproducible builds with npm install.
+* [`npms-cli`](https://github.com/npms-io/npms-cli) Search [npms.io](https://npms.io/) from the command line.
+* [`package.json-validator`](https://github.com/gorillamania/package.json-validator) A tool for validating package.json files.
+* [`package-json-to-readme`](https://github.com/zeke/package-json-to-readme) Generate README.md from package.json contents.
+* [`pm2`](https://github.com/Unitech/pm2) Node.js Production Process Manager with a built-in Load Balancer.
+* [`shrinkpack`](https://github.com/JamieMason/shrinkpack) Fast, resilient, reproducible builds with npm install.
 * [`updates`](https://github.com/silverwind/updates)
 * [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) : Note - Must be run from an elevated prompt.
 * [`wipe-modules`](https://github.com/bntzio/wipe-modules)
