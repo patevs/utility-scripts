@@ -91,6 +91,8 @@ if (ExistsCommand pip) {
   exit
 }
 
+# TODO: Ensure ffmpeg is installed
+
 # Begin install
 Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
 
