@@ -55,6 +55,7 @@
 * [`npe`](https://github.com/zeke/npe) Node Package Editor: a CLI for one-off inspection and editing of properties in package.json files.
 * [`npkill`](https://github.com/voidcosmos/npkill) Easily find and remove old and heavy node_modules folders.
 * [`npm-cache`](https://github.com/swarajban/npm-cache) Cache (npm | bower | composer | jspm) installs.
+* [`npm-gui`](https://github.com/q-nick/npm-gui) Graphic tool for managing javascript project dependencies.
 * [`npm-install-peers`](https://github.com/spatie/npm-install-peers) CLI command to install npm peerDependencies.
 * [`npm-package-json-lint`](https://github.com/tclindner/npm-package-json-lint) Configurable linter for package.json files.
 * [`npm-windows-upgrade`](https://github.com/felixrieseberg/npm-windows-upgrade) Upgrade npm on Windows. *Note* - Must be run from an elevated prompt.
