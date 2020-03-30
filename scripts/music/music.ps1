@@ -95,8 +95,15 @@ if (ExistsCommand pip) {
 Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
 
 # Create virtual environment
-Write-Color "Creating Virtual ENvironment... `n" -C White
+Write-Color "Creating Virtual Environment... `n" -C White -StartSpaces 4
 Invoke-Expression "python -m venv music-env"
+
+# Activate virtual environment
+Invoke-Expression "music-env/Scripts/activate"
+
+Invoke-Expression "pip list -o"
+
+# Upgrade pip and setuptools
 
 # ------------------------------------------------------------------------------------------- #
 
