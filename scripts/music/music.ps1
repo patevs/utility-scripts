@@ -96,7 +96,7 @@ Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C Whi
 
 # Create virtual environment
 Write-Color "Creating Virtual ENvironment... `n" -C White
-Invoke-Command "Python -m venv music-env"
+Invoke-Command "python -m venv music-env"
 
 # ------------------------------------------------------------------------------------------- #
 
