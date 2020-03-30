@@ -92,6 +92,7 @@ if (ExistsCommand pip) {
 }
 
 # TODO: Ensure ffmpeg is installed
+# TODO: Ensure mpv is installed
 
 # Begin install
 Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
