@@ -68,9 +68,10 @@ Write-Color " `n Verifying ", "Python", " and ", "Pip", " Installations... `n" -
 # Python
 if (ExistsCommand python) {
   $pythonVersion = Invoke-Expression "python --version"
-  Write-Color "+--------+----------+" -StartSpace 4
+  $pythonVersion = $pythonVersion -replace "Python "
+  Write-Color "+--------+-------+" -StartSpace 4
   Write-Color "|", " Python ", "|", " $pythonVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+--------+----------+" -StartSpace 4
+  Write-Color "+--------+-------+" -StartSpace 4
 } else {
   Write-Color "Python", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
