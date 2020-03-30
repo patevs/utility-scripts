@@ -1,0 +1,22 @@
+{
+  "name": "utility-scripts",
+  "version": "0.3.1",
+  "description": "Utility Scripts",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patevs/utility-scripts.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patevs/utility-scripts/issues"
+  },
+  "homepage": "https://github.com/patevs/utility-scripts#readme"
+}
