@@ -18,17 +18,17 @@
 
 ## Git Integrations and Utilities
 
-* [`add-gitignore`](https://github.com/TejasQ/add-gitignore)
-* [`cli-github`](https://github.com/IonicaBizau/cli-github)
-* [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy) : Note - Requires `Perl` to be installed.
-* [`g3l`](https://github.com/svhawks/g3l)
-* [`gistup`](https://github.com/mbostock/gistup)
-* [`git-open`](https://github.com/paulirish/git-open) : Note - `hub browse` does the same thing.
-* [`git-stats`](https://github.com/IonicaBizau/git-stats)
-* [`gitmoji-cli`](https://github.com/carloscuesta/gitmoji-cli)
-* [`git-labelmaker`](https://github.com/himynameisdave/git-labelmaker)
-* [`starz`](https://github.com/yyx990803/starz)
-* [`ungit`](https://github.com/FredrikNoren/ungit)
+* [`add-gitignore`](https://github.com/TejasQ/add-gitignore) Interactive CLI tool that adds a `.gitignore` to your projects.
+* [`cli-github`](https://github.com/IonicaBizau/cli-github) A fancy GitHub client for command line.
+* [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy) Good-lookin' diffs. *Note* - Requires [`Perl`](https://www.perl.org/) to be installed.
+* [`g3l`](https://github.com/svhawks/g3l) Easiest git cli in the w0rld!
+* [`gistup`](https://github.com/mbostock/gistup) Create a gist from terminal, then use git to update it.
+* [`git-open`](https://github.com/paulirish/git-open) Open the GitHub page or website for a repository in your browser. *Note* - The `hub browse` command does the same thing.
+* [`git-stats`](https://github.com/IonicaBizau/git-stats) Local git statistics including GitHub-like contributions calendars.
+* [`gitmoji-cli`](https://github.com/carloscuesta/gitmoji-cli) Interactive command line tool for using emojis on commits.
+* [`git-labelmaker`](https://github.com/himynameisdave/git-labelmaker) Manage your GitHub labels from the command line.
+* [`starz`](https://github.com/yyx990803/starz) Count a GitHub user's total stars.
+* [`ungit`](https://github.com/FredrikNoren/ungit) The easiest way to use git. On any platform. Anywhere.
 
 ---
 
