@@ -69,17 +69,16 @@ Write-Color " `n Verifying ", "Requirements... `n" -C Green, White
 # Get Current Foreground and Background Colors
 # https://stackoverflow.com/a/26583010
 # $foreground = (get-host).ui.rawui.ForegroundColor
-# $background = (get-host).ui.rawui.BackgroundColor
+$background = (get-host).ui.rawui.BackgroundColor
 
 # Python
 if (ExistsCommand python) {
   $pythonVersion = Invoke-Expression "python --version"
   $pythonVersion = $pythonVersion -replace "Python "
-  Write-Color "+------------+------------+" -StartSpace 4 -C DarkGray
-  Write-Color "|", "  Install   ", "|", "  Version   ", "|" -C DarkGray, DarkBlue, DarkGray, DarkMagenta, DarkGray -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4 -C DarkGray
+  Write-Color " ", "  Install   ", " ", "  Version   " -B $background, Cyan, $background, Green -C Black, Black, Black, Black -StartSpace 4
+  Write-Color "+------------+------------+" -StartSpace 4
   Write-Color "|", " Python     ", "|", " $pythonVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4 -C DarkGray
+  Write-Color "+------------+------------+" -StartSpace 4
 } else {
   Write-Color "Python", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
@@ -135,6 +134,8 @@ if (ExistsCommand youtube-dl) {
   Write-Color " Exiting " -B Red
   exit
 }
+
+EXIT
 
 # Begin Setup
 Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup..." -C White, Green
