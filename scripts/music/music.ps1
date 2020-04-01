@@ -66,6 +66,10 @@ Import-Module PSWriteColor
 # Write-Color " `n Verifying ", "Python", " and ", "Pip", " Installations... `n" -C White, Cyan, White, Cyan, White
 Write-Color " `n Verifying ", "Requirements... `n" -C Green, White
 
+# Get Current Foreground and Background Colors
+# $foreground = (get-host).ui.rawui.ForegroundColor
+# $background = (get-host).ui.rawui.BackgroundColor
+
 # Python
 if (ExistsCommand python) {
   $pythonVersion = Invoke-Expression "python --version"
