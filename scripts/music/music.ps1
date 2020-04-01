@@ -21,7 +21,7 @@
 .NOTES
   File Name: music.ps1
   Author: PatEvs (https://github.com/patevs)
-  Last Edit: 30/03/2020
+  Last Edit: 01/04/2020 - April 1st 2020
 
 .LINK
   Repository:
