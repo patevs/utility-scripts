@@ -159,18 +159,20 @@ Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup... 
 Write-Color "Creating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
 # Invoke-Expression "python -m venv $venvName"
 Invoke-Expression "python -m venv $venvName 2>&1 | Out-Null"
-Write-Color "Done" -C Green
+# Write-Color "Done" -C Green
+Write-Color "Done" -B Green -C Black
 
 # Activate the virtual environment
 Write-Color "Activating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
 Invoke-Expression "$venvName/Scripts/activate"
-Write-Color "Done" -C Green
+# Write-Color "Done" -C Green
+Write-Color "Done" -B Green -C Black
 
 # Upgrade pip and setuptools redirecting output to null
 Write-Color "Upgrading ", "pip", " and ", "setuptools", "... " -C Green, Cyan, White, Cyan, White -StartSpace 4 -NoNewLine
 Invoke-Expression "pip install --upgrade pip 2>&1 | Out-Null"
 Invoke-Expression "pip install --upgrade setuptools 2>&1 | Out-Null"
-Write-Color "Done" -C Green
+Write-Color "Done" -B Green -C Black
 
 # Begin Install
 Write-Color " `n Environment Setup Complete! ", "Beginning Install... `n" -C White, Green
@@ -178,18 +180,18 @@ Write-Color " `n Environment Setup Complete! ", "Beginning Install... `n" -C Whi
 # Install spotify-downloader redirecting output to null
 Write-Color "Installing", " Spotify Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
 Invoke-Expression "pip install spotdl 2>&1 | Out-Null"
-Write-Color "Done" -C Green
+Write-Color "Done" -B Green -C Black
 
 # Install YouTube Music Downloader redirecting output to null
 Write-Color "Installing", " YouTube Music Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
-Invoke-Expression "pip install ytmdl"
-Write-Color "Done" -C Green
+Invoke-Expression "pip install ytmdl 2>&1 | Out-Null"
+Write-Color "Done" -B Green -C Black
 
 # Install mps-youtube
-# Invoke-Expression "pip install mps-youtube"
+# Invoke-Expression "pip install mps-youtube 2>&1 | Out-Null"
 
 # Install Beets
-# Invoke-Expression "pip install beets"
+# Invoke-Expression "pip install beets 2>&1 | Out-Null"
 
 Write-Color ""
 Write-Color " DONE `n" -B Green -C Black # -StartSpaces 2
