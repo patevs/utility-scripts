@@ -191,9 +191,9 @@ Invoke-Expression "pip install spotdl 2>&1 | Out-Null"
 Write-Color " Done " -B Green -C Black
 
 # Install YouTube Music Downloader redirecting output to null
-Write-Color "Installing", " YouTube Music Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
-Invoke-Expression "pip install ytmdl 2>&1 | Out-Null"
-Write-Color " Done " -B Green -C Black
+# Write-Color "Installing", " YouTube Music Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
+# Invoke-Expression "pip install ytmdl 2>&1 | Out-Null"
+# Write-Color " Done " -B Green -C Black
 
 # Install mps-youtube redirecting output to null
 # Write-Color "Installing", " MPS-Youtube... " -C Green, White -StartSpaces 4 -NoNewLine
