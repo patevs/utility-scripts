@@ -129,13 +129,16 @@ if (ExistsCommand youtube-dl) {
 }
 
 # Create a virtual environment
+Write-Color ""
 Write-Color "Creating Virtual Environment... `n" -C White -StartSpaces 2
 Invoke-Expression "python -m venv music-env"
 
-# Activate virtual environment
+# Activate the virtual environment
+Write-Color "Activating Virtual Environment... `n" -C White -StartSpaces 2
 Invoke-Expression "music-env/Scripts/activate"
 
 # Upgrade pip and setuptools
+Write-Color "Upgradeing ", "pip", " and ", "setuptools", "..." -C White, Cyan, White, Cyan, White -StartSpace 2
 Invoke-Expression "pip install --upgrade pip"
 Invoke-Expression "pip install --upgrade setuptools"
 
@@ -146,13 +149,13 @@ Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C Whi
 Invoke-Expression "pip install spotdl"
 
 # Install YouTube Music Downloader
-Invoke-Expression "pip install ytmdl"
+# Invoke-Expression "pip install ytmdl"
 
 # Install mps-youtube
-Invoke-Expression "pip install mps-youtube"
+# Invoke-Expression "pip install mps-youtube"
 
 # Install Beets
-Invoke-Expression "pip install beets"
+# Invoke-Expression "pip install beets"
 
 Write-Color ""
 Write-Color " DONE " -B DarkGreen -C White -StartSpaces 2
