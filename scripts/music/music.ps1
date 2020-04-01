@@ -5,9 +5,12 @@
 
   ! Requires `Python` and `Pip` to be installed.
 
+  TODO: Accept argument parameter for location to create the environment.
+
 .DESCRIPTION
   1. Ensure `Python` and `Pip` are installed and check versions.
   2. (Optional) Upgrade `Pip` installation.
+  3. Create a virtual environment
   4. Install `Pip` packages ensuring required dependencies are met for each.
 
   Tested Python Versions:
