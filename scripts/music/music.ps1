@@ -1,17 +1,22 @@
 <# scripts/music/music.ps1
 
 .SYNOPSIS
-  `PowerShell` script for setting up a music environment.
+  PowerShell script for setting up a music environment.
 
-  ! Requires `Python` and `Pip` to be installed.
+  ! Requires python and pip to be installed.
 
   TODO: Accept argument parameter for location to create the environment.
+  TODO: Accept argument parameter for the name of the virtual environment that is created.
+  TODO: Install beets dependencies
+  TODO: Split installs into seperate components
 
 .DESCRIPTION
-  1. Ensure `Python` and `Pip` are installed and check versions.
+  1. Ensure python and pip are installed and check versions.
   2. (Optional) Upgrade `Pip` installation.
-  3. Create a virtual environment
-  4. Install `Pip` packages ensuring required dependencies are met for each.
+  3. Create a virtual environment.
+  4. Activate the virtual environment.
+  5. Upgrade pip and setuptools
+  6. Install pip packages ensuring required dependencies are met for each.
 
   Tested Python Versions:
     * 3.8.2
