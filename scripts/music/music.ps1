@@ -135,8 +135,6 @@ if (ExistsCommand youtube-dl) {
   exit
 }
 
-EXIT
-
 # Begin Setup
 Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup..." -C White, Green
 
