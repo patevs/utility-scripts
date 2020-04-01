@@ -43,7 +43,7 @@ Function ExistsModule ($moduleName) {
 }
 
 # Check if a given command exists
-# https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
+#   https://stackoverflow.com/a/3919904
 Function ExistsCommand($cmdName) {
   # return [bool](Get-Command -Name $cmdName -ea 0)
   return [bool](Get-Command -Name $cmdName -ErrorAction SilentlyContinue)
