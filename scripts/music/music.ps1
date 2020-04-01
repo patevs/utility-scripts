@@ -65,9 +65,8 @@ if (-Not (ExistsModule PSWriteColor)) {
 Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
-# Verify Python and Pip are installed
-# Write-Color " `n Verifying ", "Python", " and ", "Pip", " Installations... `n" -C White, Cyan, White, Cyan, White
-Write-Color " `n Verifying ", "Requirements... `n" -C Green, White
+# Verify installation requirements are met
+Write-Color " `n Verifying ", " Installation Requirements... `n" -C Green, White
 
 # Get Current Foreground and Background Colors
 # https://stackoverflow.com/a/26583010
