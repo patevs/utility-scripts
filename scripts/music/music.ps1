@@ -60,7 +60,8 @@ Function ExistsCommand($cmdName) {
 # Current Foreground and Background Colors
 #   https://stackoverflow.com/a/26583010
 # $foreground = (get-host).ui.rawui.ForegroundColor
-$background = (get-host).ui.rawui.BackgroundColor
+# $background = (get-host).ui.rawui.BackgroundColor
+Set-Variable background -option Constant -value (get-host).ui.rawui.BackgroundColor
 
 # TODO: Add this as an optional argument parameter
 # Name of the virtual environment we are creating
@@ -156,7 +157,7 @@ Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup... 
 # TODO: Surround this in a try/catch
 # Create a virtual environment redirecting output to null
 #   https://stackoverflow.com/a/6461021
-Write-Color "Creating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
+Write-Color "Creating", " Virtual Environment...   " -C Green, White -StartSpaces 4 -NoNewLine
 Invoke-Expression "python -m venv $venvName 2>&1 | Out-Null"
 Write-Color " Done " -B Green -C Black
 
@@ -166,7 +167,7 @@ Invoke-Expression "$venvName/Scripts/activate"
 Write-Color " Done " -B Green -C Black
 
 # Upgrade pip and setuptools redirecting output to null
-Write-Color "Upgrading ", "pip", " and ", "setuptools", "... " -C Green, Cyan, White, Cyan, White -StartSpace 4 -NoNewLine
+Write-Color "Upgrading ", "pip", " and ", "setuptools", "...   " -C Green, Cyan, White, Cyan, White -StartSpace 4 -NoNewLine
 Invoke-Expression "pip install --upgrade pip 2>&1 | Out-Null"
 Invoke-Expression "pip install --upgrade setuptools 2>&1 | Out-Null"
 Write-Color " Done " -B Green -C Black
@@ -175,14 +176,14 @@ Write-Color " Done " -B Green -C Black
 Write-Color " `n Environment Setup Complete! ", "Beginning Install... `n" -C White, Green
 
 # Install spotify-downloader redirecting output to null
-Write-Color "Installing", " Spotify Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
+Write-Color "Installing", " Spotify Downloader...       " -C Green, White -StartSpaces 4 -NoNewLine
 Invoke-Expression "pip install spotdl 2>&1 | Out-Null"
 Write-Color " Done " -B Green -C Black
 
 # Install YouTube Music Downloader redirecting output to null
 Write-Color "Installing", " YouTube Music Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
 Invoke-Expression "pip install ytmdl 2>&1 | Out-Null"
-Write-Color "Done" -B Green -C Black -
+Write-Color " Done " -B Green -C Black
 
 # Install mps-youtube redirecting output to null
 # Write-Color "Installing", " MPS-Youtube... " -C Green, White -StartSpaces 4 -NoNewLine
