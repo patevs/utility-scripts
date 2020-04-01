@@ -154,12 +154,17 @@ if (ExistsCommand youtube-dl) {
 # Begin Setup
 Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup... `n" -C White, Green
 
-# TODO: Surround this in a try/catch
 # Create a virtual environment redirecting output to null
 #   https://stackoverflow.com/a/6461021
-Write-Color "Creating", " Virtual Environment...   " -C Green, White -StartSpaces 4 -NoNewLine
-Invoke-Expression "python -m venv $venvName 2>&1 | Out-Null"
-Write-Color " Done " -B Green -C Black
+try {
+  Write-Color "Creating", " Virtual Environment...   " -C Green, White -StartSpaces 4 -NoNewLine
+  Invoke-Expression "python -m venv $venvName 2>&1 | Out-Null"
+  Write-Color " Done " -B Green -C Black
+} catch {
+  Write-Color "Failed to Create Virtual Environment... " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color " Exiting " -B Red
+  exit
+}
 
 # Activate the virtual environment
 Write-Color "Activating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
