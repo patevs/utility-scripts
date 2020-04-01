@@ -128,14 +128,16 @@ if (ExistsCommand youtube-dl) {
   exit
 }
 
+$venvName = "venv"
+
 # Create a virtual environment
 Write-Color ""
 Write-Color "Creating Virtual Environment... `n" -C White -StartSpaces 2
-Invoke-Expression "python -m venv music-env"
+Invoke-Expression "python -m venv $venvName"
 
 # Activate the virtual environment
 Write-Color "Activating Virtual Environment... `n" -C White -StartSpaces 2
-Invoke-Expression "music-env/Scripts/activate"
+Invoke-Expression "$venvName/Scripts/activate"
 
 # Upgrade pip and setuptools
 Write-Color "Upgradeing ", "pip", " and ", "setuptools", "..." -C White, Cyan, White, Cyan, White -StartSpace 2
