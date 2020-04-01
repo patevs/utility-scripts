@@ -33,9 +33,9 @@
     * https://github.com/patevs/utility-scripts/blob/master/scripts/music/music.ps1
 #>
 
-# ---------------- #
-# HELPER FUNCTIONS #
-# ---------------- #
+# * ---------------- #
+# * HELPER FUNCTIONS #
+# * ---------------- #
 
 # Check if a given PowerShell module is installed
 Function ExistsModule ($moduleName) {
@@ -48,6 +48,24 @@ Function ExistsCommand($cmdName) {
   # return [bool](Get-Command -Name $cmdName -ea 0)
   return [bool](Get-Command -Name $cmdName -ErrorAction SilentlyContinue)
 }
+
+# ------------------------------------------------------------------------------------------- #
+
+# * --------- #
+# * CONSTANTS #
+# * --------- #
+
+# https://stackoverflow.com/a/2608564
+
+# Current Foreground and Background Colors
+#   https://stackoverflow.com/a/26583010
+# $foreground = (get-host).ui.rawui.ForegroundColor
+$background = (get-host).ui.rawui.BackgroundColor
+
+# TODO: Add this as an optional argument parameter
+# Name of the virtual environment we are creating
+# $venvName = "venv"
+Set-Variable venvName -option Constant -value "venv"
 
 # ------------------------------------------------------------------------------------------- #
 
@@ -67,11 +85,6 @@ Import-Module PSWriteColor
 
 # Verify installation requirements are met
 Write-Color " `n Verifying ", " Installation Requirements... `n" -C Green, White
-
-# Get Current Foreground and Background Colors
-# https://stackoverflow.com/a/26583010
-# $foreground = (get-host).ui.rawui.ForegroundColor
-$background = (get-host).ui.rawui.BackgroundColor
 
 # Python
 if (ExistsCommand python) {
@@ -140,8 +153,7 @@ if (ExistsCommand youtube-dl) {
 # Begin Setup
 Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup... `n" -C White, Green
 
-$venvName = "venv"
-
+# TODO: Surround this in a try/catch
 # Create a virtual environment redirecting output to null
 #   https://stackoverflow.com/a/6461021
 Write-Color "Creating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
@@ -168,8 +180,10 @@ Write-Color "Installing", " Spotify Downloader... " -C Green, White -StartSpaces
 Invoke-Expression "pip install spotdl 2>&1 | Out-Null"
 Write-Color "Done" -C Green
 
-# Install YouTube Music Downloader
-# Invoke-Expression "pip install ytmdl"
+# Install YouTube Music Downloader redirecting output to null
+Write-Color "Installing", " YouTube Music Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
+Invoke-Expression "pip install ytmdl"
+Write-Color "Done" -C Green
 
 # Install mps-youtube
 # Invoke-Expression "pip install mps-youtube"
