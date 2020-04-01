@@ -50,7 +50,6 @@ Function ExistsModule ($moduleName) {
 # Check if a given command exists
 #   https://stackoverflow.com/a/3919904
 Function ExistsCommand($cmdName) {
-  # return [bool](Get-Command -Name $cmdName -ea 0)
   return [bool](Get-Command -Name $cmdName -ErrorAction SilentlyContinue)
 }
 
@@ -69,8 +68,7 @@ Function ExistsCommand($cmdName) {
 Set-Variable background -option Constant -value (get-host).ui.rawui.BackgroundColor
 
 # TODO: Add this as an optional argument parameter
-# Name of the virtual environment we are creating
-# $venvName = "venv"
+# Name of the virtual environment to be created
 Set-Variable venvName -option Constant -value "venv"
 
 # ------------------------------------------------------------------------------------------- #
@@ -207,7 +205,7 @@ Write-Color " Done " -B Green -C Black
 # Write-Color "Done" -B Green -C Black
 
 Write-Color ""
-Write-Color " DONE `n" -B Green -C Black # -StartSpaces 2
+Write-Color " DONE `n" -B Green -C Black
 
 # ------------------------------------------------------------------------------------------- #
 
