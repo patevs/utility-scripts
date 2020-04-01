@@ -1,14 +1,22 @@
 <# scripts/music/music.ps1
 
 .SYNOPSIS
-  `PowerShell` script for setting up a music environment.
+  PowerShell script for setting up a music environment.
 
-  ! Requires `Python` and `Pip` to be installed.
+  ! Requires python and pip to be installed.
+
+  TODO: Accept argument parameter for location to create the environment.
+  TODO: Accept argument parameter for the name of the virtual environment that is created.
+  TODO: Install beets dependencies
+  TODO: Split installs into seperate components
 
 .DESCRIPTION
-  1. Ensure `Python` and `Pip` are installed and check versions.
+  1. Ensure python and pip are installed and check versions.
   2. (Optional) Upgrade `Pip` installation.
-  4. Install `Pip` packages ensuring required dependencies are met for each.
+  3. Create a virtual environment.
+  4. Activate the virtual environment.
+  5. Upgrade pip and setuptools
+  6. Install pip packages ensuring required dependencies are met for each.
 
   Tested Python Versions:
     * 3.8.2
@@ -21,7 +29,7 @@
 .NOTES
   File Name: music.ps1
   Author: PatEvs (https://github.com/patevs)
-  Last Edit: 30/03/2020
+  Last Edit: 01/04/2020 - April 1st 2020
 
 .LINK
   Repository:
@@ -30,9 +38,9 @@
     * https://github.com/patevs/utility-scripts/blob/master/scripts/music/music.ps1
 #>
 
-# ---------------- #
-# HELPER FUNCTIONS #
-# ---------------- #
+# * ---------------- #
+# * HELPER FUNCTIONS #
+# * ---------------- #
 
 # Check if a given PowerShell module is installed
 Function ExistsModule ($moduleName) {
@@ -40,11 +48,30 @@ Function ExistsModule ($moduleName) {
 }
 
 # Check if a given command exists
-# https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
+#   https://stackoverflow.com/a/3919904
 Function ExistsCommand($cmdName) {
   # return [bool](Get-Command -Name $cmdName -ea 0)
   return [bool](Get-Command -Name $cmdName -ErrorAction SilentlyContinue)
 }
+
+# ------------------------------------------------------------------------------------------- #
+
+# * --------- #
+# * CONSTANTS #
+# * --------- #
+
+# https://stackoverflow.com/a/2608564
+
+# Current Foreground and Background Colors
+#   https://stackoverflow.com/a/26583010
+# $foreground = (get-host).ui.rawui.ForegroundColor
+# $background = (get-host).ui.rawui.BackgroundColor
+Set-Variable background -option Constant -value (get-host).ui.rawui.BackgroundColor
+
+# TODO: Add this as an optional argument parameter
+# Name of the virtual environment we are creating
+# $venvName = "venv"
+Set-Variable venvName -option Constant -value "venv"
 
 # ------------------------------------------------------------------------------------------- #
 
@@ -62,13 +89,14 @@ if (-Not (ExistsModule PSWriteColor)) {
 Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
-# Verify Python and Pip are installed
-Write-Color " `n Verifying ", "Python", " and ", "Pip", " Installations... `n" -C White, Cyan, White, Cyan, White
+# Verify installation requirements are met
+Write-Color " `n Verifying ", "Installation Requirements... `n" -C Green, White
 
 # Python
 if (ExistsCommand python) {
   $pythonVersion = Invoke-Expression "python --version"
   $pythonVersion = $pythonVersion -replace "Python "
+  Write-Color " ", "  Install   ", " ", "  Version   " -B $background, Cyan, $background, Green -C Black, Black, Black, Black -StartSpace 4
   Write-Color "+------------+------------+" -StartSpace 4
   Write-Color "|", " Python     ", "|", " $pythonVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
   Write-Color "+------------+------------+" -StartSpace 4
@@ -128,34 +156,58 @@ if (ExistsCommand youtube-dl) {
   exit
 }
 
-# Create a virtual environment
-Write-Color "Creating Virtual Environment... `n" -C White -StartSpaces 2
-Invoke-Expression "python -m venv music-env"
+# Begin Setup
+Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup... `n" -C White, Green
 
-# Activate virtual environment
-Invoke-Expression "music-env/Scripts/activate"
+# Create a virtual environment redirecting output to null
+#   https://stackoverflow.com/a/6461021
+try {
+  Write-Color "Creating", " Virtual Environment...   " -C Green, White -StartSpaces 4 -NoNewLine
+  Invoke-Expression "python -m venv $venvName 2>&1 | Out-Null"
+  Write-Color " Done " -B Green -C Black
+} catch {
+  Write-Color "Failed to Create Virtual Environment... " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color " Exiting " -B Red
+  exit
+}
 
-# Upgrade pip and setuptools
-Invoke-Expression "pip install --upgrade pip"
-Invoke-Expression "pip install --upgrade setuptools"
+# Activate the virtual environment
+Write-Color "Activating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
+Invoke-Expression "$venvName/Scripts/activate"
+Write-Color " Done " -B Green -C Black
 
-# Begin install
-Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
+# Upgrade pip and setuptools redirecting output to null
+Write-Color "Upgrading ", "pip", " and ", "setuptools", "...   " -C Green, Cyan, White, Cyan, White -StartSpace 4 -NoNewLine
+Invoke-Expression "pip install --upgrade pip 2>&1 | Out-Null"
+Invoke-Expression "pip install --upgrade setuptools 2>&1 | Out-Null"
+Write-Color " Done " -B Green -C Black
 
-# Install spotify-downloader
-Invoke-Expression "pip install spotdl"
+# Begin Install
+Write-Color " `n Environment Setup Complete! ", "Beginning Install... `n" -C White, Green
 
-# Install YouTube Music Downloader
-Invoke-Expression "pip install ytmdl"
+# Install spotify-downloader redirecting output to null
+Write-Color "Installing", " Spotify Downloader...       " -C Green, White -StartSpaces 4 -NoNewLine
+Invoke-Expression "pip install spotdl 2>&1 | Out-Null"
+Write-Color " Done " -B Green -C Black
 
-# Install mps-youtube
-Invoke-Expression "pip install mps-youtube"
+# Install YouTube Music Downloader redirecting output to null
+Write-Color "Installing", " YouTube Music Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
+Invoke-Expression "pip install ytmdl 2>&1 | Out-Null"
+Write-Color " Done " -B Green -C Black
 
-# Install Beets
-Invoke-Expression "pip install beets"
+# Install mps-youtube redirecting output to null
+# Write-Color "Installing", " MPS-Youtube... " -C Green, White -StartSpaces 4 -NoNewLine
+# Invoke-Expression "pip install mps-youtube 2>&1 | Out-Null"
+# Write-Color "Done" -B Green -C Black
+
+# TODO: Install beets dependencies
+# Install Beets redirecting output to null
+# Write-Color "Installing", " Beets... " -C Green, White -StartSpaces 4 -NoNewLine
+# Invoke-Expression "pip install beets 2>&1 | Out-Null"
+# Write-Color "Done" -B Green -C Black
 
 Write-Color ""
-Write-Color " DONE " -B DarkGreen -C White -StartSpaces 2
+Write-Color " DONE `n" -B Green -C Black # -StartSpaces 2
 
 # ------------------------------------------------------------------------------------------- #
 
