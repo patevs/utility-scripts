@@ -63,12 +63,15 @@ Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
 # Verify Python and Pip are installed
-Write-Color " `n Verifying ", "Python", " and ", "Pip", " Installations... `n" -C White, Cyan, White, Cyan, White
+# Write-Color " `n Verifying ", "Python", " and ", "Pip", " Installations... `n" -C White, Cyan, White, Cyan, White
+Write-Color " `n Verifying ", "Requirements... `n" -C Green, White
 
 # Python
 if (ExistsCommand python) {
   $pythonVersion = Invoke-Expression "python --version"
   $pythonVersion = $pythonVersion -replace "Python "
+  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color "|", " Install    ", "|", " Version    ", "|" -C White, Cyan, White, Green, White -StartSpace 4
   Write-Color "+------------+------------+" -StartSpace 4
   Write-Color "|", " Python     ", "|", " $pythonVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
   Write-Color "+------------+------------+" -StartSpace 4
@@ -128,24 +131,29 @@ if (ExistsCommand youtube-dl) {
   exit
 }
 
+# Begin Setup
+Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup..." -C White, Green
+
 $venvName = "venv"
 
 # Create a virtual environment
 Write-Color ""
-Write-Color "Creating Virtual Environment... `n" -C White -StartSpaces 2
+Write-Color "Creating", " Virtual Environment... `n" -C Green, White -StartSpaces 2  # -NoNewLine
 Invoke-Expression "python -m venv $venvName"
+# Write-Color "Done" -C Green
 
 # Activate the virtual environment
-Write-Color "Activating Virtual Environment... `n" -C White -StartSpaces 2
+Write-Color "`n  Activating", " Virtual Environment... " -C Green, White # -NoNewLine
 Invoke-Expression "$venvName/Scripts/activate"
+# Write-Color "Done" -C Green
 
 # Upgrade pip and setuptools
-Write-Color "Upgradeing ", "pip", " and ", "setuptools", "..." -C White, Cyan, White, Cyan, White -StartSpace 2
+Write-Color "`n  Upgradeing ", "pip", " and ", "setuptools", "... `n" -C White, Cyan, White, Cyan, White -StartSpace 2
 Invoke-Expression "pip install --upgrade pip"
 Invoke-Expression "pip install --upgrade setuptools"
 
-# Begin install
-Write-Color " `n All Requirements Satisfied! ", "Beginning Install... `n" -C White, Green
+# Begin Install
+Write-Color " `n Environment Setup Complete! ", "Beginning Install... `n" -C White, Green
 
 # Install spotify-downloader
 Invoke-Expression "pip install spotdl"
@@ -160,7 +168,7 @@ Invoke-Expression "pip install spotdl"
 # Invoke-Expression "pip install beets"
 
 Write-Color ""
-Write-Color " DONE " -B DarkGreen -C White -StartSpaces 2
+Write-Color " DONE `n" -B Green -C Black -StartSpaces 2
 
 # ------------------------------------------------------------------------------------------- #
 
