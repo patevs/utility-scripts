@@ -67,6 +67,7 @@ Import-Module PSWriteColor
 Write-Color " `n Verifying ", "Requirements... `n" -C Green, White
 
 # Get Current Foreground and Background Colors
+# https://stackoverflow.com/a/26583010
 # $foreground = (get-host).ui.rawui.ForegroundColor
 # $background = (get-host).ui.rawui.BackgroundColor
 
