@@ -139,31 +139,35 @@ if (ExistsCommand youtube-dl) {
 }
 
 # Begin Setup
-Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup..." -C White, Green
+Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup... `n" -C White, Green
 
 $venvName = "venv"
 
-# Create a virtual environment
-Write-Color ""
-Write-Color "Creating", " Virtual Environment... `n" -C Green, White -StartSpaces 2  # -NoNewLine
-Invoke-Expression "python -m venv $venvName"
-# Write-Color "Done" -C Green
+# Create a virtual environment redirecting output to null
+#   https://stackoverflow.com/a/6461021
+Write-Color "Creating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
+# Invoke-Expression "python -m venv $venvName"
+Invoke-Expression "python -m venv $venvName 2>&1 | Out-Null"
+Write-Color "Done" -C Green
 
 # Activate the virtual environment
-Write-Color "`n  Activating", " Virtual Environment... " -C Green, White # -NoNewLine
+Write-Color "Activating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
 Invoke-Expression "$venvName/Scripts/activate"
-# Write-Color "Done" -C Green
+Write-Color "Done" -C Green
 
-# Upgrade pip and setuptools
-Write-Color "`n  Upgradeing ", "pip", " and ", "setuptools", "... `n" -C White, Cyan, White, Cyan, White -StartSpace 2
-Invoke-Expression "pip install --upgrade pip"
-Invoke-Expression "pip install --upgrade setuptools"
+# Upgrade pip and setuptools redirecting output to null
+Write-Color "Upgrading ", "pip", " and ", "setuptools", "... " -C Green, Cyan, White, Cyan, White -StartSpace 4 -NoNewLine
+Invoke-Expression "pip install --upgrade pip 2>&1 | Out-Null"
+Invoke-Expression "pip install --upgrade setuptools 2>&1 | Out-Null"
+Write-Color "Done" -C Green
 
 # Begin Install
 Write-Color " `n Environment Setup Complete! ", "Beginning Install... `n" -C White, Green
 
-# Install spotify-downloader
-Invoke-Expression "pip install spotdl"
+# Install spotify-downloader redirecting output to null
+Write-Color "Installing", " Spotify Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
+Invoke-Expression "pip install spotdl 2>&1 | Out-Null"
+Write-Color "Done" -C Green
 
 # Install YouTube Music Downloader
 # Invoke-Expression "pip install ytmdl"
@@ -175,7 +179,7 @@ Invoke-Expression "pip install spotdl"
 # Invoke-Expression "pip install beets"
 
 Write-Color ""
-Write-Color " DONE `n" -B Green -C Black -StartSpaces 2
+Write-Color " DONE `n" -B Green -C Black # -StartSpaces 2
 
 # ------------------------------------------------------------------------------------------- #
 
