@@ -84,7 +84,7 @@ Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
 # Verify installation requirements are met
-Write-Color " `n Verifying ", " Installation Requirements... `n" -C Green, White
+Write-Color " `n Verifying ", "Installation Requirements... `n" -C Green, White
 
 # Python
 if (ExistsCommand python) {
@@ -157,22 +157,19 @@ Write-Color " `n All Requirements Satisfied! ", "Beginning Environment Setup... 
 # Create a virtual environment redirecting output to null
 #   https://stackoverflow.com/a/6461021
 Write-Color "Creating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
-# Invoke-Expression "python -m venv $venvName"
 Invoke-Expression "python -m venv $venvName 2>&1 | Out-Null"
-# Write-Color "Done" -C Green
-Write-Color "Done" -B Green -C Black
+Write-Color " Done " -B Green -C Black
 
 # Activate the virtual environment
 Write-Color "Activating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
 Invoke-Expression "$venvName/Scripts/activate"
-# Write-Color "Done" -C Green
-Write-Color "Done" -B Green -C Black
+Write-Color " Done " -B Green -C Black
 
 # Upgrade pip and setuptools redirecting output to null
 Write-Color "Upgrading ", "pip", " and ", "setuptools", "... " -C Green, Cyan, White, Cyan, White -StartSpace 4 -NoNewLine
 Invoke-Expression "pip install --upgrade pip 2>&1 | Out-Null"
 Invoke-Expression "pip install --upgrade setuptools 2>&1 | Out-Null"
-Write-Color "Done" -B Green -C Black
+Write-Color " Done " -B Green -C Black
 
 # Begin Install
 Write-Color " `n Environment Setup Complete! ", "Beginning Install... `n" -C White, Green
@@ -180,18 +177,23 @@ Write-Color " `n Environment Setup Complete! ", "Beginning Install... `n" -C Whi
 # Install spotify-downloader redirecting output to null
 Write-Color "Installing", " Spotify Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
 Invoke-Expression "pip install spotdl 2>&1 | Out-Null"
-Write-Color "Done" -B Green -C Black
+Write-Color " Done " -B Green -C Black
 
 # Install YouTube Music Downloader redirecting output to null
 Write-Color "Installing", " YouTube Music Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
 Invoke-Expression "pip install ytmdl 2>&1 | Out-Null"
-Write-Color "Done" -B Green -C Black
+Write-Color "Done" -B Green -C Black -
 
-# Install mps-youtube
+# Install mps-youtube redirecting output to null
+# Write-Color "Installing", " MPS-Youtube... " -C Green, White -StartSpaces 4 -NoNewLine
 # Invoke-Expression "pip install mps-youtube 2>&1 | Out-Null"
+# Write-Color "Done" -B Green -C Black
 
-# Install Beets
+# TODO: Install beets dependencies
+# Install Beets redirecting output to null
+# Write-Color "Installing", " Beets... " -C Green, White -StartSpaces 4 -NoNewLine
 # Invoke-Expression "pip install beets 2>&1 | Out-Null"
+# Write-Color "Done" -B Green -C Black
 
 Write-Color ""
 Write-Color " DONE `n" -B Green -C Black # -StartSpaces 2
