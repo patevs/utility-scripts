@@ -96,12 +96,12 @@ Write-Color " `n Verifying ", "Installation Requirements... `n" -C Green, White
 if (ExistsCommand python) {
   $pythonVersion = Invoke-Expression "python --version"
   $pythonVersion = $pythonVersion -replace "Python "
-  Write-Color " ", "  Install   ", " ", "  Version   " -B $background, Cyan, $background, Green -C Black, Black, Black, Black -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
-  Write-Color "|", " Python     ", "|", " $pythonVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color " ", "   Install   ", " ", "   Version   " -B $background, Cyan, $background, Green -C Black, Black, Black, Black -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
+  Write-Color "|", " python      ", "|", " $pythonVersion       ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
 } else {
-  Write-Color "Python", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color "python", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
   exit
 }
@@ -111,10 +111,10 @@ if (ExistsCommand pip) {
   $pipVersion = Invoke-Expression "pip --version"
   $pipVersion = $pipVersion -replace "pip "
   $pipVersion = $pipVersion.Split(" ")[0]
-  Write-Color "|", " Pip        ", "|", " $pipVersion     ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color "|", " pip         ", "|", " $pipVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
 } else {
-  Write-Color "Pip", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color "pip", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
   exit
 }
@@ -124,8 +124,8 @@ if (ExistsCommand ffmpeg) {
   $ffmpegVersion = Invoke-Expression "ffmpeg -version"
   $ffmpegVersion = $ffmpegVersion -replace "ffmpeg version "
   $ffmpegVersion = $ffmpegVersion.Split(" ")[0]
-  Write-Color "|", " ffmpeg     ", "|", " $ffmpegVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color "|", " ffmpeg      ", "|", " $ffmpegVersion       ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
 } else {
   Write-Color "ffmpeg", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
@@ -137,8 +137,8 @@ if (ExistsCommand mpv) {
   $mpvVersion = Invoke-Expression "mpv --version"
   $mpvVersion = $mpvVersion -replace "mpv "
   $mpvVersion = $mpvVersion.Split(" ")[0]
-  Write-Color "|", " mpv        ", "|", " $mpvVersion     ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color "|", " mpv         ", "|", " $mpvVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
 } else {
   Write-Color "mpv", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
@@ -148,8 +148,8 @@ if (ExistsCommand mpv) {
 # youtube-dl
 if (ExistsCommand youtube-dl) {
   $ytdlVersion = Invoke-Expression "youtube-dl --version"
-  Write-Color "|", " Youtube-dl ", "|", " $ytdlVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color "|", " youtube-dl  ", "|", " $ytdlVersion  ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
 } else {
   Write-Color "youtube-dl", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
