@@ -50,7 +50,6 @@ Function ExistsModule ($moduleName) {
 # Check if a given command exists
 #   https://stackoverflow.com/a/3919904
 Function ExistsCommand($cmdName) {
-  # return [bool](Get-Command -Name $cmdName -ea 0)
   return [bool](Get-Command -Name $cmdName -ErrorAction SilentlyContinue)
 }
 
@@ -69,8 +68,7 @@ Function ExistsCommand($cmdName) {
 Set-Variable background -option Constant -value (get-host).ui.rawui.BackgroundColor
 
 # TODO: Add this as an optional argument parameter
-# Name of the virtual environment we are creating
-# $venvName = "venv"
+# Name of the virtual environment to be created
 Set-Variable venvName -option Constant -value "venv"
 
 # ------------------------------------------------------------------------------------------- #
@@ -96,12 +94,12 @@ Write-Color " `n Verifying ", "Installation Requirements... `n" -C Green, White
 if (ExistsCommand python) {
   $pythonVersion = Invoke-Expression "python --version"
   $pythonVersion = $pythonVersion -replace "Python "
-  Write-Color " ", "  Install   ", " ", "  Version   " -B $background, Cyan, $background, Green -C Black, Black, Black, Black -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
-  Write-Color "|", " Python     ", "|", " $pythonVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color " ", "   Install   ", " ", "   Version   " -B $background, Cyan, $background, Green -C Black, Black, Black, Black -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
+  Write-Color "|", " python      ", "|", " $pythonVersion       ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
 } else {
-  Write-Color "Python", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color "python", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
   exit
 }
@@ -111,10 +109,10 @@ if (ExistsCommand pip) {
   $pipVersion = Invoke-Expression "pip --version"
   $pipVersion = $pipVersion -replace "pip "
   $pipVersion = $pipVersion.Split(" ")[0]
-  Write-Color "|", " Pip        ", "|", " $pipVersion     ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color "|", " pip         ", "|", " $pipVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
 } else {
-  Write-Color "Pip", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
+  Write-Color "pip", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
   exit
 }
@@ -124,8 +122,8 @@ if (ExistsCommand ffmpeg) {
   $ffmpegVersion = Invoke-Expression "ffmpeg -version"
   $ffmpegVersion = $ffmpegVersion -replace "ffmpeg version "
   $ffmpegVersion = $ffmpegVersion.Split(" ")[0]
-  Write-Color "|", " ffmpeg     ", "|", " $ffmpegVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color "|", " ffmpeg      ", "|", " $ffmpegVersion       ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
 } else {
   Write-Color "ffmpeg", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
@@ -137,8 +135,8 @@ if (ExistsCommand mpv) {
   $mpvVersion = Invoke-Expression "mpv --version"
   $mpvVersion = $mpvVersion -replace "mpv "
   $mpvVersion = $mpvVersion.Split(" ")[0]
-  Write-Color "|", " mpv        ", "|", " $mpvVersion     ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color "|", " mpv         ", "|", " $mpvVersion      ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
 } else {
   Write-Color "mpv", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
@@ -148,8 +146,8 @@ if (ExistsCommand mpv) {
 # youtube-dl
 if (ExistsCommand youtube-dl) {
   $ytdlVersion = Invoke-Expression "youtube-dl --version"
-  Write-Color "|", " Youtube-dl ", "|", " $ytdlVersion ", "|" -C White, Cyan, White, Green, White -StartSpace 4
-  Write-Color "+------------+------------+" -StartSpace 4
+  Write-Color "|", " youtube-dl  ", "|", " $ytdlVersion  ", "|" -C White, Cyan, White, Green, White -StartSpace 4
+  Write-Color "+-------------+-------------+" -StartSpace 4
 } else {
   Write-Color "youtube-dl", " installation could not be found. " -C Cyan, White -StartSpace 2 -NoNewLine
   Write-Color " Exiting " -B Red
@@ -191,9 +189,9 @@ Invoke-Expression "pip install spotdl 2>&1 | Out-Null"
 Write-Color " Done " -B Green -C Black
 
 # Install YouTube Music Downloader redirecting output to null
-Write-Color "Installing", " YouTube Music Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
-Invoke-Expression "pip install ytmdl 2>&1 | Out-Null"
-Write-Color " Done " -B Green -C Black
+# Write-Color "Installing", " YouTube Music Downloader... " -C Green, White -StartSpaces 4 -NoNewLine
+# Invoke-Expression "pip install ytmdl 2>&1 | Out-Null"
+# Write-Color " Done " -B Green -C Black
 
 # Install mps-youtube redirecting output to null
 # Write-Color "Installing", " MPS-Youtube... " -C Green, White -StartSpaces 4 -NoNewLine
@@ -207,7 +205,7 @@ Write-Color " Done " -B Green -C Black
 # Write-Color "Done" -B Green -C Black
 
 Write-Color ""
-Write-Color " DONE `n" -B Green -C Black # -StartSpaces 2
+Write-Color " DONE `n" -B Green -C Black
 
 # ------------------------------------------------------------------------------------------- #
 
