@@ -29,7 +29,7 @@
 .NOTES
   File Name: music.ps1
   Author: PatEvs (https://github.com/patevs)
-  Last Edit: 01/04/2020 - April 1st 2020
+  Last Edit: 02/04/2020 - April 1st 2020
 
 .LINK
   Repository:
@@ -38,9 +38,59 @@
     * https://github.com/patevs/utility-scripts/blob/master/scripts/music/music.ps1
 #>
 
+# ------------------------------------------------------------------------------------------- #
+
+# * --------- #
+# * CONSTANTS #
+# * --------- #
+
+# https://stackoverflow.com/a/2608564
+
+Set-Variable version -option Constant -value 0.1.0
+
+# Current Foreground and Background Colors
+#   https://stackoverflow.com/a/26583010
+# $foreground = (get-host).ui.rawui.ForegroundColor
+# $background = (get-host).ui.rawui.BackgroundColor
+Set-Variable background -option Constant -value (get-host).ui.rawui.BackgroundColor
+
+# TODO: Add this as an optional argument parameter
+# Name of the virtual environment to be created
+Set-Variable venvName -option Constant -value "venv"
+
+# ------------------------------------------------------------------------------------------- #
+
 # * ---------------- #
 # * HELPER FUNCTIONS #
 # * ---------------- #
+
+# Print a Welcome Message
+Function PrintWelcome {
+  Write-Host ""
+  Write-Host " Music Environment Setup Script " -BackgroundColor Magenta -ForegroundColor Black
+  Write-Host ""
+}
+
+# Print a Help Message
+Function PrintHelp {
+  PrintWelcome
+  Write-Host " Usage: "
+  Write-Host " `t .\music.ps1"
+  Write-Host " `t .\music.ps1 help"
+  Write-Host " `t .\music.ps1 version"
+  Write-Host " `t .\music.ps1 [Path\to\create\virtual\environment]"
+  Write-Host ""
+  exit
+}
+
+# Print the Current Version of the Script
+Function PrintVersion {
+  PrintWelcome
+  Write-Host " Version: " -NoNewLine
+  Write-Host "$version" -ForegroundColor Green
+  Write-Host ""
+  exit
+}
 
 # Check if a given PowerShell module is installed
 Function ExistsModule ($moduleName) {
@@ -55,27 +105,19 @@ Function ExistsCommand($cmdName) {
 
 # ------------------------------------------------------------------------------------------- #
 
-# * --------- #
-# * CONSTANTS #
-# * --------- #
-
-# https://stackoverflow.com/a/2608564
-
-# Current Foreground and Background Colors
-#   https://stackoverflow.com/a/26583010
-# $foreground = (get-host).ui.rawui.ForegroundColor
-# $background = (get-host).ui.rawui.BackgroundColor
-Set-Variable background -option Constant -value (get-host).ui.rawui.BackgroundColor
-
-# TODO: Add this as an optional argument parameter
-# Name of the virtual environment to be created
-Set-Variable venvName -option Constant -value "venv"
-
-# ------------------------------------------------------------------------------------------- #
+# Validate command line arguments
+if ($args.Count -gt 0) {
+  # Check arguments
+  switch ( $args[0] )
+  {
+      "help" { PrintHelp }
+      "version" { PrintVersion }
+      # 1 { $result = 'Monday'    }
+  }
+}
 
 # Print a welcome message
-Write-Host ""
-Write-Host " Music Environment Setup Script " -BackgroundColor Magenta -ForegroundColor Black
+PrintWelcome
 
 # Verify if PSWriteColor module is installed
 if (-Not (ExistsModule PSWriteColor)) {
@@ -88,7 +130,7 @@ Import-Module PSWriteColor
 # Uninstall-Module PSWriteColor
 
 # Verify installation requirements are met
-Write-Color " `n Verifying ", "Installation Requirements... `n" -C Green, White
+Write-Color "Verifying ", "Installation Requirements... `n" -C Green, White -StartSpace 2
 
 # Python
 if (ExistsCommand python) {
