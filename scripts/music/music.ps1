@@ -46,6 +46,7 @@
 
 # https://stackoverflow.com/a/2608564
 
+# Current version of the script
 Set-Variable version -option Constant -value 0.1.0
 
 # Current Foreground and Background Colors
@@ -112,7 +113,6 @@ if ($args.Count -gt 0) {
   {
       "help" { PrintHelp }
       "version" { PrintVersion }
-      # 1 { $result = 'Monday'    }
   }
 }
 
