@@ -6,9 +6,7 @@
   ! Requires bash and curl to be installed.
 
 .DESCRIPTION
-  Command line tracker for the Novel Coronavirus or COVID19 pandemic
-
-  **NOTE** : This script will install the [`PSWriteColor`](https://github.com/EvotecIT/PSWriteColor) module.
+  Command line tracker for the Novel Coronavirus or COVID19 pandemic.
 
 .EXAMPLE
   .\covid.ps1
@@ -27,6 +25,6 @@
 
 # ------------------------------------------------------------------------------------------- #
 
-#
+Invoke-Expression "bash curl -L covid19.trackercli.com/nz"
 
 # EOF #
