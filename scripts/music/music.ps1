@@ -239,15 +239,16 @@ Invoke-Expression "$venvName/Scripts/activate"
 Write-Color " Done " -B Green -C Black
 
 $outdated = Invoke-Expression "pip list -o"
-Write-Host "Outdated: $outdated"
+$pipUp = $outdated -contains "pip"
 
+if ( -Not $pipIp ) {
+  # Upgrade pip and setuptools redirecting output to null
+  Write-Color "Upgrading ", "pip", " and ", "setuptools", "...   " -C Green, Cyan, White, Cyan, White -StartSpace 4 -NoNewLine
+  Invoke-Expression "pip install --upgrade pip 2>&1 | Out-Null"
+  Invoke-Expression "pip install --upgrade setuptools 2>&1 | Out-Null"
+  Write-Color " Done " -B Green -C Black
+}
 exit
-
-# Upgrade pip and setuptools redirecting output to null
-Write-Color "Upgrading ", "pip", " and ", "setuptools", "...   " -C Green, Cyan, White, Cyan, White -StartSpace 4 -NoNewLine
-Invoke-Expression "pip install --upgrade pip 2>&1 | Out-Null"
-Invoke-Expression "pip install --upgrade setuptools 2>&1 | Out-Null"
-Write-Color " Done " -B Green -C Black
 
 # Begin Install
 Write-Color " `n Environment Setup Complete! ", "Beginning Install... `n" -C White, Green
