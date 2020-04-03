@@ -49,6 +49,9 @@
 # Current version of the script
 Set-Variable version -option Constant -value 0.1.0
 
+# Current Directory Location
+Set-Variable cwd -option Constant -value Get-Location
+
 # Current Foreground and Background Colors
 #   https://stackoverflow.com/a/26583010
 # $foreground = (get-host).ui.rawui.ForegroundColor
