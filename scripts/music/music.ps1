@@ -239,7 +239,7 @@ Invoke-Expression "$venvName/Scripts/activate"
 Write-Color " Done " -B Green -C Black
 
 $outdated = Invoke-Expression "pip list -o"
-$pipUp = $outdated -contains "pip"
+$pipUp = $outdated -like "pip"
 
 if ( -Not $pipIp ) {
   # Upgrade pip and setuptools redirecting output to null
