@@ -84,7 +84,7 @@ Function PrintHelp {
   Write-Host " `t .\music.ps1"
   Write-Host " `t .\music.ps1 help"
   Write-Host " `t .\music.ps1 version"
-  Write-Host " `t .\music.ps1 [Path\to\create\virtual\environment]"
+  Write-Host " `t .\music.ps1 --path path\to\create\virtual\environment]"
   Write-Host ""
   exit
 }
