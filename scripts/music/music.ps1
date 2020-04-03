@@ -106,15 +106,20 @@ Function ExistsCommand($cmdName) {
 
 # ------------------------------------------------------------------------------------------- #
 
+$envPath = $null
+
 # Validate command line arguments
 if ($args.Count -gt 0) {
   # Check arguments
   switch ( $args[0] )
   {
-      "help" { PrintHelp }
-      "version" { PrintVersion }
+    "help" { PrintHelp }
+    "version" { PrintVersion }
+    * { $envPath = $args[0] }
   }
 }
+
+Write-Host "env path: $envPath"
 
 # Print a welcome message
 PrintWelcome
