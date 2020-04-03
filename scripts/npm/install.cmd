@@ -96,7 +96,7 @@ CALL npm install --global david
 :: CALL npm install --global depcheck
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
-CALL npm install --global emma-cli
+:: CALL npm install --global emma-cli
 :: # https://github.com/rouanw/npm-audit-helper
 :: CALL npm install --global npm-audit-helper
 :: # https://github.com/dylang/npm-check
@@ -137,7 +137,7 @@ CALL npm install --global ntl
 CALL npm install --global --production npm-windows-upgrade
 :: CALL npm install --global npminstall
 :: # https://github.com/npms-io/npms-cli
-CALL npm install --global npms-cli
+:: CALL npm install --global npms-cli
 :: # https://github.com/gorillamania/package.json-validator
 :: CALL npm install --global package-json-validator
 :: # https://github.com/zeke/package-json-to-readme
@@ -263,7 +263,7 @@ CALL npm install --global neovim
 :: # https://github.com/SamVerschueren/mobisplash-cli
 :: CALL npm install --global mobisplash-cli
 :: # https://github.com/wswebcreation/start-android-emulator
-:: CALL npm install --global start-android-emulator
+CALL npm install --global start-android-emulator
 
 :: ---------------------------------------------------------------------------- ::
 
@@ -320,11 +320,11 @@ CALL npm install --global del-cli
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
-CALL npm install --global fkill-cli
+:: CALL npm install --global fkill-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
-CALL npm install --global gtop
+:: CALL npm install --global gtop
 :: # https://github.com/sindresorhus/open-cli
 :: CALL npm install --global open-cli
 :: # https://github.com/sindresorhus/pageres-cli
