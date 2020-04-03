@@ -121,12 +121,20 @@ Function CheckPath ($path) {
 
 # Validate command line arguments
 if ($args.Count -gt 0) {
-  # Check arguments
-  switch ( $args[0] )
-  {
-    "help" { PrintHelp }
-    "version" { PrintVersion }
-    # default { CheckPath($args[0]) }
+  # Loop over all arguments
+  for ($i = 0; $i -lt $args.Count; $i++) {
+    # Check arguments
+    switch ( $args[$i] )
+    {
+      "help" { PrintHelp }
+      "version" { PrintVersion }
+      "--path" {
+        if ( $args[$i + 1] -ne $null) {
+          CheckPath($args[$i + 1])
+        }
+      }
+      # default { CheckPath($args[0]) }
+    }
   }
 }
 
