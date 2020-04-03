@@ -49,8 +49,10 @@
 # Current version of the script
 Set-Variable version -option Constant -value 0.1.0
 
-# Current Directory Location
+# Current Working Directory
+$cwd = Get-Location
 # Set-Variable cwd -option Constant -value Get-Location
+# Write-Host "Current Location: $cwd"
 
 # Current Foreground and Background Colors
 #   https://stackoverflow.com/a/26583010
