@@ -248,7 +248,6 @@ if ( -Not $pipIp ) {
   Invoke-Expression "pip install --upgrade setuptools 2>&1 | Out-Null"
   Write-Color " Done " -B Green -C Black
 }
-exit
 
 # Begin Install
 Write-Color " `n Environment Setup Complete! ", "Beginning Install... `n" -C White, Green
