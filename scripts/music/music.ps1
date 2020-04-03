@@ -115,11 +115,17 @@ if ($args.Count -gt 0) {
   {
     "help" { PrintHelp }
     "version" { PrintVersion }
-    * { $envPath = $args[0] }
+    default { $envPath = $args[0] }
   }
 }
 
 Write-Host "env path: $envPath"
+
+if ( -Not (Test-Path "$envPath") ) {
+  New-Item -Path "$envPath" -ItemType Directory
+}
+
+EXIT
 
 # Print a welcome message
 PrintWelcome
