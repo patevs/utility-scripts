@@ -53,7 +53,7 @@ command_exists () {
 # VERIFY REQUIREMENTS #
 #######################
 
-printf "\n ${CYAN}Checking System Requirements...${NC}\n\n"
+printf "\n ${CYAN}Checking System Requirements...${NC}\n"
 
 # Verify curl is installed and can be found
 if command_exists "curl"; then
@@ -70,9 +70,9 @@ fi
 ################
 
 # clear
-printf "\n ${BACKGROUND_GREEN} COVID19 Pandemic Tracker ${NC} \n"
+printf "\n ${BACKGROUND_GREEN} COVID19 Pandemic Tracker ${NC} \n\n"
 
-curl -L covid19.trackercli.com/nz
+curl -L covid19.trackercli.com/history/nz
 
 # EOF #
 
