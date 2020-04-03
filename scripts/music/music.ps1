@@ -117,10 +117,6 @@ Function CheckPath ($path) {
 
 # ------------------------------------------------------------------------------------------- #
 
-# Write-Host "Current Location: $cwd"
-
-# $envPath = $null
-
 # Validate command line arguments
 if ($args.Count -gt 0) {
   # Check arguments
@@ -128,11 +124,9 @@ if ($args.Count -gt 0) {
   {
     "help" { PrintHelp }
     "version" { PrintVersion }
-    default { CheckPath($args[0]) }
+    # default { CheckPath($args[0]) }
   }
 }
-
-EXIT
 
 # Print a welcome message
 PrintWelcome
