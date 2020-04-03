@@ -59,7 +59,7 @@ printf "\n ${CYAN}Checking System Requirements...${NC}\n\n"
 if command_exists "curl"; then
   printf "\n ${BACKGROUND_PURPLE} Curl installation: ${NC}\n\n"
   which curl
-  # curl --version
+  curl --version
 else
   printf "\n ${RED}Error:${NC} Curl is not installed. Exiting...\n\n" # >&2
   exit 1
