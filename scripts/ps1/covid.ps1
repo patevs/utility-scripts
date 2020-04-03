@@ -25,6 +25,7 @@
 
 # ------------------------------------------------------------------------------------------- #
 
-Invoke-Expression "bash curl -L covid19.trackercli.com/nz"
+# Invoke-Expression "bash \"$(curl -L covid19.trackercli.com/nz)\""
+# Invoke-Expression "curl -L covid19.trackercli.com/nz"
 
 # EOF #
