@@ -49,6 +49,9 @@
 # Current version of the script
 Set-Variable version -option Constant -value 0.1.0
 
+# Current Directory Location
+# Set-Variable cwd -option Constant -value Get-Location
+
 # Current Foreground and Background Colors
 #   https://stackoverflow.com/a/26583010
 # $foreground = (get-host).ui.rawui.ForegroundColor
@@ -100,8 +103,16 @@ Function ExistsModule ($moduleName) {
 
 # Check if a given command exists
 #   https://stackoverflow.com/a/3919904
-Function ExistsCommand($cmdName) {
+Function ExistsCommand ($cmdName) {
   return [bool](Get-Command -Name $cmdName -ErrorAction SilentlyContinue)
+}
+
+# Ensure the path where the environment will be created exists
+Function CheckPath ($path) {
+  # Create environment path if it doesnt exist
+  if ( -Not (Test-Path "$envPath") ) {
+    New-Item -Path "$envPath" -ItemType Directory
+  }
 }
 
 # ------------------------------------------------------------------------------------------- #
@@ -111,8 +122,9 @@ if ($args.Count -gt 0) {
   # Check arguments
   switch ( $args[0] )
   {
-      "help" { PrintHelp }
-      "version" { PrintVersion }
+    "help" { PrintHelp }
+    "version" { PrintVersion }
+    # default { CheckPath($args[0]) }
   }
 }
 
