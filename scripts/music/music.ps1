@@ -50,9 +50,9 @@
 Set-Variable version -option Constant -value 0.1.0
 
 # Current Working Directory
-$cwd = Get-Location
-# Set-Variable cwd -option Constant -value Get-Location
-# Write-Host "Current Location: $cwd"
+$_cwd = Get-Location
+Set-Variable cwd -option Constant -value $_cwd
+Write-Host "Current Location: $cwd"
 
 # Current Foreground and Background Colors
 #   https://stackoverflow.com/a/26583010
@@ -129,7 +129,7 @@ if ($args.Count -gt 0) {
       "help" { PrintHelp }
       "version" { PrintVersion }
       "--path" {
-        if ( $args[$i + 1] -ne $null) {
+        if ( $args[$i + 1] ) {
           CheckPath($args[$i + 1])
         }
       }
@@ -237,6 +237,11 @@ try {
 Write-Color "Activating", " Virtual Environment... " -C Green, White -StartSpaces 4 -NoNewLine
 Invoke-Expression "$venvName/Scripts/activate"
 Write-Color " Done " -B Green -C Black
+
+$outdated = Invoke-Expression "pip list -o"
+Write-Host "Outdated: $outdated"
+
+exit
 
 # Upgrade pip and setuptools redirecting output to null
 Write-Color "Upgrading ", "pip", " and ", "setuptools", "...   " -C Green, Cyan, White, Cyan, White -StartSpace 4 -NoNewLine
