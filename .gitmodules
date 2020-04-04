@@ -1,0 +1,3 @@
+[submodule "covid"]
+	path = covid
+	url = https://github.com/patevs/covid
