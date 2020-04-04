@@ -97,6 +97,7 @@ CALL npm install --global david
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
 :: CALL npm install --global emma-cli
+CALL npm install --global install-peerdeps
 :: # https://github.com/rouanw/npm-audit-helper
 :: CALL npm install --global npm-audit-helper
 :: # https://github.com/dylang/npm-check

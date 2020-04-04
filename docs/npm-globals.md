@@ -39,6 +39,7 @@
 * [`depcheck`](https://github.com/depcheck/depcheck) Check your npm module for unused dependencies.
 * [`dependency-check`](https://github.com/dependency-check-team/dependency-check) Checks which modules you have used in your code and then makes sure they are listed as dependencies.
 * [`emma-cli`](https://github.com/maticzav/emma-cli) Terminal assistant to find and install node packages.
+* [`install-peerdeps`](https://github.com/nathanhleung/install-peerdeps) CLI to install an NPM package and its peer dependencies automatically.
 * [`npm-audit-helper`](https://github.com/rouanw/npm-audit-helper) Helps you understand and work through npm audit results.
 * [`npm-check`](https://github.com/dylang/npm-check) Check for outdated, incorrect, and unused dependencies.
 * [`npm-check-updates`](https://github.com/tjunnone/npm-check-updates) Find newer versions of package dependencies than what your package.json or bower.json allows.
