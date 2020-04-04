@@ -8,3 +8,6 @@
 
 # EOF #
 
+[submodule "music"]
+	path = music
+	url = https://github.com/patevs/music
