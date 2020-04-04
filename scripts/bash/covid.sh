@@ -6,6 +6,8 @@
 
 # Bash script for tracking the COVID19 pandemic.
 
+# https://github.com/WarenGonzaga/covid19-tracker-cli
+
 # ! Requires curl to be installed.
 
 ###################
