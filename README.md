@@ -8,19 +8,18 @@
 
 ```md
 .
+├── covid
+├── docs
+├── music
 ├── scripts
 │  ├── choco
 │  ├── git
 │  │  ├── installs
 │  │  │  └── git-extras.ps1
-│  ├── music
-│  │  ├── albumart.bash
-│  │  └── ytgetmp3.bash
 │  ├── npm
 │  ├── pip
 ├── .editorconfig
-├── README.md
-└── VERSION
+└── README.md
 ```
 
 ---
