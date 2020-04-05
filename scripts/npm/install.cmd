@@ -97,7 +97,7 @@ CALL npm install --global david
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
 :: CALL npm install --global emma-cli
-CALL npm install --global install-peerdeps
+:: CALL npm install --global install-peerdeps
 :: # https://github.com/rouanw/npm-audit-helper
 :: CALL npm install --global npm-audit-helper
 :: # https://github.com/dylang/npm-check
@@ -256,7 +256,7 @@ CALL npm install --global neovim
 :: ---------------------------------------------------------------------------- ::
 
 :: Mobile Development Utilities
-:: ECHO. & ECHO  [44m Installing Mobile Development Utility Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Mobile Development Utility Modules: [0m & ECHO.
 
 :: # https://github.com/SamVerschueren/mobicon-cli
 :: NOTE: Requires GraphicsMagick to be installed
@@ -325,7 +325,8 @@ CALL npm install --global empty-trash-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
-:: CALL npm install --global gtop
+CALL npm install --global gtop
+:: CALL npm install --global incognitoz
 :: # https://github.com/sindresorhus/open-cli
 :: CALL npm install --global open-cli
 :: # https://github.com/sindresorhus/pageres-cli

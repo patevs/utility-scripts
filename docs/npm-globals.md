@@ -165,6 +165,7 @@
 * [`fkill-cli`](https://github.com/sindresorhus/fkill-cli)
 * [`google-font-installer`](https://github.com/lordgiotto/google-font-installer)
 * [`gtop`](https://github.com/aksakalli/gtop)
+* [`incognitoz`](https://github.com/piotrwawrzyn/incognitoz) Open as many incognito pages with different context as you wish.
 * [`open-cli`](https://github.com/sindresorhus/open-cli)
 * [`pageres-cli`](https://github.com/sindresorhus/pageres-cli)
 * [`screensaver`](https://github.com/gillstrom/screensaver)
