@@ -326,6 +326,7 @@ CALL npm install --global empty-trash-cli
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
 :: CALL npm install --global gtop
+:: CALL npm install --global incognitoz
 :: # https://github.com/sindresorhus/open-cli
 :: CALL npm install --global open-cli
 :: # https://github.com/sindresorhus/pageres-cli
