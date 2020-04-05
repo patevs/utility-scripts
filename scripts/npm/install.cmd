@@ -256,7 +256,7 @@ CALL npm install --global neovim
 :: ---------------------------------------------------------------------------- ::
 
 :: Mobile Development Utilities
-:: ECHO. & ECHO  [44m Installing Mobile Development Utility Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Mobile Development Utility Modules: [0m & ECHO.
 
 :: # https://github.com/SamVerschueren/mobicon-cli
 :: NOTE: Requires GraphicsMagick to be installed
@@ -325,7 +325,7 @@ CALL npm install --global empty-trash-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
-:: CALL npm install --global gtop
+CALL npm install --global gtop
 :: CALL npm install --global incognitoz
 :: # https://github.com/sindresorhus/open-cli
 :: CALL npm install --global open-cli
