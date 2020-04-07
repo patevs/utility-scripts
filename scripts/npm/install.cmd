@@ -258,13 +258,14 @@ CALL npm install --global neovim
 :: Mobile Development Utilities
 ECHO. & ECHO  [44m Installing Mobile Development Utility Modules: [0m & ECHO.
 
+CALL npm install --global emus
 :: # https://github.com/SamVerschueren/mobicon-cli
 :: NOTE: Requires GraphicsMagick to be installed
 :: CALL npm install --global mobicon-cli
 :: # https://github.com/SamVerschueren/mobisplash-cli
 :: CALL npm install --global mobisplash-cli
 :: # https://github.com/wswebcreation/start-android-emulator
-CALL npm install --global start-android-emulator
+:: CALL npm install --global start-android-emulator
 
 :: ---------------------------------------------------------------------------- ::
 
