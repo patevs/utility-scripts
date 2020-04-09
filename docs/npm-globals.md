@@ -147,19 +147,19 @@
 
 ## React Development Utilities
 
-* [`create-react-app`](https://github.com/facebook/create-react-app)
-* [`generact`](https://github.com/diegohaz/generact)
+* [`create-react-app`](https://github.com/facebook/create-react-app) Create React apps with no build configuration.
+* [`generact`](https://github.com/diegohaz/generact) Tool for generating React components by replicating your own.
 
 ---
 
 ## React Native Development Utilities
 
-* [`reactxp`](https://github.com/microsoft/reactxp)
-* [`ignite`](https://github.com/infinitered/ignite)
-* [`react-native-cli`](https://github.com/react-native-community/cli)
-* [`react-native-rename`](https://github.com/junedomingo/react-native-rename)
-* [`rnpm`](https://github.com/rnpm/rnpm)
-* [`rsx`](https://github.com/react-native-contrib/rsx)
+* [`reactxp`](https://github.com/microsoft/reactxp) Library for cross-platform app development using React and React Native.
+* [`ignite`](https://github.com/infinitered/ignite) The hottest CLI for React Native, boilerplates, plugins, generators, and more!
+* [`react-native-cli`](https://github.com/react-native-community/cli) React Native command line tools.
+* [`react-native-rename`](https://github.com/junedomingo/react-native-rename) Rename react-native app with just one command.
+* [`rnpm`](https://github.com/rnpm/rnpm) React Native Package Manager. *Note* - Merged into react-native >=0.60
+* [`rsx`](https://github.com/react-native-contrib/rsx) A CLI tool built to ease your daily React Native development.
 
 ---
 
