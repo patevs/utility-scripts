@@ -4,8 +4,6 @@
 
 * [NPM Website](https://www.npmjs.com/)
 
-**TODO:** Add description to each module.
-
 ---
 
 ## Linting and Style Checking
@@ -83,147 +81,167 @@
 
 ---
 
+## Documentation Utilities
+
+* [`clog-cli`](https://github.com/kentcdodds/clog-cli) An npm distribution of the amazing [clog](https://github.com/clog-tool/clog-cli) tool.
+* [`doctoc`](https://github.com/thlorenz/doctoc) Generates table of contents for markdown files inside local git repository.
+* [`gitbook`](https://github.com/GitbookIO/gitbook) Modern documentation format and toolchain using Git and Markdown.
+
+---
+
+## Deployment Utilities
+
+* [`release-it`](https://github.com/release-it/release-it) Automate versioning and package publishing.
+* [`semantic-release`](https://github.com/semantic-release/semantic-release) Fully automated version management and package publishing.
+
+---
+
 ## Development Utilities
 
 * [`bower`](https://github.com/bower/bower) A package manager for the web.
-* [`clog-cli`](https://github.com/kentcdodds/clog-cli) An npm distribution of the amazing [clog](https://github.com/clog-tool/clog-cli) tool.
 * [`node-csvtojson`](https://github.com/Keyang/node-csvtojson) Blazing fast and Comprehensive CSV Parser for Node.JS / Browser / Command Line.
 * [`destiny`](https://github.com/benawad/destiny) Prettier for File Structures.
 * [`devion`](https://github.com/alchaplinsky/devion) One Command to Run All your Projects in Development.
-* [`doctoc`](https://github.com/thlorenz/doctoc) Generates table of contents for markdown files inside local git repository.
 * [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) Font Awesome split to individual SVG and PNG files of different sizes along with Node.JS based generator. *Note* - Requires [`rsvg-convert`](https://chocolatey.org/packages/rsvg-convert) to be installed.
-* [`foy`](https://github.com/zaaack/foy)
-* [`gatsby`](https://github.com/gatsbyjs/gatsby)
-* [`gitbook`](https://github.com/GitbookIO/gitbook)
-* [`good-first-issue`](https://github.com/cutenode/good-first-issue)
-* [`html-minifier`](https://github.com/kangax/html-minifier)
-* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image minifier.
-* [`Jsome`](https://github.com/Javascipt/Jsome)
-* [`licensed`](https://github.com/plibither8/licensed) : License generator.
-* [`loadtest`](https://github.com/alexfernandez/loadtest)
-* [`localtunnel`](https://github.com/localtunnel/localtunnel)
-* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Note - Requires `bash` - Try `licensed` instead.
-* [`neovim/node-client`](https://github.com/neovim/node-client)
-* [`node-passgen-cli`](https://github.com/jhotmann/node-passgen-cli)
-* [`project-explorer`](https://github.com/sdras/project-explorer)
-* [`release-it`](https://github.com/release-it/release-it)
-* [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli)
-* [`semantic-release`](https://github.com/semantic-release/semantic-release)
-* [`spaceholder`](https://github.com/ecrmnn/spaceholder) : Placeholder image generator.
-* [`svgo`](https://github.com/svg/svgo) : SVG Optimizer.
-* [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io)
-* [`stacks-cli`](https://github.com/WeiChiaChang/stacks-cli)
-* [`strapi`](https://github.com/strapi/strapi)
-* [`tldr`](https://github.com/tldr-pages/tldr)
-* [`tldr-node-client`](https://github.com/tldr-pages/tldr-node-client)
-* [`UglifyJS2`](https://github.com/mishoo/UglifyJS2)
-* [`underscore-cli`](https://github.com/ddopson/underscore-cli)
-* [`viewport-list-cli`](https://github.com/kevva/viewport-list-cli)
-* [`yuglify`](https://github.com/yui/yuglify)
+* [`foy`](https://github.com/zaaack/foy) A simple, light-weight and modern task runner for general purpose.
+* [`Jsome`](https://github.com/Javascipt/Jsome) Give style to your JSON on your console!
+* [`licensed`](https://github.com/plibither8/licensed) Interactive command line tool to help you choose and add licenses to your projects
+* [`loadtest`](https://github.com/alexfernandez/loadtest) Runs a load test on the selected HTTP or WebSockets URL.
+* [`localtunnel`](https://github.com/localtunnel/localtunnel) Exposes your localhost to the world for easy testing and sharing!
+* [`mklicense`](https://github.com/cezaraugusto/mklicense) CLI tool for generating Licenses. Easily. *Note* - Requires `bash` - Try [`licensed`](https://github.com/plibither8/licensed) instead.
+* [`neovim/node-client`](https://github.com/neovim/node-client) Nvim Node.js client and plugin host.
+* [`project-explorer`](https://github.com/sdras/project-explorer) CLI tool to create an annotated tree visualization of any project.
+* [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli) A tool for renaming files quickly, especially multiple files at once.
+* [`spaceholder`](https://github.com/ecrmnn/spaceholder) Download placeholder images from public domain sources blazingly fast.
+* [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io) Complete web performance tool that helps you measure the performance of your website.
+* [`stacks-cli`](https://github.com/WeiChiaChang/stacks-cli) Analyze website stack from the terminal.
+* [`strapi`](https://github.com/strapi/strapi) Headless CMS to easily build customisable APIs.
+* [`tldr`](https://github.com/tldr-pages/tldr) Simplified and community-driven man pages.
+  * [`tldr-node-client`](https://github.com/tldr-pages/tldr-node-client) Command line client for TLDR-pages.
+* [`underscore-cli`](https://github.com/ddopson/underscore-cli) Command-line utility-belt for hacking JSON and Javascript.
+* [`viewport-list-cli`](https://github.com/kevva/viewport-list-cli) Return a list of devices and their viewports.
+
+---
+
+## Minification Utilities
+
+* [`html-minifier`](https://github.com/kangax/html-minifier) HTML compressor/minifier.
+* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) Minify images seamlessly.
+* [`node-cssmin`](https://github.com/jbleuzen/node-cssmin) Tool that minimizes CSS Files.
+* [`svgo`](https://github.com/svg/svgo) Tool for optimizing SVG files.
+* [`yuglify`](https://github.com/yui/yuglify) Wrapper around [`UglifyJS`](https://github.com/mishoo/UglifyJS) and [`cssmin`](https://github.com/jbleuzen/node-cssmin)
+* [`UglifyJS2`](https://github.com/mishoo/UglifyJS2) JavaScript parser, minifier, compressor and beautifier toolkit.
 
 ---
 
 ## Mobile Development Utilities
 
 * [`emus`](https://github.com/tienph6m/emus) Start the Android Emulator or the iOS Simulator from the command line.
-* [`mobicon-cli`](https://github.com/SamVerschueren/mobicon-cli) : Note - Requires `GraphicsMagick` to be installed.
-* [`mobisplash-cli`](https://github.com/SamVerschueren/mobisplash-cli)
-* [`start-android-emulator`](https://github.com/wswebcreation/start-android-emulator)
+* [`mobicon-cli`](https://github.com/SamVerschueren/mobicon-cli) Mobile icon generator. *Note* - Requires [`GraphicsMagick`](http://www.graphicsmagick.org/).
+* [`mobisplash-cli`](https://github.com/SamVerschueren/mobisplash-cli) Mobile app splash screen generator.
+* [`start-android-emulator`](https://github.com/wswebcreation/start-android-emulator) Start an Android emulator on your local machine.
 
 ---
 
 ## React Development Utilities
 
-* [`create-react-app`](https://github.com/facebook/create-react-app)
-* [`generact`](https://github.com/diegohaz/generact)
+* [`create-react-app`](https://github.com/facebook/create-react-app) Create React apps with no build configuration.
+* [`generact`](https://github.com/diegohaz/generact) Tool for generating React components by replicating your own.
 
 ---
 
 ## React Native Development Utilities
 
-* [`reactxp`](https://github.com/microsoft/reactxp)
-* [`ignite`](https://github.com/infinitered/ignite)
-* [`react-native-cli`](https://github.com/react-native-community/cli)
-* [`react-native-rename`](https://github.com/junedomingo/react-native-rename)
-* [`rnpm`](https://github.com/rnpm/rnpm)
-* [`rsx`](https://github.com/react-native-contrib/rsx)
+* [`reactxp`](https://github.com/microsoft/reactxp) Library for cross-platform app development using React and React Native.
+* [`ignite`](https://github.com/infinitered/ignite) The hottest CLI for React Native, boilerplates, plugins, generators, and more!
+* [`react-native-cli`](https://github.com/react-native-community/cli) React Native command line tools.
+* [`react-native-rename`](https://github.com/junedomingo/react-native-rename) Rename react-native app with just one command.
+* [`rnpm`](https://github.com/rnpm/rnpm) React Native Package Manager. *Note* - Merged into react-native core from version 0.60 and up.
+* [`rsx`](https://github.com/react-native-contrib/rsx) A CLI tool built to ease your daily React Native development.
 
 ---
 
 ## Security Utilities
 
-* [`lighthouse`](https://github.com/GoogleChrome/lighthouse/) : Google's website performance test.
-* [`lighthouse-security`](https://github.com/voorhoede/lighthouse-security)
-* [`pwmetrics`](https://github.com/paulirish/pwmetrics) : Progressive web metrics.
-* [`is-website-vulnerable`](https://github.com/lirantal/is-website-vulnerable)
+* [`lighthouse`](https://github.com/GoogleChrome/lighthouse) Automated auditing, performance metrics, and best practices for the web.
+* [`lighthouse-security`](https://github.com/voorhoede/lighthouse-security) Runs the default Google Lighthouse tests with additional security tests.
+* [`pwmetrics`](https://github.com/paulirish/pwmetrics) CLI tool and lib to gather performance metrics via [`Lighthouse`](https://github.com/GoogleChrome/lighthouse).
+* [`is-website-vulnerable`](https://github.com/lirantal/is-website-vulnerable) Finds publicly known security vulnerabilities in a website's frontend JavaScript libraries.
 
 ---
 
 ## System Utilities
 
-* [`del-cli`](https://github.com/sindresorhus/del-cli)
-* [`empty-trash-cli`](https://github.com/sindresorhus/empty-trash-cli)
-* [`fkill-cli`](https://github.com/sindresorhus/fkill-cli)
-* [`google-font-installer`](https://github.com/lordgiotto/google-font-installer)
-* [`gtop`](https://github.com/aksakalli/gtop)
+* [`del-cli`](https://github.com/sindresorhus/del-cli) Delete files and directories.
+* [`empty-trash-cli`](https://github.com/sindresorhus/empty-trash-cli) Empty the trash.
+* [`fkill-cli`](https://github.com/sindresorhus/fkill-cli) Fabulously kill processes. Cross-platform.
+* [`google-font-installer`](https://github.com/lordgiotto/google-font-installer) Download and install Google Web Fonts on your local machine.
+* [`gtop`](https://github.com/aksakalli/gtop) System monitoring dashboard for terminal.
 * [`incognitoz`](https://github.com/piotrwawrzyn/incognitoz) Open as many incognito pages with different context as you wish.
-* [`open-cli`](https://github.com/sindresorhus/open-cli)
-* [`pageres-cli`](https://github.com/sindresorhus/pageres-cli)
-* [`screensaver`](https://github.com/gillstrom/screensaver)
-* [`share-cli`](https://github.com/marionebl/share-cli)
-* [`trash-cli`](https://github.com/sindresorhus/trash-cli)
-* [`vtop`](https://github.com/MrRio/vtop) : Note - Must be run using `bash`. try `gtop` instead.
-* [`wifi-password-cli`](https://github.com/kevva/wifi-password-cli)
+* [`node-passgen-cli`](https://github.com/jhotmann/node-passgen-cli) A simple cli tool for generating passwords.
+* [`open-cli`](https://github.com/sindresorhus/open-cli) Open stuff like URLs, files, executables. Cross-platform.
+* [`pageres-cli`](https://github.com/sindresorhus/pageres-cli) Capture website screenshots.
+* [`screensaver`](https://github.com/gillstrom/screensaver) Start the screensaver.
+* [`share-cli`](https://github.com/marionebl/share-cli) Quickly share files from the command line.
+* [`trash-cli`](https://github.com/sindresorhus/trash-cli) Move files and folders to the trash.
+* [`vtop`](https://github.com/MrRio/vtop) Graphical activity monitor for the command line. *Note* - Requires `bash`. Try [`gtop`](https://github.com/aksakalli/gtop) instead.
+* [`wifi-password-cli`](https://github.com/kevva/wifi-password-cli) Get current wifi password.
+
+---
+
+## Static Site Generators
+
+* [`gatsby`](https://github.com/gatsbyjs/gatsby) Build blazing fast, modern apps and websites with React.
 
 ---
 
 ## Yeoman and Generators
 
-* [`yo`](https://github.com/yeoman/yo)
+* [`yo`](https://github.com/yeoman/yo) CLI tool for running Yeoman generators to kickstart new projects, prescribing best practices and tools to help you stay productive.
 
 [](.)
 
-* [`generator-aspnet`](https://github.com/OmniSharp/generator-aspnet) : Note - Requires `bower` to be installed.
+* [`generator-aspnet`](https://github.com/OmniSharp/generator-aspnet) Generator for ASP.NET Core. *Note* - Requires [`bower`](https://github.com/bower/bower).
 
 [](.)
 
-* [`generator-h5bp`](https://github.com/h5bp/generator-h5bp)
-* [`generator-webapp`](https://github.com/yeoman/generator-webapp)
+* [`generator-h5bp`](https://github.com/h5bp/generator-h5bp) HTML5 Boilerplate generator.
+* [`generator-webapp`](https://github.com/yeoman/generator-webapp) Generator that scaffolds out a front-end web app using `gulp` for the build process.
 
 [](.)
 
-* [`generator-nm`](https://github.com/sindresorhus/generator-nm): Ava & Codecov
-* [`generator-node`](https://github.com/yeoman/generator-node) : Jest & Coveralls
+* [`generator-nm`](https://github.com/sindresorhus/generator-nm) Scaffold out a node module with `Ava` & `Codecov`.
+* [`generator-node`](https://github.com/yeoman/generator-node) Base template to start a new Node.js module with `Jest` & `Coveralls`
 
 [](.)
 
-* [`generator-node-typescript`](https://github.com/ospatil/generator-node-typescript) : Jest
-* [`generator-typescript-starter`](https://github.com/phunguyen19/generator-typescript-starter) : Ava
+* [`generator-node-typescript`](https://github.com/ospatil/generator-node-typescript) Generator for creating NodeJS packages using `TypeScript` with `Jest`
+* [`generator-typescript-starter`](https://github.com/phunguyen19/generator-typescript-starter) `Typescript` Starter Generator with `Ava`
 
 [](.)
 
-* [`generator-rn-toolbox`](https://github.com/bamlab/generator-rn-toolbox) : React Native
+* [`generator-rn-toolbox`](https://github.com/bamlab/generator-rn-toolbox) Generators to kickstart your react-native v0.48+ projects.
 
 ---
 
 ## Alternate Package Managers
 
-* [`ied`](https://github.com/alexanderGugel/ied)
-* [`pnpm`](https://github.com/pnpm/pnpm)
-* [`yarn`](https://github.com/yarnpkg/yarn)
+* [`ied`](https://github.com/alexanderGugel/ied)  Like npm, but faster - an alternative package manager for Node.
+* [`pnpm`](https://github.com/pnpm/pnpm) Fast, disk space efficient package manager.
+* [`yarn`](https://github.com/yarnpkg/yarn) Fast, reliable, and secure dependency management.
 
 ---
 
 ## Miscellaneous
 
-* [`corona-cli`](https://github.com/ahmadawais/corona-cli)
-* [`iponmap`](https://github.com/nogizhopaboroda/iponmap)
-* [`learnyoubash`](https://github.com/denysdovhan/learnyoubash)
-* [`movie-cli`](https://github.com/mayankchd/movie)
-* [`nasa-cli`](https://github.com/xxczaki/nasa-cli)
-* [`weather-cli`](https://github.com/riyadhalnur/weather-cli)
-* [`webtorrent-cli`](https://github.com/webtorrent/webtorrent-cli)
-* [`whereami`](https://github.com/rafaelrinaldi/whereami)
+* [`corona-cli`](https://github.com/ahmadawais/corona-cli) Track the Coronavirus disease (COVID-19) in the command line.
+* [`good-first-issue`](https://github.com/cutenode/good-first-issue) CLI for finding good first issues.
+* [`iponmap`](https://github.com/nogizhopaboroda/iponmap) IP location finder.
+* [`learnyoubash`](https://github.com/denysdovhan/learnyoubash) Learn you how to write your first bash script.
+* [`movie-cli`](https://github.com/mayankchd/movie) CLI for getting information about movies and comparing two movies.
+* [`nasa-cli`](https://github.com/xxczaki/nasa-cli) Download NASA Picture of the Day from your terminal!
+* [`weather-cli`](https://github.com/riyadhalnur/weather-cli) Check the weather for your city from your terminal.
+* [`webtorrent-cli`](https://github.com/webtorrent/webtorrent-cli) Streaming torrent client for the command line.
+* [`whereami`](https://github.com/rafaelrinaldi/whereami) Get your geolocation information using [freegeoip.app](https://freegeoip.app/).
 
 ---
-
