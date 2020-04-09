@@ -127,11 +127,12 @@
 
 ## Minification Utilities
 
-* [`html-minifier`](https://github.com/kangax/html-minifier)
-* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image minifier.
-* [`svgo`](https://github.com/svg/svgo) : SVG Optimizer.
-* [`yuglify`](https://github.com/yui/yuglify)
-* [`UglifyJS2`](https://github.com/mishoo/UglifyJS2)
+* [`html-minifier`](https://github.com/kangax/html-minifier) HTML compressor/minifier.
+* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) Minify images seamlessly.
+* [`node-cssmin`](https://github.com/jbleuzen/node-cssmin) Tool that minimizes CSS Files.
+* [`svgo`](https://github.com/svg/svgo) Tool for optimizing SVG files.
+* [`yuglify`](https://github.com/yui/yuglify) Wrapper around [`UglifyJS`](https://github.com/mishoo/UglifyJS) and [`cssmin`](https://github.com/jbleuzen/node-cssmin)
+* [`UglifyJS2`](https://github.com/mishoo/UglifyJS2) JavaScript parser, minifier, compressor and beautifier toolkit.
 
 ---
 
