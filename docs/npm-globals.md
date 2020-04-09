@@ -158,17 +158,17 @@
 * [`ignite`](https://github.com/infinitered/ignite) The hottest CLI for React Native, boilerplates, plugins, generators, and more!
 * [`react-native-cli`](https://github.com/react-native-community/cli) React Native command line tools.
 * [`react-native-rename`](https://github.com/junedomingo/react-native-rename) Rename react-native app with just one command.
-* [`rnpm`](https://github.com/rnpm/rnpm) React Native Package Manager. *Note* - Merged into react-native >=0.60
+* [`rnpm`](https://github.com/rnpm/rnpm) React Native Package Manager. *Note* - Merged into react-native core from version 0.60 and up.
 * [`rsx`](https://github.com/react-native-contrib/rsx) A CLI tool built to ease your daily React Native development.
 
 ---
 
 ## Security Utilities
 
-* [`lighthouse`](https://github.com/GoogleChrome/lighthouse/) : Google's website performance test.
-* [`lighthouse-security`](https://github.com/voorhoede/lighthouse-security)
-* [`pwmetrics`](https://github.com/paulirish/pwmetrics) : Progressive web metrics.
-* [`is-website-vulnerable`](https://github.com/lirantal/is-website-vulnerable)
+* [`lighthouse`](https://github.com/GoogleChrome/lighthouse) Automated auditing, performance metrics, and best practices for the web.
+* [`lighthouse-security`](https://github.com/voorhoede/lighthouse-security) Runs the default Google Lighthouse tests with additional security tests.
+* [`pwmetrics`](https://github.com/paulirish/pwmetrics) CLI tool and lib to gather performance metrics via [`Lighthouse`](https://github.com/GoogleChrome/lighthouse).
+* [`is-website-vulnerable`](https://github.com/lirantal/is-website-vulnerable) Finds publicly known security vulnerabilities in a website's frontend JavaScript libraries.
 
 ---
 
