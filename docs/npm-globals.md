@@ -91,6 +91,13 @@
 
 ---
 
+## Deployment Utilities
+
+* [`release-it`](https://github.com/release-it/release-it) Automate versioning and package publishing.
+* [`semantic-release`](https://github.com/semantic-release/semantic-release) Fully automated version management and package publishing.
+
+---
+
 ## Development Utilities
 
 * [`bower`](https://github.com/bower/bower) A package manager for the web.
@@ -105,18 +112,16 @@
 * [`localtunnel`](https://github.com/localtunnel/localtunnel) Exposes your localhost to the world for easy testing and sharing!
 * [`mklicense`](https://github.com/cezaraugusto/mklicense) CLI tool for generating Licenses. Easily. *Note* - Requires `bash` - Try [`licensed`](https://github.com/plibither8/licensed) instead.
 * [`neovim/node-client`](https://github.com/neovim/node-client) Nvim Node.js client and plugin host.
-* [`project-explorer`](https://github.com/sdras/project-explorer)
-* [`release-it`](https://github.com/release-it/release-it)
-* [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli)
-* [`semantic-release`](https://github.com/semantic-release/semantic-release)
-* [`spaceholder`](https://github.com/ecrmnn/spaceholder) : Placeholder image generator.
-* [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io)
-* [`stacks-cli`](https://github.com/WeiChiaChang/stacks-cli)
-* [`strapi`](https://github.com/strapi/strapi)
-* [`tldr`](https://github.com/tldr-pages/tldr)
-* [`tldr-node-client`](https://github.com/tldr-pages/tldr-node-client)
-* [`underscore-cli`](https://github.com/ddopson/underscore-cli)
-* [`viewport-list-cli`](https://github.com/kevva/viewport-list-cli)
+* [`project-explorer`](https://github.com/sdras/project-explorer) CLI tool to create an annotated tree visualization of any project.
+* [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli) A tool for renaming files quickly, especially multiple files at once.
+* [`spaceholder`](https://github.com/ecrmnn/spaceholder) Download placeholder images from public domain sources blazingly fast.
+* [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io) Complete web performance tool that helps you measure the performance of your website.
+* [`stacks-cli`](https://github.com/WeiChiaChang/stacks-cli) Analyze website stack from the terminal.
+* [`strapi`](https://github.com/strapi/strapi) Headless CMS to easily build customisable APIs.
+* [`tldr`](https://github.com/tldr-pages/tldr) Simplified and community-driven man pages.
+  * [`tldr-node-client`](https://github.com/tldr-pages/tldr-node-client) Command line client for TLDR-pages.
+* [`underscore-cli`](https://github.com/ddopson/underscore-cli) Command-line utility-belt for hacking JSON and Javascript.
+* [`viewport-list-cli`](https://github.com/kevva/viewport-list-cli) Return a list of devices and their viewports.
 
 ---
 
