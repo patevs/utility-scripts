@@ -174,20 +174,20 @@
 
 ## System Utilities
 
-* [`del-cli`](https://github.com/sindresorhus/del-cli)
-* [`empty-trash-cli`](https://github.com/sindresorhus/empty-trash-cli)
-* [`fkill-cli`](https://github.com/sindresorhus/fkill-cli)
-* [`google-font-installer`](https://github.com/lordgiotto/google-font-installer)
-* [`gtop`](https://github.com/aksakalli/gtop)
+* [`del-cli`](https://github.com/sindresorhus/del-cli) Delete files and directories.
+* [`empty-trash-cli`](https://github.com/sindresorhus/empty-trash-cli) Empty the trash.
+* [`fkill-cli`](https://github.com/sindresorhus/fkill-cli) Fabulously kill processes. Cross-platform.
+* [`google-font-installer`](https://github.com/lordgiotto/google-font-installer) Download and install Google Web Fonts on your local machine.
+* [`gtop`](https://github.com/aksakalli/gtop) System monitoring dashboard for terminal.
 * [`incognitoz`](https://github.com/piotrwawrzyn/incognitoz) Open as many incognito pages with different context as you wish.
 * [`node-passgen-cli`](https://github.com/jhotmann/node-passgen-cli) A simple cli tool for generating passwords.
-* [`open-cli`](https://github.com/sindresorhus/open-cli)
-* [`pageres-cli`](https://github.com/sindresorhus/pageres-cli)
-* [`screensaver`](https://github.com/gillstrom/screensaver)
-* [`share-cli`](https://github.com/marionebl/share-cli)
-* [`trash-cli`](https://github.com/sindresorhus/trash-cli)
-* [`vtop`](https://github.com/MrRio/vtop) : Note - Must be run using `bash`. try `gtop` instead.
-* [`wifi-password-cli`](https://github.com/kevva/wifi-password-cli)
+* [`open-cli`](https://github.com/sindresorhus/open-cli) Open stuff like URLs, files, executables. Cross-platform.
+* [`pageres-cli`](https://github.com/sindresorhus/pageres-cli) Capture website screenshots.
+* [`screensaver`](https://github.com/gillstrom/screensaver) Start the screensaver.
+* [`share-cli`](https://github.com/marionebl/share-cli) Quickly share files from the command line.
+* [`trash-cli`](https://github.com/sindresorhus/trash-cli) Move files and folders to the trash.
+* [`vtop`](https://github.com/MrRio/vtop) Graphical activity monitor for the command line. *Note* - Requires `bash`. Try [`gtop`](https://github.com/aksakalli/gtop) instead.
+* [`wifi-password-cli`](https://github.com/kevva/wifi-password-cli) Get current wifi password.
 
 ---
 
