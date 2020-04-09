@@ -83,21 +83,22 @@
 
 ---
 
+## Documentation Utilities
+
+* [`clog-cli`](https://github.com/kentcdodds/clog-cli) An npm distribution of the amazing [clog](https://github.com/clog-tool/clog-cli) tool.
+* [`doctoc`](https://github.com/thlorenz/doctoc) Generates table of contents for markdown files inside local git repository.
+* [`gitbook`](https://github.com/GitbookIO/gitbook) Modern documentation format and toolchain using Git and Markdown.
+
+---
+
 ## Development Utilities
 
 * [`bower`](https://github.com/bower/bower) A package manager for the web.
-* [`clog-cli`](https://github.com/kentcdodds/clog-cli) An npm distribution of the amazing [clog](https://github.com/clog-tool/clog-cli) tool.
 * [`node-csvtojson`](https://github.com/Keyang/node-csvtojson) Blazing fast and Comprehensive CSV Parser for Node.JS / Browser / Command Line.
 * [`destiny`](https://github.com/benawad/destiny) Prettier for File Structures.
 * [`devion`](https://github.com/alchaplinsky/devion) One Command to Run All your Projects in Development.
-* [`doctoc`](https://github.com/thlorenz/doctoc) Generates table of contents for markdown files inside local git repository.
 * [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) Font Awesome split to individual SVG and PNG files of different sizes along with Node.JS based generator. *Note* - Requires [`rsvg-convert`](https://chocolatey.org/packages/rsvg-convert) to be installed.
-* [`foy`](https://github.com/zaaack/foy)
-* [`gatsby`](https://github.com/gatsbyjs/gatsby)
-* [`gitbook`](https://github.com/GitbookIO/gitbook)
-* [`good-first-issue`](https://github.com/cutenode/good-first-issue)
-* [`html-minifier`](https://github.com/kangax/html-minifier)
-* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image minifier.
+* [`foy`](https://github.com/zaaack/foy) A simple, light-weight and modern task runner for general purpose.
 * [`Jsome`](https://github.com/Javascipt/Jsome)
 * [`licensed`](https://github.com/plibither8/licensed) : License generator.
 * [`loadtest`](https://github.com/alexfernandez/loadtest)
@@ -110,16 +111,23 @@
 * [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli)
 * [`semantic-release`](https://github.com/semantic-release/semantic-release)
 * [`spaceholder`](https://github.com/ecrmnn/spaceholder) : Placeholder image generator.
-* [`svgo`](https://github.com/svg/svgo) : SVG Optimizer.
 * [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io)
 * [`stacks-cli`](https://github.com/WeiChiaChang/stacks-cli)
 * [`strapi`](https://github.com/strapi/strapi)
 * [`tldr`](https://github.com/tldr-pages/tldr)
 * [`tldr-node-client`](https://github.com/tldr-pages/tldr-node-client)
-* [`UglifyJS2`](https://github.com/mishoo/UglifyJS2)
 * [`underscore-cli`](https://github.com/ddopson/underscore-cli)
 * [`viewport-list-cli`](https://github.com/kevva/viewport-list-cli)
+
+---
+
+## Minification Utilities
+
+* [`html-minifier`](https://github.com/kangax/html-minifier)
+* [`imagemin-cli`](https://github.com/imagemin/imagemin-cli) : Image minifier.
+* [`svgo`](https://github.com/svg/svgo) : SVG Optimizer.
 * [`yuglify`](https://github.com/yui/yuglify)
+* [`UglifyJS2`](https://github.com/mishoo/UglifyJS2)
 
 ---
 
@@ -177,6 +185,12 @@
 
 ---
 
+## Static Site Generators
+
+* [`gatsby`](https://github.com/gatsbyjs/gatsby) Build blazing fast, modern apps and websites with React.
+
+---
+
 ## Yeoman and Generators
 
 * [`yo`](https://github.com/yeoman/yo)
@@ -217,6 +231,7 @@
 ## Miscellaneous
 
 * [`corona-cli`](https://github.com/ahmadawais/corona-cli)
+* [`good-first-issue`](https://github.com/cutenode/good-first-issue)
 * [`iponmap`](https://github.com/nogizhopaboroda/iponmap)
 * [`learnyoubash`](https://github.com/denysdovhan/learnyoubash)
 * [`movie-cli`](https://github.com/mayankchd/movie)
@@ -226,4 +241,3 @@
 * [`whereami`](https://github.com/rafaelrinaldi/whereami)
 
 ---
-
