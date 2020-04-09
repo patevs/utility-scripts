@@ -4,8 +4,6 @@
 
 * [NPM Website](https://www.npmjs.com/)
 
-**TODO:** Add description to each module.
-
 ---
 
 ## Linting and Style Checking
@@ -228,22 +226,22 @@
 
 ## Alternate Package Managers
 
-* [`ied`](https://github.com/alexanderGugel/ied)
-* [`pnpm`](https://github.com/pnpm/pnpm)
-* [`yarn`](https://github.com/yarnpkg/yarn)
+* [`ied`](https://github.com/alexanderGugel/ied)  Like npm, but faster - an alternative package manager for Node.
+* [`pnpm`](https://github.com/pnpm/pnpm) Fast, disk space efficient package manager.
+* [`yarn`](https://github.com/yarnpkg/yarn) Fast, reliable, and secure dependency management.
 
 ---
 
 ## Miscellaneous
 
-* [`corona-cli`](https://github.com/ahmadawais/corona-cli)
-* [`good-first-issue`](https://github.com/cutenode/good-first-issue)
-* [`iponmap`](https://github.com/nogizhopaboroda/iponmap)
-* [`learnyoubash`](https://github.com/denysdovhan/learnyoubash)
-* [`movie-cli`](https://github.com/mayankchd/movie)
-* [`nasa-cli`](https://github.com/xxczaki/nasa-cli)
-* [`weather-cli`](https://github.com/riyadhalnur/weather-cli)
-* [`webtorrent-cli`](https://github.com/webtorrent/webtorrent-cli)
-* [`whereami`](https://github.com/rafaelrinaldi/whereami)
+* [`corona-cli`](https://github.com/ahmadawais/corona-cli) Track the Coronavirus disease (COVID-19) in the command line.
+* [`good-first-issue`](https://github.com/cutenode/good-first-issue) CLI for finding good first issues.
+* [`iponmap`](https://github.com/nogizhopaboroda/iponmap) IP location finder.
+* [`learnyoubash`](https://github.com/denysdovhan/learnyoubash) Learn you how to write your first bash script.
+* [`movie-cli`](https://github.com/mayankchd/movie) CLI for getting information about movies and comparing two movies.
+* [`nasa-cli`](https://github.com/xxczaki/nasa-cli) Download NASA Picture of the Day from your terminal!
+* [`weather-cli`](https://github.com/riyadhalnur/weather-cli) Check the weather for your city from your terminal.
+* [`webtorrent-cli`](https://github.com/webtorrent/webtorrent-cli) Streaming torrent client for the command line.
+* [`whereami`](https://github.com/rafaelrinaldi/whereami) Get your geolocation information using [freegeoip.app](https://freegeoip.app/).
 
 ---
