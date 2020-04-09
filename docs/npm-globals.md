@@ -139,9 +139,9 @@
 ## Mobile Development Utilities
 
 * [`emus`](https://github.com/tienph6m/emus) Start the Android Emulator or the iOS Simulator from the command line.
-* [`mobicon-cli`](https://github.com/SamVerschueren/mobicon-cli) : Note - Requires `GraphicsMagick` to be installed.
-* [`mobisplash-cli`](https://github.com/SamVerschueren/mobisplash-cli)
-* [`start-android-emulator`](https://github.com/wswebcreation/start-android-emulator)
+* [`mobicon-cli`](https://github.com/SamVerschueren/mobicon-cli) Mobile icon generator. *Note* - Requires [`GraphicsMagick`](http://www.graphicsmagick.org/).
+* [`mobisplash-cli`](https://github.com/SamVerschueren/mobisplash-cli) Mobile app splash screen generator.
+* [`start-android-emulator`](https://github.com/wswebcreation/start-android-emulator) Start an Android emulator on your local machine.
 
 ---
 
