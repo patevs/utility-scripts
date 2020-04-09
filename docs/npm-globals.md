@@ -103,9 +103,8 @@
 * [`licensed`](https://github.com/plibither8/licensed) Interactive command line tool to help you choose and add licenses to your projects
 * [`loadtest`](https://github.com/alexfernandez/loadtest) Runs a load test on the selected HTTP or WebSockets URL.
 * [`localtunnel`](https://github.com/localtunnel/localtunnel) Exposes your localhost to the world for easy testing and sharing!
-* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Note - Requires `bash` - Try [`licensed`](https://github.com/plibither8/licensed) instead.
-* [`neovim/node-client`](https://github.com/neovim/node-client)
-* [`node-passgen-cli`](https://github.com/jhotmann/node-passgen-cli)
+* [`mklicense`](https://github.com/cezaraugusto/mklicense) CLI tool for generating Licenses. Easily. *Note* - Requires `bash` - Try [`licensed`](https://github.com/plibither8/licensed) instead.
+* [`neovim/node-client`](https://github.com/neovim/node-client) Nvim Node.js client and plugin host.
 * [`project-explorer`](https://github.com/sdras/project-explorer)
 * [`release-it`](https://github.com/release-it/release-it)
 * [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli)
@@ -175,6 +174,7 @@
 * [`google-font-installer`](https://github.com/lordgiotto/google-font-installer)
 * [`gtop`](https://github.com/aksakalli/gtop)
 * [`incognitoz`](https://github.com/piotrwawrzyn/incognitoz) Open as many incognito pages with different context as you wish.
+* [`node-passgen-cli`](https://github.com/jhotmann/node-passgen-cli) A simple cli tool for generating passwords.
 * [`open-cli`](https://github.com/sindresorhus/open-cli)
 * [`pageres-cli`](https://github.com/sindresorhus/pageres-cli)
 * [`screensaver`](https://github.com/gillstrom/screensaver)
