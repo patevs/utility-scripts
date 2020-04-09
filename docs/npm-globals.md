@@ -99,11 +99,11 @@
 * [`devion`](https://github.com/alchaplinsky/devion) One Command to Run All your Projects in Development.
 * [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) Font Awesome split to individual SVG and PNG files of different sizes along with Node.JS based generator. *Note* - Requires [`rsvg-convert`](https://chocolatey.org/packages/rsvg-convert) to be installed.
 * [`foy`](https://github.com/zaaack/foy) A simple, light-weight and modern task runner for general purpose.
-* [`Jsome`](https://github.com/Javascipt/Jsome)
-* [`licensed`](https://github.com/plibither8/licensed) : License generator.
-* [`loadtest`](https://github.com/alexfernandez/loadtest)
-* [`localtunnel`](https://github.com/localtunnel/localtunnel)
-* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Note - Requires `bash` - Try `licensed` instead.
+* [`Jsome`](https://github.com/Javascipt/Jsome) Give style to your JSON on your console!
+* [`licensed`](https://github.com/plibither8/licensed) Interactive command line tool to help you choose and add licenses to your projects
+* [`loadtest`](https://github.com/alexfernandez/loadtest) Runs a load test on the selected HTTP or WebSockets URL.
+* [`localtunnel`](https://github.com/localtunnel/localtunnel) Exposes your localhost to the world for easy testing and sharing!
+* [`mklicense`](https://github.com/cezaraugusto/mklicense) : Note - Requires `bash` - Try [`licensed`](https://github.com/plibither8/licensed) instead.
 * [`neovim/node-client`](https://github.com/neovim/node-client)
 * [`node-passgen-cli`](https://github.com/jhotmann/node-passgen-cli)
 * [`project-explorer`](https://github.com/sdras/project-explorer)
