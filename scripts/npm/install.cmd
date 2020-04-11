@@ -216,6 +216,7 @@ CALL npm install --global licensed
 :: # https://github.com/cezaraugusto/mklicense
 :: Note: try licensed instead
 :: CALL npm install --global mklicense
+:: CALL npm install --global nativefier
 ::: # https://github.com/neovim/node-client
 CALL npm install --global neovim
 :: # https://github.com/jhotmann/node-passgen-cli

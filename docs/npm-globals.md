@@ -109,6 +109,7 @@
 * [`loadtest`](https://github.com/alexfernandez/loadtest) Runs a load test on the selected HTTP or WebSockets URL.
 * [`localtunnel`](https://github.com/localtunnel/localtunnel) Exposes your localhost to the world for easy testing and sharing!
 * [`mklicense`](https://github.com/cezaraugusto/mklicense) CLI tool for generating Licenses. Easily. *Note* - Requires `bash` - Try [`licensed`](https://github.com/plibither8/licensed) instead.
+* [`nativefier`](https://github.com/jiahaog/nativefier) Make any web page a desktop application.
 * [`neovim/node-client`](https://github.com/neovim/node-client) Nvim Node.js client and plugin host.
 * [`project-explorer`](https://github.com/sdras/project-explorer) CLI tool to create an annotated tree visualization of any project.
 * [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli) A tool for renaming files quickly, especially multiple files at once.

@@ -2,9 +2,6 @@
 # .gitmodules #
 # ----------- #
 
-[submodule "covid"]
-	path = covid
-	url = https://github.com/patevs/covid
 [submodule "music"]
 	path = music
 	url = https://github.com/patevs/music
