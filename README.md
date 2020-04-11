@@ -8,17 +8,20 @@
 
 ```md
 .
-├── covid
 ├── docs
 ├── music
 ├── scripts
-│  ├── choco
 │  ├── git
-│  │  ├── installs
-│  │  │  └── git-extras.ps1
+│  │  └── installs
+│  │     └── git-extras.ps1
 │  ├── npm
 │  ├── pip
+|  └── ps1
 ├── .editorconfig
+├── .gitignore
+├── .gitmodules
+├── LICENSE
+├── package.json
 └── README.md
 ```
 
