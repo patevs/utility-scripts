@@ -75,7 +75,7 @@ CALL npm install --global g3l
 :: # https://github.com/IonicaBizau/git-stats
 :: CALL npm install --global git-stats
 :: # https://github.com/carloscuesta/gitmoji-cli
-:: CALL npm install --global gitmoji-cli
+CALL npm install --global gitmoji-cli
 :: # https://github.com/himynameisdave/git-labelmaker
 :: CALL npm install --global git-labelmaker
 :: # https://github.com/yyx990803/starz
@@ -266,7 +266,7 @@ CALL npm install --global emus
 :: # https://github.com/SamVerschueren/mobisplash-cli
 :: CALL npm install --global mobisplash-cli
 :: # https://github.com/wswebcreation/start-android-emulator
-:: CALL npm install --global start-android-emulator
+CALL npm install --global start-android-emulator
 
 :: ---------------------------------------------------------------------------- ::
 
