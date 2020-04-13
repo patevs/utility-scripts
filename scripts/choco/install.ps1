@@ -1,3 +1,5 @@
+#Requires -RunAsAdministrator
+
 # ----------------- #
 # choco/install.ps1 #
 # ----------------- #
