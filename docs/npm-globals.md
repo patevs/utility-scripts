@@ -18,6 +18,8 @@
 
 * [`add-gitignore`](https://github.com/TejasQ/add-gitignore) Interactive CLI tool that adds a `.gitignore` to your projects.
 * [`cli-github`](https://github.com/IonicaBizau/cli-github) A fancy GitHub client for command line.
+* [`cz-cli`](https://github.com/commitizen/cz-cli) The [`commitizen`](https://github.com/commitizen) command line utility.
+  * [`cz-emoji`](https://github.com/ngryman/cz-emoji) Commitizen adapter for formatting commit messages using emojis.
 * [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy) Good-lookin' diffs. *Note* - Requires [`Perl`](https://www.perl.org/) to be installed.
 * [`g3l`](https://github.com/svhawks/g3l) Easiest git cli in the w0rld!
 * [`gistup`](https://github.com/mbostock/gistup) Create a gist from terminal, then use git to update it.
@@ -81,14 +83,6 @@
 
 ---
 
-## Documentation Utilities
-
-* [`clog-cli`](https://github.com/kentcdodds/clog-cli) An npm distribution of the amazing [clog](https://github.com/clog-tool/clog-cli) tool.
-* [`doctoc`](https://github.com/thlorenz/doctoc) Generates table of contents for markdown files inside local git repository.
-* [`gitbook`](https://github.com/GitbookIO/gitbook) Modern documentation format and toolchain using Git and Markdown.
-
----
-
 ## Deployment Utilities
 
 * [`release-it`](https://github.com/release-it/release-it) Automate versioning and package publishing.
@@ -114,6 +108,7 @@
 * [`project-explorer`](https://github.com/sdras/project-explorer) CLI tool to create an annotated tree visualization of any project.
 * [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli) A tool for renaming files quickly, especially multiple files at once.
 * [`spaceholder`](https://github.com/ecrmnn/spaceholder) Download placeholder images from public domain sources blazingly fast.
+* [`speedracer`](https://github.com/speedracer/speedracer) Collect performance metrics for your library/application.
 * [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io) Complete web performance tool that helps you measure the performance of your website.
 * [`stacks-cli`](https://github.com/WeiChiaChang/stacks-cli) Analyze website stack from the terminal.
 * [`strapi`](https://github.com/strapi/strapi) Headless CMS to easily build customisable APIs.
@@ -121,6 +116,14 @@
   * [`tldr-node-client`](https://github.com/tldr-pages/tldr-node-client) Command line client for TLDR-pages.
 * [`underscore-cli`](https://github.com/ddopson/underscore-cli) Command-line utility-belt for hacking JSON and Javascript.
 * [`viewport-list-cli`](https://github.com/kevva/viewport-list-cli) Return a list of devices and their viewports.
+
+---
+
+## Documentation Utilities
+
+* [`clog-cli`](https://github.com/kentcdodds/clog-cli) An npm distribution of the amazing [clog](https://github.com/clog-tool/clog-cli) tool.
+* [`doctoc`](https://github.com/thlorenz/doctoc) Generates table of contents for markdown files inside local git repository.
+* [`gitbook`](https://github.com/GitbookIO/gitbook) Modern documentation format and toolchain using Git and Markdown.
 
 ---
 
@@ -171,6 +174,12 @@
 
 ---
 
+## Static Site Generators
+
+* [`gatsby`](https://github.com/gatsbyjs/gatsby) Build blazing fast, modern apps and websites with React.
+
+---
+
 ## System Utilities
 
 * [`del-cli`](https://github.com/sindresorhus/del-cli) Delete files and directories.
@@ -187,12 +196,6 @@
 * [`trash-cli`](https://github.com/sindresorhus/trash-cli) Move files and folders to the trash.
 * [`vtop`](https://github.com/MrRio/vtop) Graphical activity monitor for the command line. *Note* - Requires `bash`. Try [`gtop`](https://github.com/aksakalli/gtop) instead.
 * [`wifi-password-cli`](https://github.com/kevva/wifi-password-cli) Get current wifi password.
-
----
-
-## Static Site Generators
-
-* [`gatsby`](https://github.com/gatsbyjs/gatsby) Build blazing fast, modern apps and websites with React.
 
 ---
 

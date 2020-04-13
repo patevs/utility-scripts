@@ -62,6 +62,8 @@ ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 CALL npm install --global add-gitignore
 :: # https://github.com/IonicaBizau/cli-github
 :: CALL npm install --global cli-github
+:: CALL npm install --global cz-cli
+:: CALL npm install --global cz-emoji
 :: # https://github.com/so-fancy/diff-so-fancy
 :: Note: requires perl to be installed
 CALL npm install --global diff-so-fancy
@@ -233,6 +235,7 @@ CALL npm install --global neovim
 :: # Placeholder image generator
 :: # https://github.com/ecrmnn/spaceholder
 :: CALL npm install --global spaceholder
+:: CALL npm install --global speedracer
 :: # SVG Optimizer
 :: # https://github.com/svg/svgo
 :: CALL npm install --global svgo
