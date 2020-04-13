@@ -7,3 +7,6 @@
 	url = https://github.com/patevs/music
 
 # EOF #
+[submodule "examples"]
+	path = examples
+	url = https://github.com/patevs/example-scripts
