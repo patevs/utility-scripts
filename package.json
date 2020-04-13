@@ -9,6 +9,14 @@
     "url": "git+https://github.com/patevs/utility-scripts.git"
   },
   "scripts": {
+    "release": "np",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "np": "^6.2.1"
+  },
+  "np": {
+    "publish": false,
+    "preview": true
   }
 }
