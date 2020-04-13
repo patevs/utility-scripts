@@ -18,6 +18,7 @@
   "np": {
     "yolo": false,
     "publish": false,
-    "preview": false
+    "preview": false,
+    "releaseDraft": true
   }
 }
