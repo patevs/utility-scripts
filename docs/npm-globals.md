@@ -18,6 +18,7 @@
 
 * [`add-gitignore`](https://github.com/TejasQ/add-gitignore) Interactive CLI tool that adds a `.gitignore` to your projects.
 * [`cli-github`](https://github.com/IonicaBizau/cli-github) A fancy GitHub client for command line.
+* [`cz-cli`](https://github.com/commitizen/cz-cli) The [`commitizen`](https://github.com/commitizen) command line utility.
 * [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy) Good-lookin' diffs. *Note* - Requires [`Perl`](https://www.perl.org/) to be installed.
 * [`g3l`](https://github.com/svhawks/g3l) Easiest git cli in the w0rld!
 * [`gistup`](https://github.com/mbostock/gistup) Create a gist from terminal, then use git to update it.
