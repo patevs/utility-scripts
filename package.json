@@ -16,7 +16,8 @@
     "np": "^6.2.1"
   },
   "np": {
+    "yolo": false,
     "publish": false,
-    "preview": true
+    "preview": false
   }
 }
