@@ -106,6 +106,7 @@
 * [`project-explorer`](https://github.com/sdras/project-explorer) CLI tool to create an annotated tree visualization of any project.
 * [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli) A tool for renaming files quickly, especially multiple files at once.
 * [`spaceholder`](https://github.com/ecrmnn/spaceholder) Download placeholder images from public domain sources blazingly fast.
+* [`speedracer`](https://github.com/speedracer/speedracer) Collect performance metrics for your library/application.
 * [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io) Complete web performance tool that helps you measure the performance of your website.
 * [`stacks-cli`](https://github.com/WeiChiaChang/stacks-cli) Analyze website stack from the terminal.
 * [`strapi`](https://github.com/strapi/strapi) Headless CMS to easily build customisable APIs.
