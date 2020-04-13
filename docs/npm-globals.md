@@ -81,14 +81,6 @@
 
 ---
 
-## Documentation Utilities
-
-* [`clog-cli`](https://github.com/kentcdodds/clog-cli) An npm distribution of the amazing [clog](https://github.com/clog-tool/clog-cli) tool.
-* [`doctoc`](https://github.com/thlorenz/doctoc) Generates table of contents for markdown files inside local git repository.
-* [`gitbook`](https://github.com/GitbookIO/gitbook) Modern documentation format and toolchain using Git and Markdown.
-
----
-
 ## Deployment Utilities
 
 * [`release-it`](https://github.com/release-it/release-it) Automate versioning and package publishing.
@@ -121,6 +113,14 @@
   * [`tldr-node-client`](https://github.com/tldr-pages/tldr-node-client) Command line client for TLDR-pages.
 * [`underscore-cli`](https://github.com/ddopson/underscore-cli) Command-line utility-belt for hacking JSON and Javascript.
 * [`viewport-list-cli`](https://github.com/kevva/viewport-list-cli) Return a list of devices and their viewports.
+
+---
+
+## Documentation Utilities
+
+* [`clog-cli`](https://github.com/kentcdodds/clog-cli) An npm distribution of the amazing [clog](https://github.com/clog-tool/clog-cli) tool.
+* [`doctoc`](https://github.com/thlorenz/doctoc) Generates table of contents for markdown files inside local git repository.
+* [`gitbook`](https://github.com/GitbookIO/gitbook) Modern documentation format and toolchain using Git and Markdown.
 
 ---
 
@@ -171,6 +171,12 @@
 
 ---
 
+## Static Site Generators
+
+* [`gatsby`](https://github.com/gatsbyjs/gatsby) Build blazing fast, modern apps and websites with React.
+
+---
+
 ## System Utilities
 
 * [`del-cli`](https://github.com/sindresorhus/del-cli) Delete files and directories.
@@ -187,12 +193,6 @@
 * [`trash-cli`](https://github.com/sindresorhus/trash-cli) Move files and folders to the trash.
 * [`vtop`](https://github.com/MrRio/vtop) Graphical activity monitor for the command line. *Note* - Requires `bash`. Try [`gtop`](https://github.com/aksakalli/gtop) instead.
 * [`wifi-password-cli`](https://github.com/kevva/wifi-password-cli) Get current wifi password.
-
----
-
-## Static Site Generators
-
-* [`gatsby`](https://github.com/gatsbyjs/gatsby) Build blazing fast, modern apps and websites with React.
 
 ---
 
