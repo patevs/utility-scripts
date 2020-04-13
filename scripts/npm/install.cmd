@@ -235,6 +235,7 @@ CALL npm install --global neovim
 :: # Placeholder image generator
 :: # https://github.com/ecrmnn/spaceholder
 :: CALL npm install --global spaceholder
+:: CALL npm install --global speedracer
 :: # SVG Optimizer
 :: # https://github.com/svg/svgo
 :: CALL npm install --global svgo
