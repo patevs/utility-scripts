@@ -81,4 +81,12 @@ Remove-Item -Recurse -Force "$env:ChocolateyInstall" -WhatIf
 
 ```
 
+If you also intend to delete the tools directory that was managed by Chocolatey, remove both of the `-WhatIf` switches:
+
+```powershell
+if ($env:ChocolateyToolsLocation) { Remove-Item -Recurse -Force "$env:ChocolateyToolsLocation" -WhatIf }
+[System.Environment]::SetEnvironmentVariable("ChocolateyToolsLocation", $null, 'User')
+[System.Environment]::SetEnvironmentVariable("ChocolateyToolsLocation", $null, 'Machine')
+```
+
 ---
