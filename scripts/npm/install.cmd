@@ -63,6 +63,7 @@ CALL npm install --global add-gitignore
 :: # https://github.com/IonicaBizau/cli-github
 :: CALL npm install --global cli-github
 :: CALL npm install --global commitizen
+:: CALL npm install --global cz-conventional-changelog
 :: CALL npm install --global cz-emoji
 :: # https://github.com/so-fancy/diff-so-fancy
 :: Note: requires perl to be installed
