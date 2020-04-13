@@ -19,6 +19,7 @@
 * [`add-gitignore`](https://github.com/TejasQ/add-gitignore) Interactive CLI tool that adds a `.gitignore` to your projects.
 * [`cli-github`](https://github.com/IonicaBizau/cli-github) A fancy GitHub client for command line.
 * [`cz-cli`](https://github.com/commitizen/cz-cli) The [`commitizen`](https://github.com/commitizen) command line utility.
+  * [`cz-conventional-changelog`](https://github.com/commitizen/cz-conventional-changelog) A commitizen adapter for the angular preset of [`conventional-changelog`](https://github.com/conventional-changelog/conventional-changelog).
   * [`cz-emoji`](https://github.com/ngryman/cz-emoji) Commitizen adapter for formatting commit messages using emojis.
 * [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy) Good-lookin' diffs. *Note* - Requires [`Perl`](https://www.perl.org/) to be installed.
 * [`g3l`](https://github.com/svhawks/g3l) Easiest git cli in the w0rld!
