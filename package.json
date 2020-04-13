@@ -14,5 +14,9 @@
   },
   "devDependencies": {
     "np": "^6.2.1"
+  },
+  "np": {
+    "publish": false,
+    "preview": true
   }
 }
