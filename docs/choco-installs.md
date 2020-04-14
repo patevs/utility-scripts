@@ -1,3 +1,7 @@
+# Chocolatey Installs
+
+---
+
 7zip.install
 Firefox
 flashplayerplugin
@@ -13,3 +17,5 @@ vcredist140
 visualstudio2019buildtools
 vlc
 vscode.install
+
+---

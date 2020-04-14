@@ -1,4 +1,8 @@
-﻿7zip (v:19.00) [main]
+﻿# Scoop Installs
+
+---
+
+7zip (v:19.00) [main]
 android-studio (v:3.6.2.0) [extras]
 aria2 (v:1.35.0-1) [main]
 bat (v:0.13.0) [main]
@@ -51,3 +55,5 @@ teracopy-np (v:3.26) [nonportable]
 windows-terminal (v:0.10.781.0) [extras]
 youtube-dl (v:2020.03.24) [main]
 zeal (v:0.6.1) [extras]
+
+---
