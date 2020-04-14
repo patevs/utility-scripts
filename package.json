@@ -1,7 +1,7 @@
 {
   "name": "utility-scripts",
   "version": "0.5.3",
-  "description": "Utility Scripts",
+  "description": "Utility scripts used to automate system setup and configuration tasks",
   "author": "PatEvs",
   "license": "MIT",
   "repository": {

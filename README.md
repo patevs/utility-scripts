@@ -4,6 +4,14 @@
 
 ---
 
+## Installation
+
+```powershell
+git submodule update --init
+```
+
+---
+
 ## Project Structure
 
 ```md
