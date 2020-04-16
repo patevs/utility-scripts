@@ -193,7 +193,7 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 :: CALL npm install --global doctoc
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
 :: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
-CALL npm install --global font-awesome-svg-png
+:: CALL npm install --global font-awesome-svg-png
 :: # https://github.com/zaaack/foy
 :: CALL npm install --global foy
 :: # https://github.com/gatsbyjs/gatsby
@@ -270,7 +270,7 @@ CALL npm install --global emus
 :: # https://github.com/SamVerschueren/mobisplash-cli
 :: CALL npm install --global mobisplash-cli
 :: # https://github.com/wswebcreation/start-android-emulator
-CALL npm install --global start-android-emulator
+:: CALL npm install --global start-android-emulator
 
 :: ---------------------------------------------------------------------------- ::
 
@@ -325,7 +325,7 @@ ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 :: # https://github.com/sindresorhus/del-cli
 CALL npm install --global del-cli
 :: # https://github.com/sindresorhus/empty-trash-cli
-CALL npm install --global empty-trash-cli
+:: CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
 :: CALL npm install --global fkill-cli
 :: # https://github.com/lordgiotto/google-font-installer
@@ -342,7 +342,7 @@ CALL npm install --global gtop
 :: # https://github.com/marionebl/share-cli
 :: CALL npm install --global share-cli
 :: # https://github.com/sindresorhus/trash-cli
-CALL npm install --global trash-cli
+:: CALL npm install --global trash-cli
 :: # https://github.com/MrRio/vtop
 :: # NOTE: vtop must be run using sh/bash. try gtop instead
 :: CALL npm install --global vtop
