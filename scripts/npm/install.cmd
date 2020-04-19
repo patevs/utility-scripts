@@ -420,6 +420,7 @@ CALL npm install --global corona-cli
 :: CALL npm install --global movie-cli
 :: # https://github.com/xxczaki/nasa-cli
 :: CALL npm install --global nasa-cli
+:: CALL npm install --global tiny-care-terminal
 :: # https://github.com/riyadhalnur/weather-cli
 :: CALL npm install --global weather-cli
 :: # https://github.com/webtorrent/webtorrent-cli
