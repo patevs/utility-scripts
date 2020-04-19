@@ -247,6 +247,7 @@
 * [`learnyoubash`](https://github.com/denysdovhan/learnyoubash) Learn you how to write your first bash script.
 * [`movie-cli`](https://github.com/mayankchd/movie) CLI for getting information about movies and comparing two movies.
 * [`nasa-cli`](https://github.com/xxczaki/nasa-cli) Download NASA Picture of the Day from your terminal!
+* [`tiny-care-terminal`](https://github.com/notwaldorf/tiny-care-terminal) A little dashboard that tries to take care of you when you're using your terminal.
 * [`weather-cli`](https://github.com/riyadhalnur/weather-cli) Check the weather for your city from your terminal.
 * [`webtorrent-cli`](https://github.com/webtorrent/webtorrent-cli) Streaming torrent client for the command line.
 * [`whereami`](https://github.com/rafaelrinaldi/whereami) Get your geolocation information using [freegeoip.app](https://freegeoip.app/).
