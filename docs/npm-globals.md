@@ -95,7 +95,6 @@
 ## Development Utilities
 
 * [`bower`](https://github.com/bower/bower) A package manager for the web.
-* [`node-csvtojson`](https://github.com/Keyang/node-csvtojson) Blazing fast and Comprehensive CSV Parser for Node.JS / Browser / Command Line.
 * [`destiny`](https://github.com/benawad/destiny) Prettier for File Structures.
 * [`devion`](https://github.com/alchaplinsky/devion) One Command to Run All your Projects in Development.
 * [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) Font Awesome split to individual SVG and PNG files of different sizes along with Node.JS based generator. *Note* - Requires [`rsvg-convert`](https://chocolatey.org/packages/rsvg-convert) to be installed.
@@ -108,8 +107,9 @@
 * [`mklicense`](https://github.com/cezaraugusto/mklicense) CLI tool for generating Licenses. Easily. *Note* - Requires `bash` - Try [`licensed`](https://github.com/plibither8/licensed) instead.
 * [`nativefier`](https://github.com/jiahaog/nativefier) Make any web page a desktop application.
 * [`neovim/node-client`](https://github.com/neovim/node-client) Nvim Node.js client and plugin host.
-* [`project-explorer`](https://github.com/sdras/project-explorer) CLI tool to create an annotated tree visualization of any project.
+* [`node-csvtojson`](https://github.com/Keyang/node-csvtojson) Blazing fast and Comprehensive CSV Parser for Node.JS / Browser / Command Line.
 * [`node-rename-cli`](https://github.com/jhotmann/node-rename-cli) A tool for renaming files quickly, especially multiple files at once.
+* [`project-explorer`](https://github.com/sdras/project-explorer) CLI tool to create an annotated tree visualization of any project.
 * [`spaceholder`](https://github.com/ecrmnn/spaceholder) Download placeholder images from public domain sources blazingly fast.
 * [`speedracer`](https://github.com/speedracer/speedracer) Collect performance metrics for your library/application.
 * [`sitespeed.io`](https://github.com/sitespeedio/sitespeed.io) Complete web performance tool that helps you measure the performance of your website.
