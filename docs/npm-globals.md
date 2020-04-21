@@ -104,6 +104,7 @@
 * [`licensed`](https://github.com/plibither8/licensed) Interactive command line tool to help you choose and add licenses to your projects
 * [`loadtest`](https://github.com/alexfernandez/loadtest) Runs a load test on the selected HTTP or WebSockets URL.
 * [`localtunnel`](https://github.com/localtunnel/localtunnel) Exposes your localhost to the world for easy testing and sharing!
+* [`maid`](https://github.com/egoist/maid) Markdown driven task runner.
 * [`mklicense`](https://github.com/cezaraugusto/mklicense) CLI tool for generating Licenses. Easily. *Note* - Requires `bash` - Try [`licensed`](https://github.com/plibither8/licensed) instead.
 * [`nativefier`](https://github.com/jiahaog/nativefier) Make any web page a desktop application.
 * [`neovim/node-client`](https://github.com/neovim/node-client) Nvim Node.js client and plugin host.
