@@ -216,6 +216,7 @@ CALL npm install --global licensed
 :: CALL npm install --global loadtest
 :: # https://github.com/localtunnel/localtunnel
 :: CALL npm install --global localtunnel
+:: CALL npm install --global maid
 :: # https://github.com/cezaraugusto/mklicense
 :: Note: try licensed instead
 :: CALL npm install --global mklicense
