@@ -16,15 +16,13 @@ git submodule update --init
 
 ```md
 .
-├── docs
 ├── examples
 ├── music
 ├── scripts
 │  ├── choco
-│  ├── git
-│  ├── npm
-│  ├── pip
-|  └── ps1
+│  ├── debian
+│  ├── ps1
+|  └── win10
 ├── .editorconfig
 ├── .gitignore
 ├── .gitmodules
