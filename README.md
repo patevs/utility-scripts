@@ -4,6 +4,12 @@
 
 ---
 
+## Links and Resources
+
+- [`hacker-scripts`](https://github.com/NARKOZ/hacker-scripts)
+
+---
+
 ## Installation
 
 ```powershell
