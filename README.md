@@ -26,7 +26,6 @@ git submodule update --init
 ├── choco
 ├── cmd
 ├── debian
-├── music
 ├── ps1
 ├── win10
 ├── .editorconfig
