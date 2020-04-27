@@ -2,10 +2,6 @@
 # .gitmodules #
 # ----------- #
 
-[submodule "examples"]
-	path = examples
-	url = https://github.com/patevs/example-scripts
-
 [submodule "music"]
 	path = music
 	url = https://github.com/patevs/music
