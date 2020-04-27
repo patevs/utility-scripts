@@ -22,13 +22,13 @@ git submodule update --init
 
 ```md
 .
-├── examples
+├── bash
+├── choco
+├── cmd
+├── debian
 ├── music
-├── scripts
-│  ├── choco
-│  ├── debian
-│  ├── ps1
-|  └── win10
+├── ps1
+├── win10
 ├── .editorconfig
 ├── .gitignore
 ├── .gitmodules
