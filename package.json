@@ -32,12 +32,6 @@
       "./node_modules/commitlint-config-gitmoji"
     ]
   },
-  "np": {
-    "yolo": false,
-    "publish": false,
-    "preview": false,
-    "releaseDraft": true
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-emoji"
@@ -48,5 +42,11 @@
         "issues"
       ]
     }
+  },
+  "np": {
+    "yolo": false,
+    "publish": false,
+    "preview": false,
+    "releaseDraft": true
   }
 }
