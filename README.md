@@ -1,6 +1,6 @@
 # Utility Scripts
 
-> Various Script Examples and Utilities.
+> Bash, Cmd, and PowerShell example and utility scripts.
 
 ---
 
@@ -15,7 +15,6 @@
 ```md
 .
 ├── bash
-├── choco
 ├── cmd
 ├── debian
 ├── ps1
