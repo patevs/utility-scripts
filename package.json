@@ -1,7 +1,7 @@
 {
   "name": "utility-scripts",
   "version": "0.10.0",
-  "description": "Various Script Examples and Utilities",
+  "description": "Bash, Cmd, and PowerShell example and utility scripts",
   "author": "PatEvs",
   "license": "MIT",
   "repository": {
