@@ -16,7 +16,6 @@
 .
 ├── bash
 ├── cmd
-├── debian
 ├── ps1
 ├── .editorconfig
 ├── .gitignore
