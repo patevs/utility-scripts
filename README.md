@@ -14,17 +14,15 @@
 
 ```md
 .
-├── bash
-├── cmd
-├── ps1
-├── .commitlintrc.json
-├── .editorconfig
-├── .gitignore
-├── .huskyrc
-├── .np-config.json
-├── LICENSE
-├── package.json
-└── README.md
+├── bash              # Bash scripts
+├── cmd               # CMD scripts
+├── ps1               # PowerShell scripts
+├── .editorconfig     # Editor configuration
+├── .gitignore        # Git ignore rules
+├── .np-config.json   # NPM publish (np) configuration
+├── LICENSE           # Project LICENSE
+├── package.json      # NPM package configuration
+└── README.md         # Project README
 ```
 
 ---
