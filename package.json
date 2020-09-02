@@ -1,6 +1,6 @@
 {
   "name": "utility-scripts",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "description": "Bash, Cmd, and PowerShell example and utility scripts",
   "author": "PatEvs",
   "license": "MIT",
@@ -18,7 +18,9 @@
     "np": "^6.5.0"
   },
   "commitlint": {
-    "extends": ["./node_modules/commitlint-config-gitmoji"]
+    "extends": [
+      "./node_modules/commitlint-config-gitmoji"
+    ]
   },
   "husky": {
     "hooks": {
