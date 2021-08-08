@@ -7,6 +7,7 @@
 ## Links and Resources
 
 - [`hacker-scripts`](https://github.com/NARKOZ/hacker-scripts)
+- [`alexinslc/powershell`](https://github.com/alexinslc/powershell) PowerShell functions and scripts for various sysadmin / devops tasks.
 
 ---
 
