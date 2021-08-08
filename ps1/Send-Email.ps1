@@ -58,20 +58,23 @@ function Send-Email() {
   )
 
   try {
-    #Creating a Mail object
+    # Creating a Mail object
     $msg = new-object Net.Mail.MailMessage
 
-    #Creating SMTP server object
+    # Creating SMTP server object
     $smtp = new-object Net.Mail.SmtpClient($smtpServer)
+    # $SMTPClient = New-Object Net.Mail.SmtpClient($smtpServer, $smtpPort)
+    # $SMTPClient.EnableSsl = $true
+    # $SMTPClient.Credentials = New-Object System.Net.NetworkCredential("<username>", "<password>");
 
-    #Email structure
+    # Email structure
     $msg.From = $from
     $msg.ReplyTo = "noreply@yourdomain.com"
     $msg.To.Add($to)
     $msg.subject = "Your Test Subject"
     $msg.body = "Your Test Body."
 
-    #Sending email
+    # Sending email
     $smtp.Send($msg)
   } catch {
     Write-Warning $_
