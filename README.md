@@ -15,6 +15,7 @@
 
 ```md
 .
+├── .husky            # Husky configuration
 ├── bash              # Bash scripts
 ├── cmd               # CMD scripts
 ├── ps1               # PowerShell scripts
