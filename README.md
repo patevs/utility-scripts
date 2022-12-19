@@ -20,6 +20,7 @@
 ├── bash              # Bash scripts
 ├── cmd               # CMD scripts
 ├── ps1               # PowerShell scripts
+├── .commitlintrc     # Commitlint configuration
 ├── .editorconfig     # Editor configuration
 ├── .gitignore        # Git ignore rules
 ├── .np-config.json   # NPM publish (np) configuration
