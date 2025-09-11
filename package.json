@@ -9,7 +9,7 @@
     "url": "git+https://github.com/patevs/utility-scripts.git"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "updates": "npx ncu",
     "release": "npx np --no-publish --no-tests"
   },
